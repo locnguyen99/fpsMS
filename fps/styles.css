@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.container-fluid {
+    background-color: white;
+}
+
+/* fonts style */
+.breadcrumbs a {
+    text-transform: capitalize;
+}
+
+.menuliparent,
+.list-group-item a,
+.hidetitle {
+    font-size: 14px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+.hidetitle {
+    color: rgb(130, 130, 130);
+}
+.menuliparent,
+.list-group-item a{
+    color: rgb(51, 51, 51);
+}
+.closediv .hidetitle,
+.caretevent .hidetitle {
+    color: rgb(51, 51, 51) !important;
+}
+
+.title-page-head{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+}
+.dashboardBlockItems span{
+    font-family: 'Poppins', sans-serif !important;
+    
+}
+/* bootstrap */
+.form-control, 
+.menutext a,
+.object-picker{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+}
+
+
+
+/* spacings */
+ul.sidebar-nav {
+    padding-left: unset !important;
+}
+ul.list-group {
+    margin-bottom: unset;
+}
+li.list-group-item {
+    background-color: unset;
+}
+.menuliparent a i {
+    margin-right: 9px  !important;
+}
+.menuliparent.closecollapseall {
+    background-color: rgba(240, 240, 240);
+    border-radius: 12px;
+}
+.menuliparent a{
+    display: flex;    
+}
+
+.menuliparent.closecollapseall a.caretevent{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menuliparent a i{
+    margin-top: 7px;
+}
+.menuliparent {
+    margin-right: 30px;
+    margin-bottom: 20px !important;
+}
+li.menuliparent{
+    padding: 10px 20px 10px 20px;
+}
+.sidebar-brand.menuliparent{
+    display: none;
+}
+
+.fa-minus-circle{
+    color: rgba(205, 0, 0, 1) !important;
+}
+.menuliparent .badge {
+    background-color: rgba(205, 0, 0, 1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+.menuliparent .badge,
+.menuliparent.closecollapseall .caret{
+    margin-left: auto !important;
+    float: right;
+    display: flex;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.help-text-button,
+i { 
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+}

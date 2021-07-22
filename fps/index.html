@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///Users/locnguyen/Documents/FPS/Dashboard%20Module.html -->
+<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Dashboard Module</title>
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="Dashboard Module">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">
+    <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://staging-redesign-app.k8s.fpsupport.nl/faviconAnsul.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="./customstyle.css">
+    <link rel="stylesheet" type="text/css" href="./customStyleLasted.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-toggle.min.css">
+
+    
+    <link href="./css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script async="" src="./analytics.js"></script><script async="" src="./analytics(1).js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-75794593-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        .row.content {}
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css"> 
+</head>
+
+<body class="" style="overflow-x:hidden;">
+    <div class="container">
+        <div class="row content " style="display: flex;align-items: stretch;">
+            <div id="leftsidemenudiv" class="" style="margin-left:15px;background-color:white;min-width: 250px;max-width:250px;transition: all 0.3s;border-right: solid 1px #f7f7f7;">
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper" style="margin-top:10px;padding-left:10px;">
+                    <a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html" style="outline: none; text-decoration: none; ">
+                        <img id="logofps" class="img-responsive" src="./FPS-Logo.png" style="height:58px;">
+                    </a>
+                    <div style="margin-top:40px;" class="menutext"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#">Menu</a></div>
+                    <ul class="sidebar-nav list-unstyled" style="margin-top:30px;padding-left:20px;">
+                        <li class="sidebar-brand menuliparent">
+                        </li>
+                        <li class="menuliparent closecollapseall">
+                            <a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#collapse2" class="caretevent" aria-expanded="true"><i class="fa fa-dashboard fa-lg" aria-hidden="true"></i> <span class="hidetitle">Dashboard </span><span class="caret addcaret caret-up"></span></a>
+                            <ul class="list-group panel-collapse collapse in" id="collapse2" aria-expanded="true" style="">
+                                <li class="list-group-item activemenu collapse in" aria-expanded="true" style=""><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Module</a>
+                                </li>
+                                <li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Profiel</a>
+                                </li>
+                                <li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html">Locatie</a>
+                                </li>
+                                <li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/rapportages-zoeken.html">Rapportages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menuliparent">
+                            <a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"><i class="fa fa-bell fa-lg" aria-hidden="true"></i> <span class="hidetitle">Notificaties </span>
+                                <span class="badge hidetitle" style="background-color:red;margin-left:70px;">20</span>
+                            </a>
+                        </li>
+                        <li class="menuliparent">
+                            <a href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> <span class="hidetitle">Beheer
+                                </span></a>
+                        </li>
+                        <li class="menuliparent">
+                            <a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html"><i class="fa fa-asterisk fa-lg" aria-hidden="true"></i> <span class="hidetitle">Melding
+                                    overzicht </span></a>
+                        </li>
+                        <li class="menuliparent">
+                            <a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html"><i class="fa fa-file fa-lg" aria-hidden="true"></i> <span class="hidetitle">Formulier
+                                    overzicht </span></a>
+                        </li>
+                        <li class="menuliparent closecollapseall">
+                            <a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#collapse1"><i class="fa fa-plus fa-lg" aria-hidden="true"></i> <span class="hidetitle">Aanmaken
+                                </span><span class="caret addcaret"></span></a>
+                            <ul class="list-group panel-collapse collapse" id="collapse1">
+                                <li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job</a></li>
+                                <li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding</a>
+                                </li>
+                                <li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker</a>
+                                </li>
+                                <li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div style="margin-top:80px;padding-left:20px;padding-bottom:20px;" class="closediv">
+                        <a href="javascript: void(0)" id="closeleftmenu">
+                            <span class="badge" style="background-color:#18A5A5;border-radius: 50%;line-height: unset;" id="closemenuicon">&lt;</span>
+                            <span class="hidetitle">Menu inklappen</span>
+                        </a>
+                    </div>
+                </div>
+                <style>
+                    .menuliparent {
+                        margin-bottom: 40px;
+                        color: rgba(130, 130, 130, 1);
+                        font-style: normal;
+                        font-family: Poppins;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 212.50000596046448%;
+                    }
+
+                    .menuliparent a i {
+                        margin-right: 5px;
+                    }
+
+                    .menuliparent ul {
+                        padding-left: 20px;
+                    }
+
+                    .menuliparent ul li {
+                        border: none;
+                    }
+
+                    .caret.caret-up {
+                        border-top-width: 0;
+                        border-bottom: 4px solid;
+                    }
+
+                    .caret {
+                        margin-left: 80px;
+                    }
+
+                    .activemenu a {
+                        color: rgba(51, 51, 51, 1);
+                        font-weight: 600;
+                    }
+
+                    #leftsidemenudiv.active {
+                        min-width: 125px !important;
+                        max-width: 125px !important;
+                        text-align: center !important;
+                    }
+
+                    #leftsidemenudiv.active .caret {
+                        margin-left: 10px;
+                    }
+
+                    #leftsidemenudiv.active .hidetitle {
+                        display: none;
+                    }
+
+                    #leftsidemenudiv.active .menuliparent ul {
+                        padding-left: 0px;
+                        text-align: left;
+                    }
+
+                    #leftsidemenudiv.active .sidebar-nav {
+                        padding-left: 0px !important;
+                    }
+
+                    #leftsidemenudiv.active .closediv {
+                        padding-left: 0px !important;
+                        padding-right: 40px;
+                    }
+
+                    #leftsidemenudiv.active .menutext {
+                        text-align: left !important;
+                    }
+
+                    #leftsidemenudiv.active #logofps {
+                        padding-left: 20px;
+                    }
+
+                    #leftsidemenudiv.active .menuliparent.closecollapseall a {
+                        padding-right: 20px;
+                    }
+
+                    #leftsidemenudiv.active .menuliparent a {
+                        padding-right: 40px;
+                    }
+                </style>
+            </div>
+            <div class="" style="padding-left: 1px;width: 100%;;min-height: 100vh;transition: all 0.3s;">
+                <nav class="navbar" style="padding-top:10px;padding-right:10px;background-color:white;margin-bottom:0px;">
+                    <div class="container-fluid" style="margin-left:-30px;">
+                        <form class="navbar-form navbar-left" action="https://staging-redesign-app.k8s.fpsupport.nl/search-dashboard.html" style="margin-top:-5px;width:100%;">
+                            <div class="input-group input-lg" style="width:15%;">
+                                <select class=" object-picker non-deselectable" name="searchType" id="searchType" tabindex="1" data-placeholder="Please select type of search" data-sortable="false" data-value="job" data-display-limit="0">
+                                    <option value="job" selected="selected">
+                                        Job
+                                    </option>
+                                    <option value="meldingen">
+                                        Meldingen
+                                    </option>
+                                    <option value="documenten">
+                                        Documenten
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="input-group input-group-lg" style="width:65%;">
+                                <input type="text" class="form-control" name="search" value="" placeholder="Waar ben je naar op zoek?" style="border-right:none;padding:20px 10px;">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+                                <div class="dropdown nav navbar-nav ">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" style="min-width: 210px;">
+                                        <li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Meldding
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/leverancier-overzicht.html">Leverancier
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+                                    </ul>
+                                </div>
+                                <a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html" class="nav navbar-nav" style="margin-left: 5px;margin-right: 15px;">
+                                    <span class="fa-stack fa-2x" data-count="20">
+                                        <i class="fa fa-bell fa-stack-1x" style="color:black;"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown nav navbar-nav">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-user" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" style="min-width: 200px;">
+                                        <li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Mijn
+                                                profiel <i class="fa fa-user" aria-hidden="true" style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Instellingen
+                                                <i class="fa fa-cog" aria-hidden="true" style="float: right;"></i></a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/login/logout/" style="color:#CD0000;">Uitloggen <i class="fa fa-sign-out" aria-hidden="true" style="float: right;"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+                <style>
+                    #searchType {
+                        height: 46px;
+                    }
+
+                    .fa-stack[data-count]:after {
+                        position: absolute;
+                        right: 0%;
+                        top: 1%;
+                        content: attr(data-count);
+                        font-size: 30%;
+                        padding: .6em;
+                        border-radius: 999px;
+                        line-height: .75em;
+                        color: white;
+                        background: rgba(255, 0, 0, .85);
+                        text-align: center;
+                        min-width: 2em;
+                        font-weight: bold;
+                    }
+                </style>
+                <style type="text/css">
+                    .dashboardBlockSubItems {
+                        border-top: #ddd 1px solid;
+                    }
+
+                    .dashboardBlockSubItems li {
+                        background: none;
+                        list-style-type: none;
+                        border-bottom: none;
+                        padding-left: 5%;
+                    }
+
+                    .dashboardBlockItems li {}
+
+                    #dashboard,
+                    #dashboardUser,
+                    #switcher {
+                        margin-top: 30px;
+                    }
+                </style>
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="breadcrumbsWrapper">
+                            <div class="container-fluid ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h1>
+                                                    <span style="width: auto; position: relative;" class="title-page-head">Dashboard Module
+                                                        <i class="help-text-button fa fa-question" data-rel="popover" data-trigger="hover" data-placement="bottom" data-content="Dit dashboard biedt u overzicht in de processen die u borgt. Deze processen worden job-modules genoemd. Onder &quot;Gebruiksinstellingen&quot; (te benaderen via Beheer) kunt u uw standaard dashboardweergave instellen." data-html="true" data-original-title="" title=""></i>
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                            <div class="col-md-12 breadcrumbs">
+                                                <a title="Dashboard" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#">Dashboard</a>
+                                                <a title="Modules" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#">Modules</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-12 submitButtons submitButtonRight" style="padding-top:15px;">
+                                            <a class="btn btn-top-greenbg" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">
+                                                <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+                                                <span>Meldding aanmaken</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <section id="main">
+                        <div class="content-cards">
+                            <div class="container-fluid" id="dashboard">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader">
+                                                <h2>Extra module 2020 </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=7464B9B2-9052-4EB7-8814B548FA85187C">
+                                                            <span class="statusRed"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>machine testing</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                10-06-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="more-module collapse" id="846305FD-5ACE-4353-88B4CA8879992B02">
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=6CC73A93-0C1F-4E19-A1B0B213AE3D2E53">
+                                                            <span class="statusRed"></span>
+                                                            <span>eenmalige job</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                24-02-2021</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=17C1ED9F-30DF-409F-BAFF863FBF1328D8">
+                                                            <span class="statusRed"></span>
+                                                            <span>Extra submodule 2020</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                25-04-2021</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=B5291C18-237D-43EE-A42EFA506E098F12">
+                                                            <span class="statusRed"></span>
+                                                            <span>test 123</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                01-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dashboardBlockFooter">
+                                                <a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#846305FD-5ACE-4353-88B4CA8879992B02" aria-expanded="false" aria-controls="846305FD-5ACE-4353-88B4CA8879992B02"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader">
+                                                <h2>First module 2021 </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=66700EE5-4A03-4914-939CE55D307768B5">
+                                                            <span class="statusRed"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>BB</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                06-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="more-module collapse" id="66849F91-BD0F-4EE1-9B30D7A232ED0A92">
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5F264A5C-89BE-4615-A6C38E525FF3229B">
+                                                            <span class="statusRed"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>first test module1</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                17-06-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dashboardBlockFooter">
+                                                <a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#66849F91-BD0F-4EE1-9B30D7A232ED0A92" aria-expanded="false" aria-controls="66849F91-BD0F-4EE1-9B30D7A232ED0A92"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader">
+                                                <h2>Test job module 0715 </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=BD10F63C-F795-4133-B53DB0DA365378B9">
+                                                            <span class="statusRed"></span>
+                                                            <span>Test job sub module 0715-1</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                15-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="more-module collapse" id="10ED8786-3088-4BC0-8D4082B3A48CEFF4">
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=7F70560C-5BE8-41DD-8816E3D0A2FD90B4">
+                                                            <span class="statusRed"></span>
+                                                            <span>Test job sub module 0715-2</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                15-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=79A4E921-1328-413D-9F5B90BA9DD2D501">
+                                                            <span class="statusRed"></span>
+                                                            <span>Test job sub module 0715</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                15-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=B73AA906-E652-4C25-9077164247EF001C">
+                                                            <span class="statusRed"></span>
+                                                            <span>Test job sub module 0719</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                19-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dashboardBlockFooter">
+                                                <a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#10ED8786-3088-4BC0-8D4082B3A48CEFF4" aria-expanded="false" aria-controls="10ED8786-3088-4BC0-8D4082B3A48CEFF4"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader">
+                                                <h2>test job module18 </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=F724C363-99ED-45C0-9BD031C7CF3A771F">
+                                                            <span class="statusRed"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>jobsubmodule25</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                25-06-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="more-module collapse" id="FA2BF12B-A58A-4515-857E047869300D72">
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=CEA297FC-8782-4786-91CBBA4B4C19264B">
+                                                            <span class="statusRed"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>test sub module18</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                14-06-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dashboardBlockFooter">
+                                                <a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#FA2BF12B-A58A-4515-857E047869300D72" aria-expanded="false" aria-controls="FA2BF12B-A58A-4515-857E047869300D72"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader">
+                                                <h2>test job module25 </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=997F4E19-713B-48C5-93251BC884A99AF6">
+                                                            <span class="statusRed"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>job submodule test25</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                07-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader">
+                                                <h2>test2021 </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=60A7729B-8232-4CE3-87E54835EED1EADD">
+                                                            <span class="statusRed"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>AAAAAA</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                25-06-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="more-module collapse" id="2B30B4DE-6A91-40EA-864340403D9A5351">
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=D64DAFF7-D8A6-410A-96C30AE94937D832">
+                                                            <span class="statusRed"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>NewTest2021</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                30-06-2021</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=C9560A83-9A85-42DE-92086D5EF409D77A">
+                                                            <span class="statusOrange"></span>
+                                                            <span class="prio-text">PRIO - </span>
+                                                            <span>JulyTest</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                14-06-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dashboardBlockFooter">
+                                                <a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#2B30B4DE-6A91-40EA-864340403D9A5351" aria-expanded="false" aria-controls="2B30B4DE-6A91-40EA-864340403D9A5351"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader">
+                                                <h2>Toomba 2de test </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=D45197F9-CD6A-41EA-A262EAA8FC9B58C6">
+                                                            <span class="statusRed"></span>
+                                                            <span>test van toomba</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                09-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader ">
+                                                <h2>Module test 1 </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=13951197-3F4E-40F0-AFA48FC10D0C77A7">
+                                                            <span class="statusRed"></span>
+                                                            <span>Submodule test 1</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                25-06-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="more-module collapse" id="91C9F2EE-AF80-4BE5-B6830408ECD6F802">
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=19A73747-0DBA-4C6B-9DBF91475FD0ECF5">
+                                                            <span class="statusGreen"></span>
+                                                            <span>test Module</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                14-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dashboardBlockFooter">
+                                                <a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#91C9F2EE-AF80-4BE5-B6830408ECD6F802" aria-expanded="false" aria-controls="91C9F2EE-AF80-4BE5-B6830408ECD6F802"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader ">
+                                                <h2>Module Test 2020 </h2>
+                                                <div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5C800737-8EF0-43C8-A41896219506A8D7">
+                                                            <span class="statusRed"></span>
+                                                            <span>Submodule test 2020</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                29-12-2020</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="more-module collapse" id="699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=201AE731-703C-402E-BC98DE505047C715">
+                                                            <span class="statusGreen"></span>
+                                                            <span>Test 2021</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dashboardBlockFooter">
+                                                <a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#699DF2E6-A6CA-43E0-8AD5F2858B57E6DB" aria-expanded="false" aria-controls="699DF2E6-A6CA-43E0-8AD5F2858B57E6DB"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12" style="">
+                                        <div class="dashboardBlock">
+                                            <div class="dashboardBlockHeader">
+                                                <h2>Buffertest </h2>
+                                                <div class="prioIcon"><i class="fa fa-check-circle" style="font-size:24px;color:var(--main-color);"></i></div>
+                                            </div>
+                                            <div class="dashboardBlockItems">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=23DD1391-5917-409E-9D1743537EF6033B">
+                                                            <span class="statusGreen"></span>
+                                                            <span>July1st_test</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum
+                                                                09-07-2021</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="more-module collapse" id="89482048-1A0E-46B0-A6B7E6D781C8DC43">
+                                                    <li>
+                                                        <a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=2512915E-D4E7-432D-90D92CB097CE6F86">
+                                                            <span class="statusGreen"></span>
+                                                            <span>Subbuffer</span><br>
+                                                            <span class="first-date-job">Eerste uitvoerdatum </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dashboardBlockFooter">
+                                                <a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#89482048-1A0E-46B0-A6B7E6D781C8DC43" aria-expanded="false" aria-controls="89482048-1A0E-46B0-A6B7E6D781C8DC43"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <style>
+                    .title-text-black {
+                        color: rgba(52, 52, 52, 1);
+                        font-style: normal;
+                        font-family: Poppins;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+
+                    .first-date-job {
+                        color: rgba(130, 130, 130, 1);
+                        font-style: normal;
+                        font-family: Poppins;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        margin-left: 20px
+                    }
+
+                    .content-cards {
+                        padding-top: 10px;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                    }
+                </style>
+            </div>
+        </div>
+        <footer class="footer container-fluid">
+            <div class="container">
+                <hr>
+                <ul class="logo-footer">
+                    <li><a href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Hier kunt u
+                            via gebruikersinstellingen een eigen logo plaatsen</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="modal_main_title">Let op</h4>
+                    </div>
+                    <div class="modal-body" id="modal_main_body">
+                        <p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_btn_close">Annuleren</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_btn_submit">Verwijderen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main_save">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="modal_main_save_title">Let op</h4>
+                    </div>
+                    <div class="modal-body" id="modal_main_save_body">
+                        <p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_save_btn_close">Annuleren</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_save_btn_submit">Akkoord</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./jquery-1.11.2.min.js"></script>
+        <script src="./bootstrap.min.js"></script>
+        <script src="./moment-with-locales.min.js"></script>
+        <script src="./dropzone.js"></script>
+        <script src="./bundle.min.js" ></script>
+        <script src="./init-sentry.js" selectorid="sentry" sentry_api_key="https://69a1bba9d92c421cb24c6c585ede4518:2303e5aceeea48519ca1433d66168c27@sentry.k8s.mytoomba.nl/33" sentry_environment="production"></script>
+        <script src="./main.js"></script>
+        <script src="./bootstrap-toggle.min.js"></script>
+        
+
+
+    </div>
+
+
+</body></html>
