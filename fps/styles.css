@@ -4,6 +4,7 @@ body {
     line-height: 150%;
     font-weight: 400;
     color: rgba(0, 0, 0);
+    overflow: hidden !important;
 }
 
 
@@ -213,7 +214,7 @@ div.input-group.input-lg{
     width: 24px !important;
 }
 .breadcrumbsWrapper {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .breadcrumbsWrapper .help-text-button {
     margin-left: 20px !important;
@@ -393,6 +394,7 @@ input,
 
 .closediv {
     padding: 0px !important;
+    margin-top: 0px !important;
 }
 span.badge:hover {
     color: white !important;
@@ -545,4 +547,38 @@ i.fa.fa-bell.fa-stack-1x:hover  {
     font-family: 'Poppins', sans-serif;
     word-spacing: 120%;
     letter-spacing: 0px;
+}
+.no-padding-left {
+    padding-left: 0px !important;
+    min-height: unset !important;
+}
+
+/* NOTE: layout */
+#main {
+    overflow-y: auto;
+    height: calc(100vh - 250px);
+}
+ul.sidebar-nav.list-unstyled {
+    overflow-y: auto;
+    height: calc(100vh - 287px);
+}
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+#dashboard, #dashboardUser {
+    margin-bottom: 0px !important;
+}
+body .container {
+    height: 100vh;
+}
+ol, ul {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#closeleftmenu {
+    padding: 0px 20px !important;
+    padding-top: 20px !important;
 }
