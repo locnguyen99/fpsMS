@@ -295,7 +295,7 @@ a.nav.navbar-nav{
     width: 100%;
 }
 .input-group.input-group-lg {
-    max-width: 65% !important;
+    max-width: 60% !important;
     height: auto;
     margin-left: -5px;
 }
