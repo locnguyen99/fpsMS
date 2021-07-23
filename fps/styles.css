@@ -92,6 +92,9 @@ li.list-group-item {
     background-color: rgba(240, 240, 240);
     border-radius: 12px;
 }
+.menuliparent ul {
+    padding-left: 25px !important;
+}
 .menuliparent a{
     display: flex;    
 }
