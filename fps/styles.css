@@ -76,7 +76,9 @@ span.badge.hidetitle{
     color: rgb(51, 51, 51);
     font-weight: 400;
 }
-
+.menutext {
+    margin-top: 100px !important;
+}
 
 /* NOTE: Spacings */
 ul.sidebar-nav {
@@ -183,6 +185,9 @@ button.btn.btn-default,
 .menuliparent .fa {
     margin-right: 20px;
 }
+.breadcrumbsWrapper {
+    margin-top: 20px;
+}
 .breadcrumbsWrapper .help-text-button {
     margin-left: 20px !important;
     margin-bottom: 2px;
@@ -236,7 +241,7 @@ input:-webkit-autofill:active
   
 
 .navbar-form .input-group {
-    width: auto !important;
+    min-width: 10% !important;
 }
 .navbar-form input {
     border-top-left-radius: 0 !important;
@@ -265,11 +270,25 @@ a.nav.navbar-nav{
     margin: 0px;
     padding: 0px;
 }
+#searchType {
+    height: 60px !important;
+}
+.navbar-form .input-group>.form-control {
+    height: 60px !important;
+}
+.navbar-form .input-group-btn .btn {
+    height: 60px !important;
+}
+.navbar-form .input-group-btn {
+    width: 60px !important;
+}
 .navbar-form .input-group-btn .btn.btn-default{
     margin: 0px;
-    padding: 0px;
+    padding: 16px !important;
+    width: 100%;
 }
 .input-group.input-group-lg {
+    max-width: 65% !important;
     height: auto;
     margin-left: -5px;
 }
@@ -283,10 +302,13 @@ a.nav.navbar-nav{
     border-radius: 50%;
     font-size: 24px !important;
 }
+select, 
+input,
+.btn,
 #closeleftmenu {
     padding: 16px 20px !important;
-    display: flex;
 }
+
 .btn.btn-top-greenbg,
 .dropdown.nav.navbar-nav button {
     background-color: rgba(24, 165, 165);
@@ -334,5 +356,43 @@ a.nav.navbar-nav{
     margin-bottom: auto;
 }
 i.glyphicon.glyphicon-search {
-    font-size: 14px !important;
+    font-size: 24px !important;
 }
+
+/* mini menu */
+#leftsidemenudiv .menuliparent ul {
+    margin-top: 10px;
+}
+#leftsidemenudiv.active {
+    padding-right: 0px !important;
+}
+#leftsidemenudiv.active .menuliparent .fa {
+    margin-right: 0px !important;
+    /* display: none; */
+}
+#leftsidemenudiv.active .menuliparent .caret {
+    display: none;
+}
+#leftsidemenudiv.active .menuliparent ul {
+    padding-left: 0px !important;
+}
+#leftsidemenudiv.active li.list-group-item {
+    padding-left: 0px !important;
+}
+#leftsidemenudiv.active .menuliparent a{
+    margin-right: 0px !important;
+}
+#leftsidemenudiv.active li.list-group-item,
+#leftsidemenudiv.active .menuliparent.closecollapseall a {
+    padding-right: 0px !important;
+}
+#leftsidemenudiv.active .menuliparent.closecollapseall a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#leftsidemenudiv.active .menuliparent.closecollapseall {
+    width: 65px;
+    padding-right: 0px !important;
+}
+    
