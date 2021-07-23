@@ -272,9 +272,15 @@ a.nav.navbar-nav{
 }
 
 /* button */
+#closeleftmenu span:first {
+    border-radius: 50%;
+    font-size: 24px !important;
+}
+#closeleftmenu {
+    padding: 16px 20px !important;
+}
 .btn.btn-top-greenbg,
 .dropdown.nav.navbar-nav button {
-    font-size: 20px !important;
     background-color: rgba(24, 165, 165);
     border-radius: 8px !important;
     color: white;
@@ -282,7 +288,14 @@ a.nav.navbar-nav{
 .submitButtonRight {
     padding-right: 0px;
 }
-.btn:hover {
+.submitButtonRight .btn .fa {
+    margin-right: 10px;
+}
+.submitButtonRight .btn {
+    padding: 16px 20px !important;
+}
+.nav.navbar-nav.navbar-right .btn:hover,
+.submitButtonRight .btn:hover {
     background-color: rgba(18, 128, 128) !important;
 }
 
