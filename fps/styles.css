@@ -397,6 +397,7 @@ i.glyphicon.glyphicon-search {
 }
 
 
+/* NOTE: hover */
 .dashboardBlockItems li {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -411,4 +412,24 @@ i.glyphicon.glyphicon-search {
 .dashboardBlockItems li a:hover {
     background-color: rgba(240, 240, 240);
     border-radius: 8px;
+}
+/* hover */
+.menuliparent span:hover,
+.menuliparent a:hover,
+.menuliparent:hover {
+    background-color: rgba(240, 240, 240);
+    border-radius: 12px;
+    font-weight: 700 !important;
+    color: black !important;
+}
+/* hover */
+.breadcrumbs a {
+    padding-left: 10px;
+    margin-left: -10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.breadcrumbs a:last-child:hover {
+    background-color: rgba(240, 240, 240);
+    border-radius: 16px;
 }
