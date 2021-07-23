@@ -155,7 +155,7 @@ i {
 .dashboardBlockHeader {
     display: flex;
     border-radius: 8px !important;
-    padding: 16px 16px;
+    padding: 16px 20px;
 }
 .dashboardBlockHeader h2{
     margin-right: 10px;
@@ -202,7 +202,6 @@ button.btn.btn-default,
 }
 .navbar-form .input-lg {
     padding: 0px 0px 0px 20px !important;
-    
 }
 .navbar-form .group-btn,
 .navbar-form input,
@@ -273,6 +272,8 @@ a.nav.navbar-nav{
 .navbar-form .input-group-btn {
     margin: 0px;
     padding: 0px;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
 }
 #searchType {
     height: 60px !important;
@@ -306,6 +307,7 @@ a.nav.navbar-nav{
     border-radius: 50%;
     font-size: 24px !important;
 }
+.glyphicon.glyphicon-search,
 i.fa.fa-bell.fa-stack-1x {
     color: rgba(130, 130, 130, 1) !important;
 }
@@ -399,8 +401,8 @@ i.glyphicon.glyphicon-search {
     padding-bottom: 10px;
 }
 .dashboardBlockItems li a {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .dashboardBlockItems li:hover {
     background-color: unset;
@@ -440,6 +442,14 @@ i.glyphicon.glyphicon-search {
 li.list-group-item:hover {
     font-weight: 700 !important;
 }
-i.fa.fa-bell.fa-stack-1x:hover {
+
+.navbar-form:hover .glyphicon-search,
+.glyphicon.glyphicon-search:hover,
+i.fa.fa-bell.fa-stack-1x:hover  {
     color: rgba(51, 51, 51, 1) !important
+}
+
+.navbar-form:hover .input-lg *,
+.navbar-form:hover .input-group-lg * {
+    background-color:  rgba(230, 230, 230) !important;
 }
