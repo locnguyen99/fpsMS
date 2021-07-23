@@ -195,7 +195,7 @@ button.btn.btn-default,
 .breadcrumbsWrapper .help-text-button {
     margin-left: 20px !important;
     margin-bottom: 2px;
-    font-size: 20px !important;
+    font-size: 14px !important;
 }
 .menuliparent a i{
     margin-top: 5px;
@@ -306,6 +306,10 @@ a.nav.navbar-nav{
     border-radius: 50%;
     font-size: 24px !important;
 }
+i.fa.fa-bell.fa-stack-1x {
+    color: rgba(130, 130, 130, 1) !important;
+}
+
 select, 
 input,
 .btn,
@@ -420,7 +424,7 @@ i.glyphicon.glyphicon-search {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.breadcrumbs a:last-child:hover {
+.breadcrumbs a:hover {
     background-color: rgba(240, 240, 240);
     border-radius: 16px;
 }
@@ -436,10 +440,6 @@ i.glyphicon.glyphicon-search {
 li.list-group-item:hover {
     font-weight: 700 !important;
 }
-/* mini hover */
-/* .active li.list-group-item:hover {
-    overflow: visible;
+i.fa.fa-bell.fa-stack-1x:hover {
+    color: rgba(51, 51, 51, 1) !important
 }
-.active li.list-group-item:hover a {
-    position: relative;
-} */
