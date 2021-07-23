@@ -137,15 +137,28 @@ li.menuliparent{
 .help-text-button,
 .prioIcon,
 i { 
-    width: 20px;
-    height: 20px;
-    font-size: 20px !important;
+    width: 24px;
+    height: 24px;
+    font-size: 24px !important;
+}
+.dashboardBlockHeader {
+    display: flex;
+}
+.dashboardBlockHeader h2{
+    margin-right: 10px;
+}
+.prioIcon {
+    position: inherit; 
+    right: unset;
+    top: unset;
+    margin-left: auto;
 }
 .menuliparent .fa {
     margin-right: 20px;
 }
 .breadcrumbsWrapper .help-text-button {
     margin-left: 20px !important;
+    margin-bottom: 5px;
 }
 .menuliparent a i{
     margin-top: 7px;
