@@ -153,6 +153,8 @@ i {
 }
 .dashboardBlockHeader {
     display: flex;
+    border-radius: 8px !important;
+    padding: 16px 16px;
 }
 .dashboardBlockHeader h2{
     margin-right: 10px;
@@ -270,10 +272,18 @@ a.nav.navbar-nav{
 }
 
 /* button */
+.btn.btn-top-greenbg,
 .dropdown.nav.navbar-nav button {
     font-size: 20px !important;
-    background-color: rgba(24, 165, 165) !important;
-    border-radius: 12px !important;
+    background-color: rgba(24, 165, 165);
+    border-radius: 8px !important;
+    color: white;
+}
+.submitButtonRight {
+    padding-right: 0px;
+}
+.btn:hover {
+    background-color: rgba(18, 128, 128) !important;
 }
 
 #main {
