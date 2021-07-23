@@ -95,8 +95,9 @@ li.list-group-item {
     background-color: unset;
     padding: 10px 20px;
 }
+
 .menuliparent.closecollapseall {
-    background-color: rgba(240, 240, 240);
+    background-color: rgba(240, 240, 240) !important;
     border-radius: 12px;
 }
 .menuliparent ul {
@@ -171,6 +172,18 @@ input.form-control,
 button.btn.btn-default,
 .object-picker.non-deselectable{
     background-color: rgba(240, 240, 240, 1);
+}
+.dashboardBlockFooter {
+    margin-top: 30px;
+}
+.dashboardBlockFooter .more {
+    background-color: rgba(240, 240, 240, 1);
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+    border-radius: 5px !important;
+}
+.dashboardBlockFooter .more:hover {
+    background-color: rgb(175, 173, 173);
 }
   
 .menuliparent .fa {
