@@ -19,7 +19,7 @@ body {
     }
 }@media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1140px;
+        max-width: 1240px;
     }
 }@media (min-width: 1540px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -79,6 +79,7 @@ span.badge.hidetitle{
 .menutext {
     margin-top: 100px !important;
     text-transform: uppercase;
+    margin-left: 20px;
 }
 
 /* NOTE: Spacings */
