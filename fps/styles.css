@@ -395,4 +395,20 @@ i.glyphicon.glyphicon-search {
     width: 65px;
     padding-right: 0px !important;
 }
-    
+
+
+.dashboardBlockItems li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dashboardBlockItems li a {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.dashboardBlockItems li:hover {
+    background-color: unset;
+}
+.dashboardBlockItems li a:hover {
+    background-color: rgba(240, 240, 240);
+    border-radius: 8px;
+}
