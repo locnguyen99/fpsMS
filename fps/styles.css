@@ -410,7 +410,8 @@ i.glyphicon.glyphicon-search {
 .dashboardBlockItems li a {
     padding-left: 20px;
     padding-right: 20px;
-    background: url(./forward-icon-user-dashboard.png) no-repeat scroll 97% center rgba(0, 0, 0, 0);
+    /* NOTE */
+    background: url(https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard.png) no-repeat scroll 97% center rgba(0, 0, 0, 0);
     background-size: 8px 15px;
 }
 .dashboardBlockItems li:hover {
