@@ -79,6 +79,7 @@ span.badge.hidetitle{
 .menutext {
     margin-top: 100px !important;
     text-transform: uppercase;
+    margin-left: 20px;
 }
 
 /* NOTE: Spacings */
