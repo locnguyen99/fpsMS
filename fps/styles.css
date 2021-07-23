@@ -311,6 +311,7 @@ input,
 .btn,
 #closeleftmenu {
     padding: 16px 20px !important;
+    display: flex;
 }
 
 .btn.btn-top-greenbg,
@@ -321,16 +322,14 @@ input,
 }
 .submitButtonRight {
     padding-right: 0px;
+    display: flex;
 }
 .submitButtonRight .btn .fa {
     margin-right: 10px;
 }
 .submitButtonRight .btn {
     padding: 16px 20px !important;
-}
-.nav.navbar-nav.navbar-right .btn:hover,
-.submitButtonRight .btn:hover {
-    background-color: rgba(18, 128, 128) !important;
+    margin-left: auto;
 }
 
 #main {
@@ -408,7 +407,6 @@ i.glyphicon.glyphicon-search {
 }
 /* hover */
 .menuliparent span:hover,
-.menuliparent a:hover,
 .menuliparent:hover {
     background-color: rgba(240, 240, 240);
     border-radius: 12px;
@@ -426,8 +424,22 @@ i.glyphicon.glyphicon-search {
     background-color: rgba(240, 240, 240);
     border-radius: 16px;
 }
-
-/* .fa {
-    font-family: "Font Awesome 5 Pro" !important;
-    font-weight: 100 !important;
+/* hover */
+.nav.navbar-nav.navbar-right .btn:hover,
+.submitButtonRight .btn:hover {
+    background-color: rgba(18, 128, 128) !important;
+}
+.closediv:hover .badge {
+    background-color: rgba(18, 128, 128) !important;
+}
+/* hover */
+li.list-group-item:hover {
+    font-weight: 700 !important;
+}
+/* mini hover */
+/* .active li.list-group-item:hover {
+    overflow: visible;
+}
+.active li.list-group-item:hover a {
+    position: relative;
 } */
