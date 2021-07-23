@@ -5,11 +5,35 @@ body {
     font-weight: 400;
 }
 
-.container-fluid {
+
+/* NOTE: Container */
+.container {
     background-color: white;
 }
 
-/* fonts style */
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
+}@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+    }
+}@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}@media (min-width: 1540px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1480px;
+    }
+}
+
+/* NOTE: Font styles */
 .breadcrumbs a {
     text-transform: capitalize;
 }
@@ -42,7 +66,7 @@ body {
     font-family: 'Poppins', sans-serif !important;
     
 }
-/* bootstrap */
+/* member: bootstrap */
 .form-control, 
 .menutext a,
 .object-picker{
@@ -53,8 +77,7 @@ body {
 }
 
 
-
-/* spacings */
+/* NOTE: Spacings */
 ul.sidebar-nav {
     padding-left: unset !important;
 }
@@ -63,9 +86,7 @@ ul.list-group {
 }
 li.list-group-item {
     background-color: unset;
-}
-.menuliparent a i {
-    margin-right: 9px  !important;
+    padding: 10px 20px;
 }
 .menuliparent.closecollapseall {
     background-color: rgba(240, 240, 240);
@@ -80,10 +101,14 @@ li.list-group-item {
     padding-bottom: 10px;
 }
 .menuliparent a i{
-    margin-top: 7px;
+    /* margin-top: auto; */
+    margin-bottom: auto;
+}
+.sidebar-nav {
+    margin-right: 20px;
+    margin-top: 20px !important;
 }
 .menuliparent {
-    margin-right: 30px;
     margin-bottom: 20px !important;
 }
 li.menuliparent{
@@ -110,8 +135,122 @@ li.menuliparent{
 }
 
 .help-text-button,
+.prioIcon,
 i { 
-    width: 24px;
-    height: 24px;
-    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px !important;
+}
+.menuliparent .fa {
+    margin-right: 20px;
+}
+.breadcrumbsWrapper .help-text-button {
+    margin-left: 20px !important;
+}
+.menuliparent a i{
+    margin-top: 7px;
+}
+.navbar-form .input-lg {
+    padding: 0px 0px 0px 20px !important;
+    
+}
+.navbar-form .group-btn,
+.navbar-form input,
+.navbar-form select {
+    border: none;
+    box-shadow: none;
+    padding: 0px 20px 0px 20px !important;
+    background-color: rgba(240, 240, 240);
+}
+.navbar-form .btn.btn-default {
+    background-color: rgba(240, 240, 240);
+    border: none;
+    box-shadow: none;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+   
+}
+.navbar-form .btn.btn-default {
+    border-top-right-radius: 12 !important;
+    border-bottom-right-radius: 12 !important;
+}
+.navbar-form select {
+    border-top-left-radius: 12 !important;
+    border-bottom-left-radius: 12 !important;
+
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+button:-webkit-autofill,
+button:-webkit-autofill:hover, 
+button:-webkit-autofill:focus, 
+button:-webkit-autofill:active,
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px rgba(240, 240, 240) inset !important;
+}
+  
+
+.navbar-form .input-group {
+    width: auto !important;
+}
+.navbar-form input {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+/* note: add container padding */
+.container-right {
+    padding: 0px;
+}
+*:focus {
+    outline: none;
+}
+.nav.navbar-nav.navbar-right {
+    margin: 0px !important;
+    margin: 0px !important;
+
+}
+a.nav.navbar-nav{
+    margin: 0px 10px !important;
+}
+.navbar-form .input-group-btn {
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-form .input-group-btn .btn.btn-default{
+    margin: 0px;
+    padding: 0px;
+}
+.input-group.input-group-lg {
+    height: auto;
+    margin-left: -5px;
+}
+.input-group.input-group-lg input {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* button */
+.dropdown.nav.navbar-nav button {
+    font-size: 20px !important;
+    background-color: rgba(24, 165, 165) !important;
+    border-radius: 12px !important;
+}
+
+#main {
+    padding: 30px !important;
+    margin-top: 10px;
+    background-color: rgba(240, 240, 240) !important;
+}
+.content-cards {
+    padding: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.content-cards .container-fluid {
+    margin-top: 0px !important;
 }
