@@ -40,8 +40,14 @@ body {
 }
 .dashboardBlockItems span{
     font-family: 'Poppins', sans-serif !important;
-    
 }
+i.fa.fa-minus-circle{
+    font-weight: 600;
+}
+span.badge.hidetitle{
+    font-weight: 500;
+}
+
 /* bootstrap */
 .form-control, 
 .menutext a,
@@ -115,3 +121,17 @@ i {
     height: 24px;
     font-size: 14px;
 }
+
+/* Header search */
+input.form-control,
+button.btn.btn-default,
+.object-picker.non-deselectable{
+    background-color: rgba(240, 240, 240, 1);
+}
+
+/* border-radius: 4px 0px 0px 4px;
+border-right: none;
+position: absolute;
+
+border-radius: 0px 4px 4px 0px;
+border-left: none; */
