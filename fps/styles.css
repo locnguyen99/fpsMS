@@ -358,6 +358,9 @@ input,
 .closediv {
     padding: 0px !important;
 }
+span.badge:hover {
+    color: white !important;
+}
 .closediv .badge {
     font-size: 24px !important;
     margin-right: 10px;
@@ -401,10 +404,13 @@ i.glyphicon.glyphicon-search {
 .dashboardBlockItems li {
     padding-top: 10px;
     padding-bottom: 10px;
+    background: unset !important;
 }
 .dashboardBlockItems li a {
     padding-left: 20px;
     padding-right: 20px;
+    background: url(./forward-icon-user-dashboard.png) no-repeat scroll 97% center rgba(0, 0, 0, 0);
+    background-size: 8px 15px;
 }
 .dashboardBlockItems li:hover {
     background-color: unset;
@@ -414,12 +420,17 @@ i.glyphicon.glyphicon-search {
     border-radius: 8px;
 }
 /* hover */
-.menuliparent span:hover,
 .menuliparent:hover {
     background-color: rgba(240, 240, 240);
     border-radius: 12px;
     font-weight: 700 !important;
+}
+.menuliparent:hover .hidetitle,
+.menuliparent:hover .fa {
     color: black !important;
+}
+.menuliparent:hover .badge.hidetitle {
+    color: white !important;
 }
 /* hover */
 .breadcrumbs a {
@@ -454,4 +465,9 @@ i.fa.fa-bell.fa-stack-1x:hover  {
 .navbar-form:hover .input-lg *,
 .navbar-form:hover .input-group-lg * {
     background-color:  rgba(230, 230, 230) !important;
+}
+
+/* images */
+.dashboardBlockItems li.haschild {
+    /* background: none; */
 }

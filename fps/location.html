@@ -1,0 +1,1033 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<title>Dashboard Locatie</title>
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="Dashboard Locatie" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html" />
+<!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="faviconAnsul.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="customstyle.css">
+<link rel="stylesheet" type="text/css" href="customStyleLasted.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-toggle.min.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+(function (i, s, o, g, r, a, m) {
+i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+(i[r].q = i[r].q || []).push(arguments)
+}, i[r].l = 1 * new Date(); a = s.createElement(o),
+m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-75794593-2', 'auto');
+ga('send', 'pageview');
+</script>
+<style>
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+}
+/* Set gray background color and 100% height */
+.sidenav {
+background-color: #f1f1f1;
+height: 100%;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {
+height: auto;
+}
+}
+</style>
+</head>
+<body class="" style="overflow-x:hidden;">
+<div class="container-fluid">
+<div class="row content " style="display: flex;align-items: stretch;">
+<div id="leftsidemenudiv" class="" style="margin-left:15px;background-color:white;min-width: 250px;max-width:250px;transition: all 0.3s;border-right: solid 1px #f7f7f7;">
+<!-- Sidebar -->
+<div id="sidebar-wrapper" style="margin-top:10px;padding-left:10px;">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html" style="outline: none; text-decoration: none; ">
+<img id="logofps" class="img-responsive" src="FPS-Logo.png" style="height:58px;">
+</a>
+<div style="margin-top:40px;" class="menutext"><a href="#">Menu</a></div>
+<ul class="sidebar-nav list-unstyled" style="margin-top:30px;padding-left:20px;">
+<li class="sidebar-brand menuliparent">
+</li>
+<li class="menuliparent closecollapseall">
+<a data-toggle="collapse" href="#collapse2" class="caretevent"><i class="fa fa-dashboard fa-lg" aria-hidden="true"></i> <span class="hidetitle">Dashboard </span><span class="caret addcaret"></span></a>
+<ul class="list-group panel-collapse collapse" id="collapse2">
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Module</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Profiel</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html">Locatie</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/rapportages-zoeken.html">Rapportages</a></li>
+</ul>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"><i class="fa fa-bell fa-lg" aria-hidden="true"></i> <span class="hidetitle">Notificaties </span>
+<span class="badge hidetitle" style="background-color:red;margin-left:70px;">4</span>
+</a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> <span class="hidetitle">Beheer </span></a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html"><i class="fa fa-asterisk fa-lg" aria-hidden="true"></i> <span class="hidetitle">Melding overzicht </span></a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html"><i class="fa fa-file fa-lg" aria-hidden="true"></i> <span class="hidetitle">Formulier overzicht </span></a>
+</li>
+<li class="menuliparent closecollapseall">
+<a data-toggle="collapse" href="#collapse1"><i class="fa fa-plus fa-lg" aria-hidden="true"></i> <span class="hidetitle">Aanmaken </span><span class="caret addcaret"></a>
+<ul class="list-group panel-collapse collapse" id="collapse1">
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie</a></li>
+</ul>
+</li>
+</ul>
+<div style="margin-top:80px;padding-left:20px;padding-bottom:20px;" class="closediv">
+<a href="javascript: void(0)" id="closeleftmenu">
+<span class="badge" style="background-color:#18A5A5;border-radius: 50%;line-height: unset;" id="closemenuicon"><</span>
+<span class="hidetitle">Menu inklappen</span>
+</a>
+</div>
+</div>
+<style>
+.menuliparent {
+margin-bottom:40px;
+color: rgba(130, 130, 130, 1);
+font-style: normal;
+font-family: Poppins;
+font-weight: 600;
+font-size: 16px;
+line-height: 212.50000596046448%;
+}
+.menuliparent a i {
+margin-right:5px;
+}
+.menuliparent ul {
+padding-left:20px;
+}
+.menuliparent ul li {
+border:none;
+}
+.caret.caret-up {
+border-top-width: 0;
+border-bottom: 4px solid;
+}
+.caret {
+margin-left:80px;
+}
+.activemenu a{
+color: rgba(51, 51, 51, 1);
+font-weight: 600;
+}
+#leftsidemenudiv.active{
+min-width: 125px !important;
+max-width: 125px !important;
+text-align: center !important;
+}
+#leftsidemenudiv.active .caret{
+margin-left:10px;
+}
+#leftsidemenudiv.active .hidetitle{
+display:none;
+}
+#leftsidemenudiv.active .menuliparent ul{
+padding-left:0px;
+text-align:left;
+}
+#leftsidemenudiv.active .sidebar-nav{
+padding-left:0px !important;
+}
+#leftsidemenudiv.active .closediv{
+padding-left:0px !important;
+padding-right:40px;
+}
+#leftsidemenudiv.active .menutext{
+text-align:left !important;
+}
+#leftsidemenudiv.active #logofps{
+padding-left:20px;
+}
+#leftsidemenudiv.active .menuliparent.closecollapseall a{
+padding-right:20px;
+}
+#leftsidemenudiv.active .menuliparent a{
+padding-right:40px;
+}
+</style>
+</div>
+<div class="" style="padding-left: 1px;width: 100%;;min-height: 100vh;transition: all 0.3s;">
+<nav class="navbar" style="padding-top:10px;padding-right:10px;background-color:white;margin-bottom:0px;">
+<div class="container-fluid" style="margin-left:-30px;">
+<form class="navbar-form navbar-left" action="https://staging-redesign-app.k8s.fpsupport.nl/search-dashboard.html" style="margin-top:-5px;width:100%;">
+<div class="input-group input-lg" style="width:15%;">
+<select class=" object-picker non-deselectable"
+name="searchType"
+id="searchType"
+tabindex="1"
+data-placeholder="Please select type of search"
+data-sortable="false"
+data-value="job"
+data-display-limit="0"
+>
+<option value="job" selected="selected">
+Job
+</option>
+<option value="meldingen">
+Meldingen
+</option>
+<option value="documenten">
+Documenten
+</option>
+</select>
+</div>
+<div class="input-group input-group-lg" style="width:65%;">
+<input type="text" class="form-control" name="search" value="" placeholder="Waar ben je naar op zoek?" style="border-right:none;padding:20px 10px;">
+<div class="input-group-btn">
+<button class="btn btn-default" type="submit">
+<i class="glyphicon glyphicon-search"></i>
+</button>
+</div>
+</div>
+<div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+<div class="dropdown nav navbar-nav ">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-plus" aria-hidden="true"></i>
+</button>
+<ul class="dropdown-menu pull-right" style="min-width: 210px;">
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Meldding aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/leverancier-overzicht.html">Leverancier aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+</ul>
+</div>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html" class="nav navbar-nav" style="margin-left: 5px;margin-right: 15px;">
+<span class="fa-stack fa-2x" data-count="4">
+<i class="fa fa-bell fa-stack-1x" style="color:black;"></i>
+</span>
+</a>
+<div class="dropdown nav navbar-nav">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-user" aria-hidden="true"></i>
+</button>
+<ul class="dropdown-menu pull-right" style="min-width: 200px;">
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Mijn profiel <i class="fa fa-user" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Instellingen <i class="fa fa-cog" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/login/logout/" style="color:#CD0000;">Uitloggen <i class="fa fa-sign-out" aria-hidden="true" style="float: right;"></i></a></li>
+</ul>
+</div>	
+</div>
+</form>
+</div>
+</nav>
+<style>
+#searchType{
+height: 46px;
+}
+.fa-stack[data-count]:after{
+position:absolute;
+right:0%;
+top:1%;
+content: attr(data-count);
+font-size:30%;
+padding:.6em;
+border-radius:999px;
+line-height:.75em;
+color: white;
+background:rgba(255,0,0,.85);
+text-align:center;
+min-width:2em;
+font-weight:bold;
+}
+</style>
+<style type="text/css">
+.dashboardBlockSubItems{
+border-top: #ddd 1px solid;
+}
+.dashboardBlockSubItems li{
+list-style-type: none;
+border-bottom: none;
+padding-left: 5%;
+}
+.dashboardBlockItems li {
+background-position: 97% 22px;
+}
+#dashboard, #dashboardUser , #switcher{
+margin-top: 30px;
+}
+.dashboardBlockItems li a{
+padding:20px 0px;
+}
+</style>
+<div class="">
+<div class="breadcrumbsWrapper">
+<div class="container-fluid ">
+<div class="row">
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-12">
+<h1>
+<span style="width: auto; position: relative;" class="title-page-head">Dashboard Locatie
+<i class="help-text-button fa fa-question" data-rel="popover" data-trigger="hover"
+data-placement="bottom" data-content="Dit dashboard biedt u overzicht in de job-modules op locatieniveau. Onder &quot;Gebruiksinstellingen&quot; (te benaderen via Beheer) kunt u uw standaard dashboardweergave instellen." data-html="true"></i>
+</span>
+</h1>
+</div>
+<div class="col-md-12 breadcrumbs">
+<a title="Dashboard" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Dashboard</a>
+<a title="Locatie" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html">Locatie</a>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+</div>
+</div>
+<section id="main">
+<div class="container-fluid" id="dashboard">
+<div class="row">
+<div class="col-md-4 col-sm-6 col-xs-12">
+<div class="dashboardBlock">
+<div class="dashboardBlockHeader prio" id="head_B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<h2>Parnassia </h2>
+<div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+</div>
+<div class="dashboardBlockItems">
+<ul>
+<li class="haschild">
+<a data-toggle="collapse" href="#B8B3FDBA-5C21-4AFC-A3532ABDE08B4479846305FD-5ACE-4353-88B4CA8879992B02" aria-expanded="false" aria-controls="846305FD-5ACE-4353-88B4CA8879992B02">
+<span class="statusRed"></span>
+<span>Extra module 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="B8B3FDBA-5C21-4AFC-A3532ABDE08B4479846305FD-5ACE-4353-88B4CA8879992B02">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=6CC73A93-0C1F-4E19-A1B0B213AE3D2E53&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>eenmalige job</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=17C1ED9F-30DF-409F-BAFF863FBF1328D8&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>Extra submodule 2020</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=7464B9B2-9052-4EB7-8814B548FA85187C&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>machine testing</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#B8B3FDBA-5C21-4AFC-A3532ABDE08B447966849F91-BD0F-4EE1-9B30D7A232ED0A92" aria-expanded="false" aria-controls="66849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<span class="statusRed"></span>
+<span>First module 2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="B8B3FDBA-5C21-4AFC-A3532ABDE08B447966849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=66700EE5-4A03-4914-939CE55D307768B5&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>BB</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5F264A5C-89BE-4615-A6C38E525FF3229B&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>first test module1</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#B8B3FDBA-5C21-4AFC-A3532ABDE08B4479699DF2E6-A6CA-43E0-8AD5F2858B57E6DB" aria-expanded="false" aria-controls="699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<span class="statusRed"></span>
+<span>Module Test 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="B8B3FDBA-5C21-4AFC-A3532ABDE08B4479699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5C800737-8EF0-43C8-A41896219506A8D7&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>Submodule test 2020</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="more-module collapse" id="B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<li class="haschild">
+<a data-toggle="collapse" href="#B8B3FDBA-5C21-4AFC-A3532ABDE08B4479FA2BF12B-A58A-4515-857E047869300D72" aria-expanded="false" aria-controls="FA2BF12B-A58A-4515-857E047869300D72">
+<span class="statusRed"></span>
+<span>test job module18</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="B8B3FDBA-5C21-4AFC-A3532ABDE08B4479FA2BF12B-A58A-4515-857E047869300D72">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=CEA297FC-8782-4786-91CBBA4B4C19264B&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>test sub module18</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#B8B3FDBA-5C21-4AFC-A3532ABDE08B44792B30B4DE-6A91-40EA-864340403D9A5351" aria-expanded="false" aria-controls="2B30B4DE-6A91-40EA-864340403D9A5351">
+<span class="statusRed"></span>
+<span>test2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="B8B3FDBA-5C21-4AFC-A3532ABDE08B44792B30B4DE-6A91-40EA-864340403D9A5351">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=60A7729B-8232-4CE3-87E54835EED1EADD&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>AAAAAA</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=D64DAFF7-D8A6-410A-96C30AE94937D832&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusRed"></span>
+<span>NewTest2021</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=C9560A83-9A85-42DE-92086D5EF409D77A&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusGreen"></span>
+<span>JulyTest</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#B8B3FDBA-5C21-4AFC-A3532ABDE08B447991C9F2EE-AF80-4BE5-B6830408ECD6F802" aria-expanded="false" aria-controls="91C9F2EE-AF80-4BE5-B6830408ECD6F802">
+<span class="statusGreen"></span>
+<span>Module test 1</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="B8B3FDBA-5C21-4AFC-A3532ABDE08B447991C9F2EE-AF80-4BE5-B6830408ECD6F802">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=19A73747-0DBA-4C6B-9DBF91475FD0ECF5&locid=B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">
+<span class="statusGreen"></span>
+<span>test Module</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="dashboardBlockFooter">
+<a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="#B8B3FDBA-5C21-4AFC-A3532ABDE08B4479" aria-expanded="false" aria-controls="head_B8B3FDBA-5C21-4AFC-A3532ABDE08B4479"></a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+<div class="dashboardBlock">
+<div class="dashboardBlockHeader prio" id="head_6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<h2>Supremes </h2>
+<div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+</div>
+<div class="dashboardBlockItems">
+<ul>
+<li class="haschild">
+<a data-toggle="collapse" href="#6841348B-D4B1-47A4-ADBC8389C45B05D2846305FD-5ACE-4353-88B4CA8879992B02" aria-expanded="false" aria-controls="846305FD-5ACE-4353-88B4CA8879992B02">
+<span class="statusRed"></span>
+<span>Extra module 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="6841348B-D4B1-47A4-ADBC8389C45B05D2846305FD-5ACE-4353-88B4CA8879992B02">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=6CC73A93-0C1F-4E19-A1B0B213AE3D2E53&locid=6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<span class="statusRed"></span>
+<span>eenmalige job</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=17C1ED9F-30DF-409F-BAFF863FBF1328D8&locid=6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<span class="statusRed"></span>
+<span>Extra submodule 2020</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=7464B9B2-9052-4EB7-8814B548FA85187C&locid=6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<span class="statusRed"></span>
+<span>machine testing</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#6841348B-D4B1-47A4-ADBC8389C45B05D266849F91-BD0F-4EE1-9B30D7A232ED0A92" aria-expanded="false" aria-controls="66849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<span class="statusRed"></span>
+<span>First module 2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="6841348B-D4B1-47A4-ADBC8389C45B05D266849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=66700EE5-4A03-4914-939CE55D307768B5&locid=6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<span class="statusRed"></span>
+<span>BB</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5F264A5C-89BE-4615-A6C38E525FF3229B&locid=6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<span class="statusRed"></span>
+<span>first test module1</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#6841348B-D4B1-47A4-ADBC8389C45B05D2699DF2E6-A6CA-43E0-8AD5F2858B57E6DB" aria-expanded="false" aria-controls="699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<span class="statusRed"></span>
+<span>Module Test 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="6841348B-D4B1-47A4-ADBC8389C45B05D2699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5C800737-8EF0-43C8-A41896219506A8D7&locid=6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<span class="statusRed"></span>
+<span>Submodule test 2020</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="more-module collapse" id="6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<li class="haschild">
+<a data-toggle="collapse" href="#6841348B-D4B1-47A4-ADBC8389C45B05D2FA2BF12B-A58A-4515-857E047869300D72" aria-expanded="false" aria-controls="FA2BF12B-A58A-4515-857E047869300D72">
+<span class="statusRed"></span>
+<span>test job module18</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="6841348B-D4B1-47A4-ADBC8389C45B05D2FA2BF12B-A58A-4515-857E047869300D72">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=CEA297FC-8782-4786-91CBBA4B4C19264B&locid=6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<span class="statusRed"></span>
+<span>test sub module18</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#6841348B-D4B1-47A4-ADBC8389C45B05D22B30B4DE-6A91-40EA-864340403D9A5351" aria-expanded="false" aria-controls="2B30B4DE-6A91-40EA-864340403D9A5351">
+<span class="statusGreen"></span>
+<span>test2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="6841348B-D4B1-47A4-ADBC8389C45B05D22B30B4DE-6A91-40EA-864340403D9A5351">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=C9560A83-9A85-42DE-92086D5EF409D77A&locid=6841348B-D4B1-47A4-ADBC8389C45B05D2">
+<span class="statusGreen"></span>
+<span>JulyTest</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="dashboardBlockFooter">
+<a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="#6841348B-D4B1-47A4-ADBC8389C45B05D2" aria-expanded="false" aria-controls="head_6841348B-D4B1-47A4-ADBC8389C45B05D2"></a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+<div class="dashboardBlock">
+<div class="dashboardBlockHeader prio" id="head_1023FF5F-F289-40A6-A26B65696EE87B15">
+<h2>Toomba Locatie 1 </h2>
+<div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+</div>
+<div class="dashboardBlockItems">
+<ul>
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B15846305FD-5ACE-4353-88B4CA8879992B02" aria-expanded="false" aria-controls="846305FD-5ACE-4353-88B4CA8879992B02">
+<span class="statusRed"></span>
+<span>Extra module 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B15846305FD-5ACE-4353-88B4CA8879992B02">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=6CC73A93-0C1F-4E19-A1B0B213AE3D2E53&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>eenmalige job</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=7464B9B2-9052-4EB7-8814B548FA85187C&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>machine testing</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=B5291C18-237D-43EE-A42EFA506E098F12&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>test 123</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B1566849F91-BD0F-4EE1-9B30D7A232ED0A92" aria-expanded="false" aria-controls="66849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<span class="statusRed"></span>
+<span>First module 2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B1566849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5F264A5C-89BE-4615-A6C38E525FF3229B&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>first test module1</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=66700EE5-4A03-4914-939CE55D307768B5&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusGreen"></span>
+<span>BB</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B15699DF2E6-A6CA-43E0-8AD5F2858B57E6DB" aria-expanded="false" aria-controls="699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<span class="statusRed"></span>
+<span>Module Test 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B15699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5C800737-8EF0-43C8-A41896219506A8D7&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>Submodule test 2020</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="more-module collapse" id="1023FF5F-F289-40A6-A26B65696EE87B15">
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B1510ED8786-3088-4BC0-8D4082B3A48CEFF4" aria-expanded="false" aria-controls="10ED8786-3088-4BC0-8D4082B3A48CEFF4">
+<span class="statusRed"></span>
+<span>Test job module 0715</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B1510ED8786-3088-4BC0-8D4082B3A48CEFF4">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=BD10F63C-F795-4133-B53DB0DA365378B9&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>Test job sub module 0715-1</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B15FA2BF12B-A58A-4515-857E047869300D72" aria-expanded="false" aria-controls="FA2BF12B-A58A-4515-857E047869300D72">
+<span class="statusRed"></span>
+<span>test job module18</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B15FA2BF12B-A58A-4515-857E047869300D72">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=F724C363-99ED-45C0-9BD031C7CF3A771F&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>jobsubmodule25</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=CEA297FC-8782-4786-91CBBA4B4C19264B&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>test sub module18</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B1528936106-9F15-49B0-A8F10573E3101B2E" aria-expanded="false" aria-controls="28936106-9F15-49B0-A8F10573E3101B2E">
+<span class="statusRed"></span>
+<span>test job module25</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B1528936106-9F15-49B0-A8F10573E3101B2E">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=997F4E19-713B-48C5-93251BC884A99AF6&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>job submodule test25</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B15AB4465BB-6B9C-4067-8C98EACA9AA9B0F6" aria-expanded="false" aria-controls="AB4465BB-6B9C-4067-8C98EACA9AA9B0F6">
+<span class="statusRed"></span>
+<span>Toomba 2de test</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B15AB4465BB-6B9C-4067-8C98EACA9AA9B0F6">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=D45197F9-CD6A-41EA-A262EAA8FC9B58C6&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusRed"></span>
+<span>test van toomba</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B1591C9F2EE-AF80-4BE5-B6830408ECD6F802" aria-expanded="false" aria-controls="91C9F2EE-AF80-4BE5-B6830408ECD6F802">
+<span class="statusGreen"></span>
+<span>Module test 1</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B1591C9F2EE-AF80-4BE5-B6830408ECD6F802">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=19A73747-0DBA-4C6B-9DBF91475FD0ECF5&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusGreen"></span>
+<span>test Module</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B152B30B4DE-6A91-40EA-864340403D9A5351" aria-expanded="false" aria-controls="2B30B4DE-6A91-40EA-864340403D9A5351">
+<span class="statusGreen"></span>
+<span>test2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="1023FF5F-F289-40A6-A26B65696EE87B152B30B4DE-6A91-40EA-864340403D9A5351">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=60A7729B-8232-4CE3-87E54835EED1EADD&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusGreen"></span>
+<span>AAAAAA</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=C9560A83-9A85-42DE-92086D5EF409D77A&locid=1023FF5F-F289-40A6-A26B65696EE87B15">
+<span class="statusGreen"></span>
+<span>JulyTest</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="dashboardBlockFooter">
+<a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="#1023FF5F-F289-40A6-A26B65696EE87B15" aria-expanded="false" aria-controls="head_1023FF5F-F289-40A6-A26B65696EE87B15"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-6 col-xs-12">
+<div class="dashboardBlock">
+<div class="dashboardBlockHeader prio" id="head_45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<h2>Toomba Locatie 2 </h2>
+<div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+</div>
+<div class="dashboardBlockItems">
+<ul>
+<li class="haschild">
+<a data-toggle="collapse" href="#45EDEFDF-5B34-43A5-B96D0A3681FECB5E846305FD-5ACE-4353-88B4CA8879992B02" aria-expanded="false" aria-controls="846305FD-5ACE-4353-88B4CA8879992B02">
+<span class="statusRed"></span>
+<span>Extra module 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="45EDEFDF-5B34-43A5-B96D0A3681FECB5E846305FD-5ACE-4353-88B4CA8879992B02">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=6CC73A93-0C1F-4E19-A1B0B213AE3D2E53&locid=45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<span class="statusRed"></span>
+<span>eenmalige job</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=17C1ED9F-30DF-409F-BAFF863FBF1328D8&locid=45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<span class="statusRed"></span>
+<span>Extra submodule 2020</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#45EDEFDF-5B34-43A5-B96D0A3681FECB5E66849F91-BD0F-4EE1-9B30D7A232ED0A92" aria-expanded="false" aria-controls="66849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<span class="statusRed"></span>
+<span>First module 2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="45EDEFDF-5B34-43A5-B96D0A3681FECB5E66849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5F264A5C-89BE-4615-A6C38E525FF3229B&locid=45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<span class="statusRed"></span>
+<span>first test module1</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=66700EE5-4A03-4914-939CE55D307768B5&locid=45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<span class="statusGreen"></span>
+<span>BB</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#45EDEFDF-5B34-43A5-B96D0A3681FECB5E699DF2E6-A6CA-43E0-8AD5F2858B57E6DB" aria-expanded="false" aria-controls="699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<span class="statusRed"></span>
+<span>Module Test 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="45EDEFDF-5B34-43A5-B96D0A3681FECB5E699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5C800737-8EF0-43C8-A41896219506A8D7&locid=45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<span class="statusRed"></span>
+<span>Submodule test 2020</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="more-module collapse" id="45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<li class="haschild">
+<a data-toggle="collapse" href="#45EDEFDF-5B34-43A5-B96D0A3681FECB5EFA2BF12B-A58A-4515-857E047869300D72" aria-expanded="false" aria-controls="FA2BF12B-A58A-4515-857E047869300D72">
+<span class="statusRed"></span>
+<span>test job module18</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="45EDEFDF-5B34-43A5-B96D0A3681FECB5EFA2BF12B-A58A-4515-857E047869300D72">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=CEA297FC-8782-4786-91CBBA4B4C19264B&locid=45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<span class="statusRed"></span>
+<span>test sub module18</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#45EDEFDF-5B34-43A5-B96D0A3681FECB5E28936106-9F15-49B0-A8F10573E3101B2E" aria-expanded="false" aria-controls="28936106-9F15-49B0-A8F10573E3101B2E">
+<span class="statusRed"></span>
+<span>test job module25</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="45EDEFDF-5B34-43A5-B96D0A3681FECB5E28936106-9F15-49B0-A8F10573E3101B2E">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=997F4E19-713B-48C5-93251BC884A99AF6&locid=45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<span class="statusRed"></span>
+<span>job submodule test25</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#45EDEFDF-5B34-43A5-B96D0A3681FECB5E2B30B4DE-6A91-40EA-864340403D9A5351" aria-expanded="false" aria-controls="2B30B4DE-6A91-40EA-864340403D9A5351">
+<span class="statusGreen"></span>
+<span>test2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="45EDEFDF-5B34-43A5-B96D0A3681FECB5E2B30B4DE-6A91-40EA-864340403D9A5351">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=C9560A83-9A85-42DE-92086D5EF409D77A&locid=45EDEFDF-5B34-43A5-B96D0A3681FECB5E">
+<span class="statusGreen"></span>
+<span>JulyTest</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="dashboardBlockFooter">
+<a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="#45EDEFDF-5B34-43A5-B96D0A3681FECB5E" aria-expanded="false" aria-controls="head_45EDEFDF-5B34-43A5-B96D0A3681FECB5E"></a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+<div class="dashboardBlock">
+<div class="dashboardBlockHeader prio" id="head_FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<h2>Toomba Locatie 3 </h2>
+<div class="prioIcon"><i class="fa fa-minus-circle" style="font-size:24px;color:red;"></i></div>
+</div>
+<div class="dashboardBlockItems">
+<ul>
+<li class="haschild">
+<a data-toggle="collapse" href="#FA8BA2B1-26B7-429B-AA58E10C0BA5AE22846305FD-5ACE-4353-88B4CA8879992B02" aria-expanded="false" aria-controls="846305FD-5ACE-4353-88B4CA8879992B02">
+<span class="statusRed"></span>
+<span>Extra module 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="FA8BA2B1-26B7-429B-AA58E10C0BA5AE22846305FD-5ACE-4353-88B4CA8879992B02">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=6CC73A93-0C1F-4E19-A1B0B213AE3D2E53&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusRed"></span>
+<span>eenmalige job</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=17C1ED9F-30DF-409F-BAFF863FBF1328D8&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusRed"></span>
+<span>Extra submodule 2020</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#FA8BA2B1-26B7-429B-AA58E10C0BA5AE2266849F91-BD0F-4EE1-9B30D7A232ED0A92" aria-expanded="false" aria-controls="66849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<span class="statusRed"></span>
+<span>First module 2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="FA8BA2B1-26B7-429B-AA58E10C0BA5AE2266849F91-BD0F-4EE1-9B30D7A232ED0A92">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5F264A5C-89BE-4615-A6C38E525FF3229B&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusRed"></span>
+<span>first test module1</span>
+</a>
+</li>
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=66700EE5-4A03-4914-939CE55D307768B5&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusGreen"></span>
+<span>BB</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#FA8BA2B1-26B7-429B-AA58E10C0BA5AE22699DF2E6-A6CA-43E0-8AD5F2858B57E6DB" aria-expanded="false" aria-controls="699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<span class="statusRed"></span>
+<span>Module Test 2020</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="FA8BA2B1-26B7-429B-AA58E10C0BA5AE22699DF2E6-A6CA-43E0-8AD5F2858B57E6DB">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=5C800737-8EF0-43C8-A41896219506A8D7&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusRed"></span>
+<span>Submodule test 2020</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="more-module collapse" id="FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<li class="haschild">
+<a data-toggle="collapse" href="#FA8BA2B1-26B7-429B-AA58E10C0BA5AE22FA2BF12B-A58A-4515-857E047869300D72" aria-expanded="false" aria-controls="FA2BF12B-A58A-4515-857E047869300D72">
+<span class="statusRed"></span>
+<span>test job module18</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="FA8BA2B1-26B7-429B-AA58E10C0BA5AE22FA2BF12B-A58A-4515-857E047869300D72">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=CEA297FC-8782-4786-91CBBA4B4C19264B&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusRed"></span>
+<span>test sub module18</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#FA8BA2B1-26B7-429B-AA58E10C0BA5AE2228936106-9F15-49B0-A8F10573E3101B2E" aria-expanded="false" aria-controls="28936106-9F15-49B0-A8F10573E3101B2E">
+<span class="statusRed"></span>
+<span>test job module25</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="FA8BA2B1-26B7-429B-AA58E10C0BA5AE2228936106-9F15-49B0-A8F10573E3101B2E">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=997F4E19-713B-48C5-93251BC884A99AF6&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusRed"></span>
+<span>job submodule test25</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#FA8BA2B1-26B7-429B-AA58E10C0BA5AE22AB4465BB-6B9C-4067-8C98EACA9AA9B0F6" aria-expanded="false" aria-controls="AB4465BB-6B9C-4067-8C98EACA9AA9B0F6">
+<span class="statusRed"></span>
+<span>Toomba 2de test</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="FA8BA2B1-26B7-429B-AA58E10C0BA5AE22AB4465BB-6B9C-4067-8C98EACA9AA9B0F6">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=D45197F9-CD6A-41EA-A262EAA8FC9B58C6&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusRed"></span>
+<span>test van toomba</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="haschild">
+<a data-toggle="collapse" href="#FA8BA2B1-26B7-429B-AA58E10C0BA5AE222B30B4DE-6A91-40EA-864340403D9A5351" aria-expanded="false" aria-controls="2B30B4DE-6A91-40EA-864340403D9A5351">
+<span class="statusGreen"></span>
+<span>test2021</span>
+</a>
+<ul class="dashboardBlockSubItems collapse" id="FA8BA2B1-26B7-429B-AA58E10C0BA5AE222B30B4DE-6A91-40EA-864340403D9A5351">
+<li>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/jobs-in-submodule.html?subid=C9560A83-9A85-42DE-92086D5EF409D77A&locid=FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">
+<span class="statusGreen"></span>
+<span>JulyTest</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="dashboardBlockFooter">
+<a class="col-md-12 col-sm-12 col-xs-12 more" data-toggle="collapse" href="#FA8BA2B1-26B7-429B-AA58E10C0BA5AE22" aria-expanded="false" aria-controls="head_FA8BA2B1-26B7-429B-AA58E10C0BA5AE22"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<footer class="footer container-fluid">
+<div class="container">
+<hr>
+<ul class="logo-footer">
+<li><a href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Hier kunt u via gebruikersinstellingen een eigen logo plaatsen</a></li>
+</ul>
+</div>
+</footer>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="modal_main_title">Let op</h4>
+</div>
+<div class="modal-body" id="modal_main_body">
+<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal"
+id="modal_main_btn_close">Annuleren</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal"
+id="modal_main_btn_submit">Verwijderen</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main_save">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="modal_main_save_title">Let op</h4>
+</div>
+<div class="modal-body" id="modal_main_save_body">
+<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal"
+id="modal_main_save_btn_close">Annuleren</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal"
+id="modal_main_save_btn_submit">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+<script src="jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="moment-with-locales.min.js"></script>
+<script src="dropzone.js"></script>
+<script src="bundle.min.js" ></script>
+<script src="init-sentry.js"></script>
+<script src="main.js"></script>
+<script src="bootstrap-toggle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./styles.css"> 
+
+</div>
+
+<script>
+    $('#main').parent().removeClass('row')
+</script>
+
+</body></html>

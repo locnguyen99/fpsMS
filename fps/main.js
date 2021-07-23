@@ -65,11 +65,11 @@ $("#closeleftmenu").click(function(){
   if(btntext == "<"){
     $("#leftsidemenudiv").addClass("active");
     $("#closemenuicon").text(">");
-    $("#logofps").attr("src","/assets/images/FPS-Logo-short.png");
+    $("#logofps").attr("src","/FPS-Logo-short.png");
   }else{
     $("#leftsidemenudiv").removeClass("active");
     $("#closemenuicon").text("<");
-    $("#logofps").attr("src","/assets/images/FPS-Logo.png");
+    $("#logofps").attr("src","/FPS-Logo.png");
   }
 });
 
