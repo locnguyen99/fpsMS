@@ -81,6 +81,10 @@ span.badge.hidetitle{
 }
 
 /* NOTE: Spacings */
+#sidebar-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 ul.sidebar-nav {
     padding-left: unset !important;
 }
@@ -194,7 +198,7 @@ button.btn.btn-default,
     font-size: 20px !important;
 }
 .menuliparent a i{
-    margin-top: 7px;
+    margin-top: 5px;
 }
 .navbar-form .input-lg {
     padding: 0px 0px 0px 20px !important;
@@ -365,6 +369,7 @@ i.glyphicon.glyphicon-search {
 }
 #leftsidemenudiv.active {
     padding-right: 0px !important;
+    min-width: auto !important;
 }
 #leftsidemenudiv.active .menuliparent .fa {
     margin-right: 0px !important;
@@ -381,6 +386,8 @@ i.glyphicon.glyphicon-search {
 }
 #leftsidemenudiv.active .menuliparent a{
     margin-right: 0px !important;
+    padding-right: 0px !important;
+    width: 24px;
 }
 #leftsidemenudiv.active li.list-group-item,
 #leftsidemenudiv.active .menuliparent.closecollapseall a {
@@ -392,7 +399,6 @@ i.glyphicon.glyphicon-search {
     text-overflow: ellipsis;
 }
 #leftsidemenudiv.active .menuliparent.closecollapseall {
-    width: 65px;
     padding-right: 0px !important;
 }
 
@@ -433,3 +439,8 @@ i.glyphicon.glyphicon-search {
     background-color: rgba(240, 240, 240);
     border-radius: 16px;
 }
+
+/* .fa {
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 100 !important;
+} */
