@@ -64,8 +64,15 @@ body {
 }
 .dashboardBlockItems span{
     font-family: 'Poppins', sans-serif !important;
-    
 }
+i.fa.fa-minus-circle{
+    font-weight: 600;
+}
+span.badge.hidetitle{
+    font-weight: 500;
+}
+
+/* bootstrap */
 /* member: bootstrap */
 .form-control, 
 .menutext a,
@@ -156,6 +163,22 @@ i {
     top: unset;
     margin-left: auto;
 }
+
+/* Header search */
+input.form-control,
+button.btn.btn-default,
+.object-picker.non-deselectable{
+    background-color: rgba(240, 240, 240, 1);
+}
+
+/* border-radius: 4px 0px 0px 4px;
+border-right: none;
+position: absolute;
+
+border-radius: 0px 4px 4px 0px;
+border-left: none; */
+
+  
 .menuliparent .fa {
     margin-right: 20px;
 }
@@ -207,7 +230,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active
 {
- -webkit-box-shadow: 0 0 0 30px rgba(240, 240, 240) inset !important;
+    -webkit-box-shadow: 0 0 0 30px rgba(240, 240, 240) inset !important;
 }
   
 
