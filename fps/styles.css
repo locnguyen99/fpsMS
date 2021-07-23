@@ -78,6 +78,7 @@ span.badge.hidetitle{
 }
 .menutext {
     margin-top: 100px !important;
+    text-transform: uppercase;
 }
 
 /* NOTE: Spacings */
@@ -310,6 +311,7 @@ a.nav.navbar-nav{
 .glyphicon.glyphicon-search,
 i.fa.fa-bell.fa-stack-1x {
     color: rgba(130, 130, 130, 1) !important;
+    font-size: 18px !important;
 }
 
 select, 
