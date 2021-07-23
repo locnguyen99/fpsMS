@@ -18,13 +18,22 @@ body {
     .container, .container-lg, .container-md, .container-sm {
         max-width: 960px;
     }
+    .input-group.input-group-lg {
+        width: 38% !important;
+    }
 }@media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1240px;
+        max-width: 1260px;
+    }
+    .input-group.input-group-lg {
+        width: 58% !important;
     }
 }@media (min-width: 1540px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1480px;
+        max-width: 1600px;
+    }
+    .input-group.input-group-lg {
+        width: 68% !important;
     }
 }
 
@@ -196,11 +205,7 @@ input.form-control:focus{
 }
 
 div.input-group.input-lg{
-    width: 19% !important;
-}
-
-div.input-group.input-group-lg{
-    width: 57% !important;
+    width: auto !important;
 }
 
 .menuliparent .fa {
@@ -282,7 +287,7 @@ nav.navbar {
 .nav.navbar-nav.navbar-right {
     margin: 0px !important;
     margin: 0px !important;
-
+    width: 200px;
 }
 a.nav.navbar-nav{
     margin: 0px 10px !important;
@@ -295,6 +300,7 @@ a.nav.navbar-nav{
 }
 #searchType {
     height: 60px !important;
+    width: auto;
 }
 .navbar-form .input-group>.form-control {
     height: 60px !important;
@@ -311,7 +317,6 @@ a.nav.navbar-nav{
     width: 100%;
 }
 .input-group.input-group-lg {
-    max-width: 60% !important;
     height: auto;
     margin-left: -5px;
 }
@@ -518,6 +523,9 @@ i.fa.fa-bell.fa-stack-1x:hover  {
     margin-left: 10px;
     margin-bottom: 0px;
 }
+#logofps .img-responsive {
+    height: 48px !important;
+}
 .active #logofps .company {
     display: none;
 }
@@ -527,6 +535,7 @@ i.fa.fa-bell.fa-stack-1x:hover  {
     font-weight: bold;
     color: black;
     font-family: 'Poppins', sans-serif;
+    font-size: 30px;
 }
 #logofps .company .slogan {
     margin-top: 0px;
