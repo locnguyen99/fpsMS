@@ -312,7 +312,14 @@ a.nav.navbar-nav{
 .glyphicon.glyphicon-search,
 i.fa.fa-bell.fa-stack-1x {
     color: rgba(130, 130, 130, 1) !important;
-    font-size: 18px !important;
+    font-size: 20px !important;
+    margin-top: 10px;
+}
+span.fa-stack.fa-2x:after {
+    background: rgba(205, 0, 0, 1) !important;
+    font-size: 10px;
+    font-family: 'Poppins';
+    margin-top: 6px;
 }
 
 select, 
