@@ -488,3 +488,10 @@ i.fa.fa-bell.fa-stack-1x:hover  {
 .dashboardBlockItems li.haschild {
     /* background: none; */
 }
+input.form-control:focus{
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+/* Submodule page */
+
