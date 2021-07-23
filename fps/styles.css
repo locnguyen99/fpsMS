@@ -147,8 +147,8 @@ li.menuliparent{
 .help-text-button,
 .prioIcon,
 i { 
-    width: 24px;
-    height: 24px;
+    /* width: 24px;
+    height: 24px; */
     font-size: 24px !important;
 }
 .dashboardBlockHeader {
