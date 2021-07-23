@@ -371,13 +371,6 @@ i.glyphicon.glyphicon-search {
     padding-right: 0px !important;
     min-width: auto !important;
 }
-#leftsidemenudiv.active .menuliparent .fa {
-    margin-right: 0px !important;
-    /* display: none; */
-}
-#leftsidemenudiv.active .menuliparent .caret {
-    display: none;
-}
 #leftsidemenudiv.active .menuliparent ul {
     padding-left: 0px !important;
 }
@@ -386,12 +379,6 @@ i.glyphicon.glyphicon-search {
 }
 #leftsidemenudiv.active .menuliparent a{
     margin-right: 0px !important;
-    padding-right: 0px !important;
-    width: 24px;
-}
-#leftsidemenudiv.active li.list-group-item,
-#leftsidemenudiv.active .menuliparent.closecollapseall a {
-    padding-right: 0px !important;
 }
 #leftsidemenudiv.active .menuliparent.closecollapseall a {
     white-space: nowrap;
