@@ -170,14 +170,6 @@ button.btn.btn-default,
 .object-picker.non-deselectable{
     background-color: rgba(240, 240, 240, 1);
 }
-
-/* border-radius: 4px 0px 0px 4px;
-border-right: none;
-position: absolute;
-
-border-radius: 0px 4px 4px 0px;
-border-left: none; */
-
   
 .menuliparent .fa {
     margin-right: 20px;
