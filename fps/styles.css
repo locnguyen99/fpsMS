@@ -107,8 +107,8 @@ li.list-group-item {
 }
 
 .menuliparent.closecollapseall a.caretevent{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .menuliparent a i{
     /* margin-top: auto; */
