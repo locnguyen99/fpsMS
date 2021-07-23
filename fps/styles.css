@@ -342,6 +342,7 @@ input,
 .submitButtonRight {
     padding-right: 0px;
     display: flex;
+    padding-bottom: 0px;
 }
 .submitButtonRight .btn .fa {
     margin-right: 10px;
@@ -355,6 +356,9 @@ input,
     padding: 30px 15px !important;
     margin-top: 10px;
     background-color: rgba(240, 240, 240) !important;
+}
+#dashboard {
+    margin-top: 0px !important;
 }
 .content-cards {
     padding: 0px !important;
@@ -450,6 +454,7 @@ i.glyphicon.glyphicon-search {
     margin-left: -10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-family: inherit;
 }
 .breadcrumbs a:hover {
     background-color: rgba(240, 240, 240);
