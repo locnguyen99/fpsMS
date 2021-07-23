@@ -342,7 +342,7 @@ input,
 .submitButtonRight {
     padding-right: 0px;
     display: flex;
-    padding-bottom: 0px;
+    margin-bottom: 0px !important;
 }
 .submitButtonRight .btn .fa {
     margin-right: 10px;
