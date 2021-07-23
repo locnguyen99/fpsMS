@@ -278,6 +278,7 @@ a.nav.navbar-nav{
 }
 #closeleftmenu {
     padding: 16px 20px !important;
+    display: flex;
 }
 .btn.btn-top-greenbg,
 .dropdown.nav.navbar-nav button {
@@ -312,4 +313,16 @@ a.nav.navbar-nav{
 
 .content-cards .container-fluid {
     margin-top: 0px !important;
+}
+
+.closediv {
+    padding: 0px !important;
+}
+.closediv .badge {
+    font-size: 24px !important;
+    margin-right: 10px;
+}
+.closediv .hidetitle {
+    margin-top: auto;
+    margin-bottom: auto;
 }
