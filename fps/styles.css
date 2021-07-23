@@ -326,3 +326,6 @@ a.nav.navbar-nav{
     margin-top: auto;
     margin-bottom: auto;
 }
+i.glyphicon.glyphicon-search {
+    font-size: 14px !important;
+}
