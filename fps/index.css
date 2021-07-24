@@ -228,6 +228,9 @@ div.input-group.input-lg{
 .menuliparent a i{
     margin-top: 5px;
 }
+form.navbar-form.navbar-left {
+    padding-left: 25px;
+}
 .navbar-form .input-lg {
     padding: 0px 0px 0px 20px !important;
 }
