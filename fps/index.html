@@ -57,17 +57,11 @@ height: auto;
 <div id="leftsidemenudiv" class="" style="margin-left:15px;background-color:white;min-width: 250px;max-width:250px;transition: all 0.3s;border-right: solid 1px #f7f7f7;">
 <!-- Sidebar -->
 <div id="sidebar-wrapper" style="margin-top:10px;padding-left:10px;">
-<a href="./index.html" style="outline: none; text-decoration: none; ">
 
-<div id="logofps">
-    <img  class="img-responsive" src="https://staging-redesign-app.k8s.fpsupport.nl/assets/images/FPS-Logo-short.png" style="height:58px;">
-    <div class="company">
-        <h2 class="name">FPS</h2>
-        <span class="slogan">Faccility Process Support</span>
-    </div>
-</div>
 
-</a>
+<logo-template></logo-template>
+
+
 <div style="margin-top:40px;" class="menutext"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html#">Menu</a></div>
 <ul class="sidebar-nav list-unstyled" style="margin-top:30px;padding-left:20px;">
 <li class="sidebar-brand menuliparent">
@@ -702,12 +696,9 @@ margin-right: 15px;
 <script src="init-sentry.js"></script>
 <script src="main.js"></script>
 <script src="bootstrap-toggle.min.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./styles.css"> 
-<script>
-    $('#main').parent().removeClass('row');
-    $('.navbar').parent().addClass('no-padding-left');
-    $('.footer hr').remove();
-    $('.logo-footer').parent().removeClass('container');
-</script>
+<link rel="stylesheet" type="text/css" href="index.css"> 
+<script src="index.js"></script>
+
 </div></body></html>

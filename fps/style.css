@@ -389,7 +389,7 @@ textarea{
 				.generalTableItem li {
 					list-style-type: none;
 					border-bottom: 1px solid #ddd;
-					background: url("./forward-icon-user-dashboard.png") no-repeat scroll 97% center rgba(0, 0, 0, 0);
+					background: url("https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard-down.png") no-repeat scroll 97% center rgba(0, 0, 0, 0);
 				}
 
 				.generalTableItem li:last-child{
@@ -405,7 +405,7 @@ textarea{
 				}
 
 				.generalTableItem li:after {
-					background: url('./forward-icon-user-dashboard.png');
+					background: url('https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard-down.png');
 					float: right;
 					color: #f39c12;
 				}
@@ -420,14 +420,14 @@ textarea{
 	.generalTableItemIcon td:last-child {
 		padding: 20px 10px;
 		list-style-type: none;
-		background-image: url("./forward-icon-user-dashboard.png");
+		background-image: url("https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard-down.png");
 		background-attachment: scroll;
 		background-repeat: no-repeat;
 		/* background-color: #fff; */
 		background-position: right 15px center;
 		padding-right: 30px;
 		background-size: 8px 15px;
-		/*background: url("./forward-icon-user-dashboard.png") no-repeat scroll 98% center #FFF;*/
+		/*background: url("https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard-down.png") no-repeat scroll 98% center #FFF;*/
 	}
 
 	.generalTableItemIcon td:last-child:empty {
@@ -478,7 +478,7 @@ textarea{
 		}
 
 			.generalTableItemIcon td:last-child {
-				background: url("./forward-icon-user-dashboard.png") no-repeat scroll 96% 30% #FFF;
+				background: url("https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard-down.png") no-repeat scroll 96% 30% #FFF;
 				padding: 0;
 			}
 
@@ -639,7 +639,7 @@ textarea{
 	}
 
 		.dashboardBlockFooter .more{
-			background: url('./icon-module-see_more.png') no-repeat center;
+			background: url('https://staging-redesign-app.k8s.fpsupport.nl/assets/images/icon-module-see_more.png') no-repeat center;
 			background-color: #3498db;
 			color: #fff;
 			border-bottom-left-radius:5px;
@@ -980,7 +980,7 @@ textarea{
 			.dashboardBlockItems li{
 				list-style-type: none;
 				border-bottom: 1px solid #ddd;
-				background: url("./forward-icon-user-dashboard.png") no-repeat scroll 97% center rgba(0, 0, 0, 0);
+				background: url("https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard-down.png") no-repeat scroll 97% center rgba(0, 0, 0, 0);
 				background-size: 8px 15px;
 
 			}
@@ -1130,7 +1130,7 @@ textarea{
 				padding: 20px;
 				list-style-type: none;
 				border-bottom: 1px solid #ddd;
-				background: url(./forward-icon-user-dashboard.png) no-repeat 97% center;
+				background: url(https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard-down.png) no-repeat 97% center;
 			}
 
 			.sidemenuBlockItems li:last-child{
@@ -1385,7 +1385,7 @@ table tbody.dashboardBlockItems{
 	.dashboardBlockItems tr.tableRow td:last-child {
 		padding: 20px;
 		list-style-type: none;
-		background: url("./forward-icon-user-dashboard.png") no-repeat scroll 92% center #FFF;
+		background: url("https://staging-redesign-app.k8s.fpsupport.nl/assets/images/forward-icon-user-dashboard-down.png") no-repeat scroll 92% center #FFF;
 	}
 /*
 @media(max-width: 768px){
