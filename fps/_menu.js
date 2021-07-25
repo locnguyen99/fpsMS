@@ -27,7 +27,7 @@ var menu = `
         aria-hidden="true"></i> <span class="hidetitle">Beheer </span></a>
   </li>
   <li class="menuliparent">
-    <a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html"><i class="fa fa-asterisk fa-lg"
+    <a href="_Meldingen overzicht.html"><i class="fa fa-asterisk fa-lg"
         aria-hidden="true"></i> <span class="hidetitle">Melding overzicht </span></a>
   </li>
   <li class="menuliparent">

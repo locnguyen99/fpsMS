@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html -->
+<html lang="nl" aria-expanded="true" class="collapse in" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Meldingen overzicht</title>
+
+<!-- header -->
+
+<link rel="shortcut icon" href="https://staging-redesign-app.k8s.fpsupport.nl/faviconAnsul.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/bootstrap-datepicker3.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customstyle.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customStyleLasted.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/select2.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/css/bootstrap-toggle.min.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/transition.min.css">
+<script src="https://www.google-analytics.com/analytics.js"></script>
+
+<style>
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+}
+/* Set gray background color and 100% height */
+.sidenav {
+background-color: #f1f1f1;
+height: 100%;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {
+height: auto;
+}
+}
+</style>
+</head>
+<body class="job-buffer collapse in" style="overflow-x: hidden;" aria-expanded="true" cz-shortcut-listen="true">
+<div class="container-fluid collapse in" aria-expanded="true" style="">
+<div class="row content collapse in" style="display: flex; align-items: stretch;" aria-expanded="true">
+<div id="leftsidemenudiv" class="collapse in" style="margin-left: 15px; background-color: white; min-width: 250px; max-width: 250px; transition: all 0.3s ease 0s; border-right: 1px solid rgb(247, 247, 247);" aria-expanded="true">
+<!-- Sidebar -->
+<div id="sidebar-wrapper" style="margin-top: 10px; padding-left: 10px;" aria-expanded="true" class="collapse in">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html" style="outline: none; text-decoration: none; ">
+<img id="logofps" class="img-responsive" src="./Meldingen overzicht_files/FPS-Logo.png" style="height:58px;">
+</a>
+<div style="margin-top:40px;" class="menutext"><a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html#">Menu</a></div>
+<ul class="sidebar-nav list-unstyled collapse in" style="margin-top: 30px; padding-left: 20px;" aria-expanded="true">
+<li class="sidebar-brand menuliparent">
+</li>
+<li class="menuliparent closecollapseall">
+<a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html#collapse2" class="caretevent"><i class="fa fa-dashboard fa-lg" aria-hidden="true"></i> <span class="hidetitle">Dashboard </span><span class="caret addcaret"></span></a>
+<ul class="list-group panel-collapse collapse" id="collapse2">
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Module</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Profiel</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html">Locatie</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/rapportages-zoeken.html">Rapportages</a></li>
+</ul>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"><i class="fa fa-bell fa-lg" aria-hidden="true"></i> <span class="hidetitle">Notificaties </span>
+<span class="badge hidetitle" style="background-color:red;margin-left:70px;">4</span>
+</a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> <span class="hidetitle">Beheer </span></a>
+</li>
+<li class="menuliparent activemenu collapse in" aria-expanded="true" style="">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html"><i class="fa fa-asterisk fa-lg" aria-hidden="true"></i> <span class="hidetitle">Melding overzicht </span></a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html"><i class="fa fa-file fa-lg" aria-hidden="true"></i> <span class="hidetitle">Formulier overzicht </span></a>
+</li>
+<li class="menuliparent closecollapseall">
+<a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html#collapse1"><i class="fa fa-plus fa-lg" aria-hidden="true"></i> <span class="hidetitle">Aanmaken </span><span class="caret addcaret"></span></a>
+<ul class="list-group panel-collapse collapse" id="collapse1">
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie</a></li>
+</ul>
+</li>
+</ul>
+<div style="margin-top:80px;padding-left:20px;padding-bottom:20px;" class="closediv">
+<a href="javascript: void(0)" id="closeleftmenu">
+<span class="badge" style="background-color:#18A5A5;border-radius: 50%;line-height: unset;" id="closemenuicon">&lt;</span>
+<span class="hidetitle">Menu inklappen</span>
+</a>
+</div>
+</div>
+<style>
+.menuliparent {
+margin-bottom:40px;
+color: rgba(130, 130, 130, 1);
+font-style: normal;
+font-family: Poppins;
+font-weight: 600;
+font-size: 16px;
+line-height: 212.50000596046448%;
+}
+.menuliparent a i {
+margin-right:5px;
+}
+.menuliparent ul {
+padding-left:20px;
+}
+.menuliparent ul li {
+border:none;
+}
+.caret.caret-up {
+border-top-width: 0;
+border-bottom: 4px solid;
+}
+.caret {
+margin-left:80px;
+}
+.activemenu a{
+color: rgba(51, 51, 51, 1);
+font-weight: 600;
+}
+#leftsidemenudiv.active{
+min-width: 125px !important;
+max-width: 125px !important;
+text-align: center !important;
+}
+#leftsidemenudiv.active .caret{
+margin-left:10px;
+}
+#leftsidemenudiv.active .hidetitle{
+display:none;
+}
+#leftsidemenudiv.active .menuliparent ul{
+padding-left:0px;
+text-align:left;
+}
+#leftsidemenudiv.active .sidebar-nav{
+padding-left:0px !important;
+}
+#leftsidemenudiv.active .closediv{
+padding-left:0px !important;
+padding-right:40px;
+}
+#leftsidemenudiv.active .menutext{
+text-align:left !important;
+}
+#leftsidemenudiv.active #logofps{
+padding-left:20px;
+}
+#leftsidemenudiv.active .menuliparent.closecollapseall a{
+padding-right:20px;
+}
+#leftsidemenudiv.active .menuliparent a{
+padding-right:40px;
+}
+</style>
+</div>
+<div class="" style="padding-left: 1px;width: 100%;;min-height: 100vh;transition: all 0.3s;">
+<nav class="navbar" style="padding-top:10px;padding-right:10px;background-color:white;margin-bottom:0px;">
+<div class="container-fluid" style="margin-left:-30px;">
+<form class="navbar-form navbar-left" action="https://staging-redesign-app.k8s.fpsupport.nl/search-dashboard.html" style="margin-top:-5px;width:100%;">
+<div class="input-group input-lg" style="width:15%;">
+<select class=" object-picker non-deselectable" name="searchType" id="searchType" tabindex="1" data-placeholder="Please select type of search" data-sortable="false" data-value="job" data-display-limit="0">
+<option value="job" selected="selected">
+Job
+</option>
+<option value="meldingen">
+Meldingen
+</option>
+<option value="documenten">
+Documenten
+</option>
+</select>
+</div>
+<div class="input-group input-group-lg" style="width:65%;">
+<input type="text" class="form-control" name="search" value="" placeholder="Waar ben je naar op zoek?" style="border-right:none;padding:20px 10px;">
+<div class="input-group-btn">
+<button class="btn btn-default" type="submit">
+<i class="glyphicon glyphicon-search"></i>
+</button>
+</div>
+</div>
+<div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+<div class="dropdown nav navbar-nav ">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-plus" aria-hidden="true"></i>
+</button>
+<ul class="dropdown-menu pull-right" style="min-width: 210px;">
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Meldding aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/leverancier-overzicht.html">Leverancier aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+</ul>
+</div>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html" class="nav navbar-nav" style="margin-left: 5px;margin-right: 15px;">
+<span class="fa-stack fa-2x" data-count="4">
+<i class="fa fa-bell fa-stack-1x" style="color:black;"></i>
+</span>
+</a>
+<div class="dropdown nav navbar-nav">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-user" aria-hidden="true"></i>
+</button>
+<ul class="dropdown-menu pull-right" style="min-width: 200px;">
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Mijn profiel <i class="fa fa-user" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Instellingen <i class="fa fa-cog" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/login/logout/" style="color:#CD0000;">Uitloggen <i class="fa fa-sign-out" aria-hidden="true" style="float: right;"></i></a></li>
+</ul>
+</div>	
+</div>
+</form>
+</div>
+</nav>
+<style>
+#searchType{
+height: 46px;
+}
+.fa-stack[data-count]:after{
+position:absolute;
+right:0%;
+top:1%;
+content: attr(data-count);
+font-size:30%;
+padding:.6em;
+border-radius:999px;
+line-height:.75em;
+color: white;
+background:rgba(255,0,0,.85);
+text-align:center;
+min-width:2em;
+font-weight:bold;
+}
+</style>
+<style>
+.resultaat_melding_length{
+color:#2ecc71
+}
+.resultaat_melding_length_error{
+color:rgb(121, 6, 6)
+}
+.resultaat_melding_length_error_text{
+float:left;
+}
+.generalTable .first-col{
+text-align: center ;
+}
+</style>
+<div class="">
+<div class="breadcrumbsWrapper">
+<div class="container-fluid ">
+<div class="row">
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-12">
+<h1>
+<span style="width: auto; position: relative;" class="title-page-head">Meldingen overzicht
+<i class="help-text-button fa fa-question" data-rel="popover" data-trigger="hover" data-placement="bottom" data-content="Door de melding te openen wordt de inhoud van de melding weergegeven. U kunt de melding classificeren en eventueel voorzien van aanvullende informatie (kies voor de optie Wijzigen). U kunt de melding afronden door het invullen van een resultaatveld of het aanmaken van een job." data-html="true" data-original-title="" title=""></i>
+</span>
+</h1>
+</div>
+<div class="col-md-12 breadcrumbs">
+<a title="Dashboard" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Dashboard</a>
+<a title="Beheer" href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html">Beheer</a>
+<a title="MELDINGEN" href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html">MELDINGEN</a>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="col-md-12 submitButtons submitButtonRight" style="padding-top:15px;">
+<a class="btn btn-top-delete" href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html" id="deleteAlert">
+<i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+<span>Verwijderen</span>
+</a>
+<a class="btn btn-top-greybg" href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html" id="completeAlert">
+<i class="fa fa-check fa-lg" aria-hidden="true"></i>
+<span>Afronden</span>
+</a>
+<a class="btn btn-top-greenbg" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">
+<i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+<span>Meldding aanmaken</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="main">
+<div class="container-fluid">
+<div id="notification"></div>
+<div class="row">
+<div class="col-md-12 generalTable table table-responsive rechtenOverzicht">
+<table class="tablesorter tablesorter-default hasFilters" cell-spacing="3" role="grid">
+<thead>
+<tr role="row" class="tablesorter-headerRow">
+<th class="generalTableHeader greenHeader hidden-xs roundBorders sorter-false tablesorter-header tablesorter-headerUnSorted" style="text-align: center; user-select: none;" data-column="0" scope="col" role="columnheader" aria-disabled="true" unselectable="on" aria-sort="none" aria-label=": No sort applied, sorting is disabled"><div class="tablesorter-header-inner">
+<input type="checkbox" name="alertsSelected[]" id="select_all" class="checkbox-big">
+</div></th>
+<th class="generalTableHeader greenHeader hidden-xs tablesorter-header tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Meldingen: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Meldingen</div></th>
+<th class="generalTableHeader greenHeader hidden-xs tablesorter-header tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="(Sub)Module: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">(Sub)Module</div></th>
+<th class="generalTableHeader greenHeader roundBorders tablesorter-header tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Melding: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Melding</div></th>
+<th class="generalTableHeader greenHeader roundBorders tablesorter-header tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Omschrijving: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Omschrijving</div></th>
+<th class="generalTableHeader greenHeader hidden-xs tablesorter-header tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Locatie: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Locatie</div></th>
+<th class="generalTableHeader greenHeader hidden-xs tablesorter-header tablesorter-headerUnSorted" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Melder: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Melder</div></th>
+<th class="generalTableHeader greenHeader hidden-xs sorter-shortDate dateFormat-ddmmyyyy tablesorter-header tablesorter-headerUnSorted" data-column="7" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Datum: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Datum</div></th>
+<th class="generalTableHeader greenHeader hidden-xs roundBorders sorter-false tablesorter-header tablesorter-headerUnSorted" data-column="8" scope="col" role="columnheader" aria-disabled="true" unselectable="on" aria-sort="none" aria-label="Status: No sort applied, sorting is disabled" style="user-select: none;"><div class="tablesorter-header-inner">Status</div></th>
+</tr>
+<tr role="row" class="tablesorter-filter-row tablesorter-ignoreRow"><td data-column="0"><input type="search" placeholder="" class="tablesorter-filter disabled" data-column="0" disabled="" data-lastsearchtime="1627188321796"></td><td data-column="1"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="1" data-lastsearchtime="1627188321796"></td><td data-column="2"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="2" data-lastsearchtime="1627188321796"></td><td data-column="3"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="3" data-lastsearchtime="1627188321796"></td><td data-column="4"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="4" data-lastsearchtime="1627188321796"></td><td data-column="5"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="5" data-lastsearchtime="1627188321796"></td><td data-column="6"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="6" data-lastsearchtime="1627188321796"></td><td data-column="7"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="7" data-lastsearchtime="1627188321796"></td><td data-column="8"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="8" data-lastsearchtime="1627188321796"></td></tr></thead>
+<tbody aria-live="polite" aria-relevant="all">
+<form id="formAlert" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/melding_buffer/_deleteAlert/" method="post"></form>
+<input type="hidden" name="hdpageID" value="06A93DDA-C759-4A5E-B1481C2827B64007">
+<input type="hidden" name="alertsSelected" id="alertsSelected" value="">
+
+
+
+
+
+
+
+
+
+
+<tr class="generalTableItem linked-row odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=38B479ED-F2C3-43F7-984FC4B0636C4671" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="38B479ED-F2C3-43F7-984FC4B0636C4671">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+dat
+</td>
+<td>
+ss
+</td>
+<td>
+Parnassia
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>08-06-2021 19:36</td>
+<td><span class="statusRed"></span></td>
+</tr><tr class="generalTableItem linked-row even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=5197DDEA-F641-4BBF-B84E9FE3E97D57A9" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="5197DDEA-F641-4BBF-B84E9FE3E97D57A9">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Chithra
+</td>
+<td>
+test 123
+</td>
+<td>
+Toomba Locatie 1
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>16-06-2021 10:32</td>
+<td><span class="statusRed"></span></td>
+</tr><tr class="generalTableItem linked-row odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=7B524B20-984D-469F-BE5D5AC356B19F4B" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="7B524B20-984D-469F-BE5D5AC356B19F4B">
+</td>
+<td>
+My notification
+</td>
+<td>
+test notification1
+</td>
+<td>
+test3
+</td>
+<td>
+test 3
+</td>
+<td>
+Verwijderd - yrdyr
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>16-06-2021 10:55</td>
+<td><span class="statusRed"></span></td>
+</tr><tr class="generalTableItem linked-row even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=28AB959F-B540-41B0-8D05C4F733143B3B" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="28AB959F-B540-41B0-8D05C4F733143B3B">
+</td>
+<td>
+My notification
+</td>
+<td>
+test notification1
+</td>
+<td>
+test3
+</td>
+<td>
+tes33
+</td>
+<td>
+Parnassia
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>16-06-2021 11:13</td>
+<td><span class="statusRed"></span></td>
+</tr><tr class="generalTableItem linked-row odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=ABBBEC72-CFD4-40EA-A20D202D3E17885C" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="ABBBEC72-CFD4-40EA-A20D202D3E17885C">
+</td>
+<td>
+My notification
+</td>
+<td>
+test notification1
+</td>
+<td>
+test3
+</td>
+<td>
+test 123
+</td>
+<td>
+Verwijderd - Toomba Locatie 4
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>17-06-2021 11:37</td>
+<td><span class="statusRed"></span></td>
+</tr><tr class="generalTableItem linked-row even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=C24C1DFC-5C99-4026-971CE2C5CF1F2FE6" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="C24C1DFC-5C99-4026-971CE2C5CF1F2FE6">
+</td>
+<td>
+test notification 14
+</td>
+<td>
+test sub notification 14
+</td>
+<td>
+test message tep14
+</td>
+<td>
+test notification28
+</td>
+<td>
+Verwijderd - KVP
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>28-06-2021 16:25</td>
+<td><span class="statusRed"></span></td>
+</tr><tr class="generalTableItem linked-row odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=830B8402-5343-4422-88D697CD18530B75" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="830B8402-5343-4422-88D697CD18530B75">
+</td>
+<td>
+test notification 14
+</td>
+<td>
+test sub notification 14
+</td>
+<td>
+test message tep14
+</td>
+<td>
+test AAA
+</td>
+<td>
+Verwijderd - KVP
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>28-06-2021 16:33</td>
+<td><span class="statusRed"></span></td>
+</tr><tr class="generalTableItem linked-row even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=1C190C76-3A0D-44D1-B9B277E67E4F5877" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="1C190C76-3A0D-44D1-B9B277E67E4F5877">
+</td>
+<td>
+test notification 11
+</td>
+<td>
+test sub notification 
+</td>
+<td>
+test message1
+</td>
+<td>
+test
+</td>
+<td>
+Verwijderd - KVP
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>29-06-2021 10:23</td>
+<td><span class="statusRed"></span></td>
+</tr><tr class="generalTableItem linked-row odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html?alertID=9A77C921-316B-4586-BACECF10343FAE2B" role="row">
+<td class="first-col">
+<input type="checkbox" class="checkbox_table checkbox-big" name="alertsSelected[]" value="9A77C921-316B-4586-BACECF10343FAE2B">
+</td>
+<td>
+My notification
+</td>
+<td>
+test notification1
+</td>
+<td>
+test3
+</td>
+<td>
+test 3
+</td>
+<td>
+Toomba Locatie 1
+</td>
+<td>
+Inge Haverkamp
+</td>
+<td>29-06-2021 10:26</td>
+<td><span class="statusRed"></span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_complete" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ã—</span></button>
+<h4 class="modal-title" id="modal_main_title">Rond de geselecteerde meldingen met hetzelfde resultaat af, door het invullen van RESULTAAT MELDING en/of het koppelen van een document bij DOCUMENT AFRONDING MELDING.	</h4>
+</div>
+<div class="modal-body" id="complete_modal_main_body">
+<div id="complete_modal_main_body_error"></div>
+<form id="formAlertComplete" enctype="multipart/form-data" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/melding_buffer/completeAlert/" method="post">
+<div id="block_resultaat_melding" class="row createFormDetail">
+<input type="hidden" name="completeMelding" id="completeMelding" value="">
+<div class="col-md-4"><label>RESULTAAT MELDINGEN</label></div>
+<div class="col-md-8">
+<div class="resultaat_melding_length_error_text hide">
+<p class="resultaat_melding_length_error">
+Helaas is het maximaal aantal leestekens van 1,000 stuks van overschreden. Je kunt de tekst aanpassen of het opnemen in een document en bijsluiten als bijlage bij DOCUMENT AFRONDING JOB.
+</p>	
+</div>
+<div style="float: right;">
+<b class="resultaat_melding_length">0</b>
+<b>/1,000</b>
+</div>	
+<textarea id="resultaat_melding" name="resultaat_melding" required=""></textarea>
+</div>
+<div class="col-md-4"><label>DOCUMENT AFRONDING MELDINGEN
+</label></div>
+<div class="col-md-8"><input type="file" name="close_document" id="close_document" required=""> </div>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_btn_close">
+Annuleren
+</button>
+<button type="button" class="btn btn-primary" id="modal_complete_main_btn_submit">
+Afronden bevestigen
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<footer class="footer container-fluid">
+<div class="container">
+<hr>
+<ul class="logo-footer">
+<li><a href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Hier kunt u via gebruikersinstellingen een eigen logo plaatsen</a></li>
+</ul>
+</div>
+</footer>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="modal_main_title">Let op</h4>
+</div>
+<div class="modal-body" id="modal_main_body">
+<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_btn_close">Annuleren</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_btn_submit">Verwijderen</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main_save">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="modal_main_save_title">Let op</h4>
+</div>
+<div class="modal-body" id="modal_main_save_body">
+<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_save_btn_close">Annuleren</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_save_btn_submit">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+<!-- footer -->
+
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/bootstrap-datepicker.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/locales/bootstrap-datepicker.nl.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/dropzone.js"></script>
+<script src="https://browser.sentry-cdn.com/5.23.0/bundle.min.js" integrity="sha384-5yYHk2XjpqhbWfLwJrxsdolnhl+HfgEnD1UhVzAs6Kd2fx+ZoD0wBFjd65mWgZOG"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/init-sentry.js" selectorid="sentry" sentry_api_key="https://69a1bba9d92c421cb24c6c585ede4518:2303e5aceeea48519ca1433d66168c27@sentry.k8s.mytoomba.nl/33" sentry_environment="production"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/main.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/pages/reports-search.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/select2.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/i18n/nl.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/transition.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery.validate.min.js"></script>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="index.css"> 
+<script src='_logo.js'></script>
+<script src='_menu.js'></script>
+<script src="index.js"></script>
+
+</div><style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style></body></html>

@@ -503,6 +503,10 @@ i.glyphicon.glyphicon-search {
 .closediv:hover .badge {
     background-color: rgba(18, 128, 128) !important;
 }
+.flex-space-between .submitButtonRight .btn:hover i,
+.flex-space-between .submitButtonRight .btn:hover span {
+    color: white !important; 
+}
 /* hover */
 li.list-group-item:hover {
     font-weight: 700 !important;
@@ -573,12 +577,6 @@ i.fa.fa-bell.fa-stack-1x:hover  {
 }
 .flex-space-between .submitButtonRight .btn {
     margin-left: 15px;
-}
-.flex-space-between .submitButtonRight .btn:hover {
-    background-color: #18A5A5 !important;
-}
-.flex-space-between .submitButtonRight .btn:hover span {
-    color: white !important; 
 }
 #main:hover {
     overflow-y: auto;
