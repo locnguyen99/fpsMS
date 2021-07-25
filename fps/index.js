@@ -24,5 +24,8 @@ $(document).ready( function() {
     $('ul.sidebar-nav.list-unstyled').replaceWith(menu);
 
     $(".toggle.btn.btn-default.off.btn-sm.fps-toggle").children().first().remove();
+
+    //HH
+    $("#main .breadcrumbsWrapper").insertBefore("#main")
 });
 

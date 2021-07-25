@@ -367,11 +367,12 @@ input,
     display: flex;
 }
 
+.dropdown .toggle,
 .btn.btn-top-greenbg,
 .dropdown.nav.navbar-nav button {
-    background-color: rgba(24, 165, 165);
+    background-color: rgba(24, 165, 165) !important;
     border-radius: 8px !important;
-    color: white;
+    color: white !important;
 }
 .submitButtonRight {
     padding-right: 0px;
@@ -643,7 +644,8 @@ ol, ul {
 .bg-white {
     background-color: white;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 8px;
 }
 
@@ -704,6 +706,24 @@ a.btn.btn-top-delete span{
     color: rgba(205, 0, 0,.6) !important;
 }
 
-.bg-white .panel-group{
-    padding:15px;
+.bg-white .panel-group {
+    padding: 0px 15px;
+}
+.generalTable {
+    margin-bottom: 30px !important;
+    margin-top: unset;
+}
+.dropdownIconBlue{
+    margin-top: 0px !important;
+}
+
+
+tr.subModuleButton.linked-element{
+    background-color: rgba(24, 165, 165, 0.05) !important;
+}
+
+.btn.dropdown-toggle{
+    background-color: unset !important;
+    border-radius: 8px !important;
+    color: unset !important;
 }
