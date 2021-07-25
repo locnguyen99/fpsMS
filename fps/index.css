@@ -41,7 +41,9 @@ body {
         width: 68% !important;
     }
 }
-
+input, select, textarea {
+    border-radius: 8px;
+}
 /* NOTE: Font styles */
 .breadcrumbs a {
     text-transform: capitalize;
