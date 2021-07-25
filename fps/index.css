@@ -741,4 +741,7 @@ tr.subModuleButton.linked-element{
     background-color: unset !important;
     color: unset !important;
 }
+.submitButtons div.textCenter{
+    width: 100% !important;
+}
 
