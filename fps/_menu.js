@@ -16,7 +16,7 @@ var menu = `
     </ul>
   </li>
   <li class="menuliparent">
-    <a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"><i class="fa fa-bell fa-lg"
+    <a href="_Notificaties.html"><i class="fa fa-bell fa-lg"
         aria-hidden="true"></i> <span class="hidetitle">Notificaties </span>
       <span class="badge hidetitle" style="background-color:red;margin-left:70px;">4</span>
     </a>
