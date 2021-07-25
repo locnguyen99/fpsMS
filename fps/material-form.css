@@ -58,11 +58,11 @@
 .form-field__textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
-    color: rgba(130, 130, 130, 1);
+    /* color: rgba(130, 130, 130, 1); */
     appearance: none;
     background: transparent;
     border: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     display: block;
     /* font-size: 1.2rem; */
     font-size: 120%;
@@ -122,12 +122,30 @@
 /* remove border bottom */
 .no-border input,
 .no-border textarea {
-    border-bottom: 0px solid #999 !important;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.15) !important;
 }
 .no-border .form-field__control {
     border-radius: 8px 8px 8px 8px !important;
 }
 .bg-transparent .form-field__control {
     background: transparent  !important;
-    border: 1px solid rgba(130, 130, 130, 1) !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+/* select2 */
+.form-field .select2-selection {
+    height: auto !important;
+    background: transparent  !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.form-field .select2-container--default .select2-selection--single .select2-selection__arrow {
+    position: absolute;
+    top: -7px;
+    right: 30px;
+    width: 20px;
+    height: 100%;
 }
