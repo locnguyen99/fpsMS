@@ -28,7 +28,7 @@ body {
     }
 }@media (min-width: 1200px) {
     .fps-container {
-        max-width: 1260px;
+        max-width: 1360px;
     }
     .input-group.input-group-lg {
         width: 58% !important;
@@ -391,6 +391,9 @@ input,
     margin-top: 10px;
     background-color: rgba(240, 240, 240) !important;
 }
+#main .settingsOverview{
+    margin-top: 0px;
+}
 #dashboard {
     margin-top: 0px !important;
 }
@@ -503,8 +506,10 @@ i.glyphicon.glyphicon-search {
 .closediv:hover .badge {
     background-color: rgba(18, 128, 128) !important;
 }
-.flex-space-between .submitButtonRight .btn:hover i,
-.flex-space-between .submitButtonRight .btn:hover span {
+.flex-space-between .submitButtonRight .normal-btn-deactive:hover i,
+.flex-space-between .submitButtonRight .normal-btn-deactive:hover span,
+.flex-space-between .submitButtonRight .normal-btn-active:hover i,
+.flex-space-between .submitButtonRight .normal-btn-active:hover span {
     color: white !important; 
 }
 /* hover */
@@ -642,5 +647,61 @@ ol, ul {
     border-radius: 8px;
 }
 
+.toggle.btn.btn-sm.fps-toggle.btn-primary{
+    min-width: 80px;
+    padding: 15px;
+}
+.toggle-group .btn {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: inline-block !important;
+}
+.toggle-group label{
+    padding-top: 8px !important;
+}
+.toggle.fps-toggle .toggle-handle{
+    width: 30px;
+    height: 30px;
+}
+.toggle.off .toggle-group {
+    left: -83%;
+    width: 200% !important;
+}
+.toggle .toggle-group {
+    width: 164%;
+}
+.toggle.btn-sm {
+    min-height: 31px !important;
+}
+.checkbox .toggle{
+    min-width: 90px !important;
+    float: right;
+}
 
+#completeAlert:hover {
+    background-color: rgba(230, 230, 230) !important;
+}
 
+#completeAlert:hover i,
+#completeAlert:hover span{
+    color: rgb(51, 51, 51) !important;
+}
+#completeAlert i,
+#completeAlert span{
+    color: rgb(130, 130, 130) !important;
+}
+
+/* button delete */
+a.btn.btn-top-delete:hover {
+    background-color:  rgba(205, 0, 0, 0.05)!important;
+}
+a.btn.btn-top-delete:hover i,
+a.btn.btn-top-delete:hover span{
+    color: rgba(205, 0, 0) !important;
+}
+a.btn.btn-top-delete i,
+a.btn.btn-top-delete span{
+    color: rgba(205, 0, 0,.6) !important;
+}
+
+/* rgb(130, 130, 130) */

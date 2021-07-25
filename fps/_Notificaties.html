@@ -1,659 +1,995 @@
 <!DOCTYPE html>
 <!-- saved from url=(0063)https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html -->
-<html lang="nl" aria-expanded="true" class="collapse in" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Notificaties</title>
-<link rel="shortcut icon" href="https://staging-redesign-app.k8s.fpsupport.nl/faviconAnsul.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/bootstrap-datepicker3.css">
-<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customstyle.css">
-<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customStyleLasted.css">
-<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/select2.css">
-<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/style.css">
-<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/css/bootstrap-toggle.min.css">
-<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/transition.min.css">
-<script src="https://www.google-analytics.com/analytics.js"></script><
-<style>
-/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-.row.content {
-}
-/* Set gray background color and 100% height */
-.sidenav {
-background-color: #f1f1f1;
-height: 100%;
-}
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-.sidenav {
-height: auto;
-padding: 15px;
-}
-.row.content {
-height: auto;
-}
-}
-</style>
+<html lang="nl" aria-expanded="true" class="collapse in" style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Notificaties</title>
+    <link rel="shortcut icon" href="https://staging-redesign-app.k8s.fpsupport.nl/faviconAnsul.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customstyle.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customStyleLasted.css">
+    <link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/select2.css">
+    <link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/css/bootstrap-toggle.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/transition.min.css">
+    <script src="https://www.google-analytics.com/analytics.js"></script>
+    < <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        .row.content {
+        }
+        /* Set gray background color and 100% height */
+        .sidenav {
+        background-color: #f1f1f1;
+        height: 100%;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+        .sidenav {
+        height: auto;
+        padding: 15px;
+        }
+        .row.content {
+        height: auto;
+        }
+        }
+        </style>
 </head>
+
 <body class="collapse in" style="overflow-x: hidden;" aria-expanded="true">
-<div class="container-fluid collapse in" aria-expanded="true" style="">
-<div class="row content collapse in" style="display: flex; align-items: stretch;" aria-expanded="true">
-<div id="leftsidemenudiv" class="collapse in" style="margin-left: 15px; background-color: white; min-width: 250px; max-width: 250px; transition: all 0.3s ease 0s; border-right: 1px solid rgb(247, 247, 247);" aria-expanded="true">
-<!-- Sidebar -->
-<div id="sidebar-wrapper" style="margin-top: 10px; padding-left: 10px;" aria-expanded="true" class="collapse in">
-<a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html" style="outline: none; text-decoration: none; ">
-<img id="logofps" class="img-responsive" src="./Notificaties_files/FPS-Logo.png" style="height:58px;">
-</a>
-<div style="margin-top:40px;" class="menutext"><a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html#">Menu</a></div>
-<ul class="sidebar-nav list-unstyled collapse in" style="margin-top: 30px; padding-left: 20px;" aria-expanded="true">
-<li class="sidebar-brand menuliparent">
-</li>
-<li class="menuliparent closecollapseall">
-<a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html#collapse2" class="caretevent"><i class="fa fa-dashboard fa-lg" aria-hidden="true"></i> <span class="hidetitle">Dashboard </span><span class="caret addcaret"></span></a>
-<ul class="list-group panel-collapse collapse" id="collapse2">
-<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Module</a></li>
-<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Profiel</a></li>
-<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html">Locatie</a></li>
-<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/rapportages-zoeken.html">Rapportages</a></li>
-</ul>
-</li>
-<li class="menuliparent activemenu collapse in" aria-expanded="true" style="">
-<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"><i class="fa fa-bell fa-lg" aria-hidden="true"></i> <span class="hidetitle">Notificaties </span>
-<span class="badge hidetitle" style="background-color:red;margin-left:70px;">4</span>
-</a>
-</li>
-<li class="menuliparent">
-<a href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> <span class="hidetitle">Beheer </span></a>
-</li>
-<li class="menuliparent">
-<a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html"><i class="fa fa-asterisk fa-lg" aria-hidden="true"></i> <span class="hidetitle">Melding overzicht </span></a>
-</li>
-<li class="menuliparent">
-<a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html"><i class="fa fa-file fa-lg" aria-hidden="true"></i> <span class="hidetitle">Formulier overzicht </span></a>
-</li>
-<li class="menuliparent closecollapseall">
-<a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html#collapse1"><i class="fa fa-plus fa-lg" aria-hidden="true"></i> <span class="hidetitle">Aanmaken </span><span class="caret addcaret"></span></a>
-<ul class="list-group panel-collapse collapse" id="collapse1">
-<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job</a></li>
-<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding</a></li>
-<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker</a></li>
-<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie</a></li>
-</ul>
-</li>
-</ul>
-<div style="margin-top:80px;padding-left:20px;padding-bottom:20px;" class="closediv">
-<a href="javascript: void(0)" id="closeleftmenu">
-<span class="badge" style="background-color:#18A5A5;border-radius: 50%;line-height: unset;" id="closemenuicon">&lt;</span>
-<span class="hidetitle">Menu inklappen</span>
-</a>
-</div>
-</div>
-<style>
-.menuliparent {
-margin-bottom:40px;
-color: rgba(130, 130, 130, 1);
-font-style: normal;
-font-family: Poppins;
-font-weight: 600;
-font-size: 16px;
-line-height: 212.50000596046448%;
-}
-.menuliparent a i {
-margin-right:5px;
-}
-.menuliparent ul {
-padding-left:20px;
-}
-.menuliparent ul li {
-border:none;
-}
-.caret.caret-up {
-border-top-width: 0;
-border-bottom: 4px solid;
-}
-.caret {
-margin-left:80px;
-}
-.activemenu a{
-color: rgba(51, 51, 51, 1);
-font-weight: 600;
-}
-#leftsidemenudiv.active{
-min-width: 125px !important;
-max-width: 125px !important;
-text-align: center !important;
-}
-#leftsidemenudiv.active .caret{
-margin-left:10px;
-}
-#leftsidemenudiv.active .hidetitle{
-display:none;
-}
-#leftsidemenudiv.active .menuliparent ul{
-padding-left:0px;
-text-align:left;
-}
-#leftsidemenudiv.active .sidebar-nav{
-padding-left:0px !important;
-}
-#leftsidemenudiv.active .closediv{
-padding-left:0px !important;
-padding-right:40px;
-}
-#leftsidemenudiv.active .menutext{
-text-align:left !important;
-}
-#leftsidemenudiv.active #logofps{
-padding-left:20px;
-}
-#leftsidemenudiv.active .menuliparent.closecollapseall a{
-padding-right:20px;
-}
-#leftsidemenudiv.active .menuliparent a{
-padding-right:40px;
-}
-</style>
-</div>
-<div class="" style="padding-left: 1px;width: 100%;;min-height: 100vh;transition: all 0.3s;">
-<nav class="navbar" style="padding-top:10px;padding-right:10px;background-color:white;margin-bottom:0px;">
-<div class="container-fluid" style="margin-left:-30px;">
-<form class="navbar-form navbar-left" action="https://staging-redesign-app.k8s.fpsupport.nl/search-dashboard.html" style="margin-top:-5px;width:100%;">
-<div class="input-group input-lg" style="width:15%;">
-<select class=" object-picker non-deselectable" name="searchType" id="searchType" tabindex="1" data-placeholder="Please select type of search" data-sortable="false" data-value="job" data-display-limit="0">
-<option value="job" selected="selected">
-Job
-</option>
-<option value="meldingen">
-Meldingen
-</option>
-<option value="documenten">
-Documenten
-</option>
-</select>
-</div>
-<div class="input-group input-group-lg" style="width:65%;">
-<input type="text" class="form-control" name="search" value="" placeholder="Waar ben je naar op zoek?" style="border-right:none;padding:20px 10px;">
-<div class="input-group-btn">
-<button class="btn btn-default" type="submit">
-<i class="glyphicon glyphicon-search"></i>
-</button>
-</div>
-</div>
-<div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
-<div class="dropdown nav navbar-nav ">
-<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-plus" aria-hidden="true"></i>
-</button>
-<ul class="dropdown-menu pull-right" style="min-width: 210px;">
-<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
-<li class="divider"></li>
-<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Meldding aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
-<li class="divider"></li>
-<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
-<li class="divider"></li>
-<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
-<li class="divider"></li>
-<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/leverancier-overzicht.html">Leverancier aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
-</ul>
-</div>
-<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html" class="nav navbar-nav" style="margin-left: 5px;margin-right: 15px;">
-<span class="fa-stack fa-2x" data-count="4">
-<i class="fa fa-bell fa-stack-1x" style="color:black;"></i>
-</span>
-</a>
-<div class="dropdown nav navbar-nav">
-<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-user" aria-hidden="true"></i>
-</button>
-<ul class="dropdown-menu pull-right" style="min-width: 200px;">
-<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Mijn profiel <i class="fa fa-user" aria-hidden="true" style="float: right;"></i></a></li>
-<li class="divider"></li>
-<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Instellingen <i class="fa fa-cog" aria-hidden="true" style="float: right;"></i></a></li>
-<li class="divider"></li>
-<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/login/logout/" style="color:#CD0000;">Uitloggen <i class="fa fa-sign-out" aria-hidden="true" style="float: right;"></i></a></li>
-</ul>
-</div>	
-</div>
-</form>
-</div>
-</nav>
-<style>
-#searchType{
-height: 46px;
-}
-.fa-stack[data-count]:after{
-position:absolute;
-right:0%;
-top:1%;
-content: attr(data-count);
-font-size:30%;
-padding:.6em;
-border-radius:999px;
-line-height:.75em;
-color: white;
-background:rgba(255,0,0,.85);
-text-align:center;
-min-width:2em;
-font-weight:bold;
-}
-</style>
-<style type="text/css">
-.note {
-padding: 20px;
-font-style: italic;
-background-color: #f3fafa ;
-font-weight: 800;
-color: #18a5a5;
-text-align:center;
-}
-.generalTableItem td{
-font-weight: bold !important;
-}
-.generalTableItem.read td{
-font-weight: normal !important;
-}
-.generalTable .first-column{
-text-align: center ;
-}
-.submitButtons .greenBtn{
-margin-right: 0px;
-}
-</style>
-<div class="">
-<div class="breadcrumbsWrapper">
-<div class="container-fluid ">
-<div class="row">
-<div class="col-md-10">
-<div class="row">
-<div class="col-md-12">
-<h1>
-<span style="width: auto; position: relative;" class="title-page-head">Notificaties 
-<i class="help-text-button fa fa-question" data-rel="popover" data-trigger="hover" data-placement="bottom" data-content="De notificaties geven de jobs en meldingen aan die u uit dient te voeren of waar u verantwoordelijk voor bent." data-html="true" data-original-title="" title=""></i>
-</span>
-</h1>
-</div>
-</div>
-</div>
-<div class="col-md-2">
-<div class="" style="padding-top: 30px;padding-left: 10px;">
-<div class="checkbox">
-<span style="">Toon geschiedenis</span>
-<div class="toggle btn btn-default off btn-sm fps-toggle" data-toggle="toggle" style="width: 65px; height: 30px;"><input type="checkbox" data-size="small" data-toggle="toggle" data-style="fps-toggle" id="show-jobs" name="show-jobs"><div class="toggle-group"><label class="btn btn-primary btn-sm toggle-on">Ja</label><label class="btn btn-default btn-sm active toggle-off">Nee</label><span class="toggle-handle btn btn-default btn-sm"></span></div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section id="main">
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-12 generalTable rechtenOverzicht">
-<table class="tablesorter tablesorter-default hasFilters" cell-spacing="3" role="grid">
-<thead>
-<tr role="row" class="tablesorter-headerRow">
-<th class="generalTableHeader hidden-xs roundBorders greenHeader sorter-false tablesorter-header tablesorter-headerUnSorted" width="10%" style="text-align: center; user-select: none;" data-column="0" scope="col" role="columnheader" aria-disabled="true" unselectable="on" aria-sort="none" aria-label=": No sort applied, sorting is disabled"><div class="tablesorter-header-inner">
-<input id="notify-selected-all" type="checkbox" class="checkbox-big">
-</div></th>
-<th class="generalTableHeader hidden-xs greenHeader tablesorter-header tablesorter-headerUnSorted" width="25%" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Datum: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Datum </div></th>
-<th class="generalTableHeader roundBorders greenHeader tablesorter-header tablesorter-headerUnSorted" width="50%" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Notificatie: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Notificatie</div></th>
-<th class="generalTableHeader hidden-xs roundBorders greenHeader tablesorter-header tablesorter-headerUnSorted" width="100%" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Type: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Type</div></th>
-</tr>
-<tr role="row" class="tablesorter-filter-row tablesorter-ignoreRow"><td data-column="0"><input type="search" placeholder="" class="tablesorter-filter disabled" data-column="0" disabled="" data-lastsearchtime="1627187478285"></td><td data-column="1"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="1" data-lastsearchtime="1627187478285"></td><td data-column="2"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="2" data-lastsearchtime="1627187478285"></td><td data-column="3"><input type="search" placeholder="Zoeken" class="tablesorter-filter" data-column="3" data-lastsearchtime="1627187478285"></td></tr></thead>
-<tbody aria-live="polite" aria-relevant="all">
-<tr class="generalTableItem generalTableItemIcon odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=AA70DC89-F083-48E7-8574CC1B808B074F" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="AA70DC89-F083-48E7-8574CC1B808B074F" type="checkbox">
-</td>
-<td width="25%" class="linked-row">24-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: SafetyTest</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=67E4B36D-609F-467A-8DC6D2C961309A71" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="67E4B36D-609F-467A-8DC6D2C961309A71" type="checkbox">
-</td>
-<td width="25%" class="linked-row">27-06-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de job waar u verantwoordelijk voor bent: eenmalige job gebruiker</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=FC5037C5-0572-4BEF-9DA8A885527FA02D" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="FC5037C5-0572-4BEF-9DA8A885527FA02D" type="checkbox">
-</td>
-<td width="25%" class="linked-row">25-06-2021</td>
-<td width="50%" class="linked-row">U bent verantwoordelijke voor een nieuwe job: testjob temp25</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=A66FF291-4157-4BE6-A72235B852CC476F" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="A66FF291-4157-4BE6-A72235B852CC476F" type="checkbox">
-</td>
-<td width="25%" class="linked-row">25-06-2021</td>
-<td width="50%" class="linked-row">U bent verantwoordelijke voor een nieuwe job: ChithraTest</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=769C7469-75E5-42C6-ABA3E90806A8841B" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="769C7469-75E5-42C6-ABA3E90806A8841B" type="checkbox">
-</td>
-<td width="25%" class="linked-row">24-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: First safety test</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=710098C3-0B7C-4183-B79C6649F04180BC" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="710098C3-0B7C-4183-B79C6649F04180BC" type="checkbox">
-</td>
-<td width="25%" class="linked-row">20-07-2021</td>
-<td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent is zojuist in de status 'Rood' gekomen.</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=16268FB8-4F9C-4525-89C23CB2BF1EACCD" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="16268FB8-4F9C-4525-89C23CB2BF1EACCD" type="checkbox">
-</td>
-<td width="25%" class="linked-row">20-07-2021</td>
-<td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent is zojuist in de status 'Rood' gekomen.</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=49B00A58-B0E6-468E-8E592784E7159B39" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="49B00A58-B0E6-468E-8E592784E7159B39" type="checkbox">
-</td>
-<td width="25%" class="linked-row">20-07-2021</td>
-<td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent is zojuist in de status 'Rood' gekomen.</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=08ACC49B-C888-4462-A2E4BEC457BF0876" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="08ACC49B-C888-4462-A2E4BEC457BF0876" type="checkbox">
-</td>
-<td width="25%" class="linked-row">20-07-2021</td>
-<td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent is zojuist in de status 'Rood' gekomen.</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=213FB9ED-EBDF-4698-8D88AD44FF6FE476" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="213FB9ED-EBDF-4698-8D88AD44FF6FE476" type="checkbox">
-</td>
-<td width="25%" class="linked-row">20-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: safety test 1</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=DE7E9183-DBB5-4ED2-A248C27ABC03867A" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="DE7E9183-DBB5-4ED2-A248C27ABC03867A" type="checkbox">
-</td>
-<td width="25%" class="linked-row">19-07-2021</td>
-<td width="50%" class="linked-row">Er is een nieuwe job aan u toegewezen: safety test 1</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=2BD53672-8800-4310-9006A78E30726FFB" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="2BD53672-8800-4310-9006A78E30726FFB" type="checkbox">
-</td>
-<td width="25%" class="linked-row">09-07-2021</td>
-<td width="50%" class="linked-row">U bent verantwoordelijke voor een nieuwe job: For first</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=0DB56EDA-B686-45B9-A122BBF6CFEF80F0" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="0DB56EDA-B686-45B9-A122BBF6CFEF80F0" type="checkbox">
-</td>
-<td width="25%" class="linked-row">06-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: Job for testing 1 user</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=314822E0-5AD6-4155-A857540584045FCE" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="314822E0-5AD6-4155-A857540584045FCE" type="checkbox">
-</td>
-<td width="25%" class="linked-row">06-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: For from Test</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=360F15A4-6BCE-46AE-9F953185F6BA748D" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="360F15A4-6BCE-46AE-9F953185F6BA748D" type="checkbox">
-</td>
-<td width="25%" class="linked-row">06-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: Job for testing 1 user</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=212ADFBF-E2D2-4F99-8891DCF5793CC991" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="212ADFBF-E2D2-4F99-8891DCF5793CC991" type="checkbox">
-</td>
-<td width="25%" class="linked-row">05-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de job waar u verantwoordelijk voor bent: For from Test</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=8D5F8796-CB3E-4912-8F871D99562758D6" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="8D5F8796-CB3E-4912-8F871D99562758D6" type="checkbox">
-</td>
-<td width="25%" class="linked-row">05-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: Job for testing 1 supplier</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=DA853F65-A3E1-4262-950526CFA40B85C6" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="DA853F65-A3E1-4262-950526CFA40B85C6" type="checkbox">
-</td>
-<td width="25%" class="linked-row">05-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de job waar u verantwoordelijk voor bent: Job for testing 1 user</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=DD85B475-9F9F-4D17-A5E1A902C7DDDBD4" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="DD85B475-9F9F-4D17-A5E1A902C7DDDBD4" type="checkbox">
-</td>
-<td width="25%" class="linked-row">05-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de job waar u verantwoordelijk voor bent: Job for testing 1 user</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=1522D30F-3381-4DF5-B6D68FFE03339C8B" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="1522D30F-3381-4DF5-B6D68FFE03339C8B" type="checkbox">
-</td>
-<td width="25%" class="linked-row">04-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de job waar u verantwoordelijk voor bent: Job for testing 1 supplier</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=3D96BAFE-5EF5-4824-B98D27667FC4857B" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="3D96BAFE-5EF5-4824-B98D27667FC4857B" type="checkbox">
-</td>
-<td width="25%" class="linked-row">03-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: Emergency Exists light Testing</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=A2EB2E40-3D63-4A92-99208DEE284D59DF" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="A2EB2E40-3D63-4A92-99208DEE284D59DF" type="checkbox">
-</td>
-<td width="25%" class="linked-row">02-07-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de job waar u verantwoordelijk voor bent: Emergency Exists light Testing</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=6B2D7491-1EF0-42DA-8FD22E9C204543E9" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="6B2D7491-1EF0-42DA-8FD22E9C204543E9" type="checkbox">
-</td>
-<td width="25%" class="linked-row">29-06-2021</td>
-<td width="50%" class="linked-row">U bent verantwoordelijke voor een nieuwe job: For from Test</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=A4109DCD-05E7-47FF-964FE8A4A9F74159" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="A4109DCD-05E7-47FF-964FE8A4A9F74159" type="checkbox">
-</td>
-<td width="25%" class="linked-row">29-06-2021</td>
-<td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen: test notification29</td>
-<td width="100%" class="linked-row">Melding</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=3242AC2F-5E4F-40C2-A180CD3A641F784D" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="3242AC2F-5E4F-40C2-A180CD3A641F784D" type="checkbox">
-</td>
-<td width="25%" class="linked-row">29-06-2021</td>
-<td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen: test 3</td>
-<td width="100%" class="linked-row">Melding</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=ED64BF91-465C-476F-AE62932C00289B96" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="ED64BF91-465C-476F-AE62932C00289B96" type="checkbox">
-</td>
-<td width="25%" class="linked-row">29-06-2021</td>
-<td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen: test 123</td>
-<td width="100%" class="linked-row">Melding</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=44A9BAD0-3091-42E9-BE2BB5DAA213187C" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="44A9BAD0-3091-42E9-BE2BB5DAA213187C" type="checkbox">
-</td>
-<td width="25%" class="linked-row">29-06-2021</td>
-<td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen: test notification</td>
-<td width="100%" class="linked-row">Melding</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=CA368173-D83E-4551-A8D98FB32938F212" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="CA368173-D83E-4551-A8D98FB32938F212" type="checkbox">
-</td>
-<td width="25%" class="linked-row">28-06-2021</td>
-<td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen: test 123</td>
-<td width="100%" class="linked-row">Melding</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=454C9EDB-2659-4751-BE0A08972C785682" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="454C9EDB-2659-4751-BE0A08972C785682" type="checkbox">
-</td>
-<td width="25%" class="linked-row">28-06-2021</td>
-<td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen: test nofication 14</td>
-<td width="100%" class="linked-row">Melding</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=11977451-2CD9-4821-9A3A5A81C269CB55" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="11977451-2CD9-4821-9A3A5A81C269CB55" type="checkbox">
-</td>
-<td width="25%" class="linked-row">28-06-2021</td>
-<td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job waar u uitvoerder voor bent: eenmalige job gebruiker</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=BE61DAB9-2B32-467F-8E009C24F2B9ED6D" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="BE61DAB9-2B32-467F-8E009C24F2B9ED6D" type="checkbox">
-</td>
-<td width="25%" class="linked-row">25-06-2021</td>
-<td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent is zojuist in de status 'Rood' gekomen.</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=2C8EE744-E2B4-4C09-8A1E2FD3ACD9A14A" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="2C8EE744-E2B4-4C09-8A1E2FD3ACD9A14A" type="checkbox">
-</td>
-<td width="25%" class="linked-row">25-06-2021</td>
-<td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent is zojuist in de status 'Rood' gekomen.</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read odd" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=765F6CDF-5189-41C0-BDD3E6024DC073A4" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="765F6CDF-5189-41C0-BDD3E6024DC073A4" type="checkbox">
-</td>
-<td width="25%" class="linked-row">25-06-2021</td>
-<td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent is zojuist in de status 'Rood' gekomen.</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-<tr class="generalTableItem generalTableItemIcon read even" data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=A4D81655-D33F-4B55-ABDD19011D7A753E" role="row">
-<td width="10%" class="first-column">
-<input class="notify-selected checkbox-big" name="notify-selected" value="A4D81655-D33F-4B55-ABDD19011D7A753E" type="checkbox">
-</td>
-<td width="25%" class="linked-row">25-06-2021</td>
-<td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent is zojuist in de status 'Rood' gekomen.</td>
-<td width="100%" class="linked-row">Job</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="col-md-12 ">
-<p class="note">
-Gelezen notificaties worden na 30 dagen automatisch verwijderd
-</p>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 submitButtonRight submitButtons">
-<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html#" class="greenBtn btn-del-color" style="display: none;" id="btnDelFolder" data-notification-del="" data-pageid="B504AE62-D026-4D0B-AF76E7DC9CB91C55" data-url="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_deleteNotification/">Verwijderen</a>
-<input type="hidden" name="notification_del" value="" id="inputDelNotify">
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-<footer class="footer container-fluid">
-<div class="container">
-<hr>
-<ul class="logo-footer">
-<li><a href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Hier kunt u via gebruikersinstellingen een eigen logo plaatsen</a></li>
-</ul>
-</div>
-</footer>
-<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-<h4 class="modal-title" id="modal_main_title">Let op</h4>
-</div>
-<div class="modal-body" id="modal_main_body">
-<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_btn_close">Annuleren</button>
-<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_btn_submit">Verwijderen</button>
-</div>
-</div>
-</div>
-</div>
-<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main_save">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-<h4 class="modal-title" id="modal_main_save_title">Let op</h4>
-</div>
-<div class="modal-body" id="modal_main_save_body">
-<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_save_btn_close">Annuleren</button>
-<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_save_btn_submit">Akkoord</button>
-</div>
-</div>
-</div>
-</div>
+    <div class="container-fluid collapse in" aria-expanded="true" style="">
+        <div class="row content collapse in" style="display: flex; align-items: stretch;" aria-expanded="true">
+            <div id="leftsidemenudiv" class="collapse in"
+                style="margin-left: 15px; background-color: white; min-width: 250px; max-width: 250px; transition: all 0.3s ease 0s; border-right: 1px solid rgb(247, 247, 247);"
+                aria-expanded="true">
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper" style="margin-top: 10px; padding-left: 10px;" aria-expanded="true"
+                    class="collapse in">
+                    <a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html"
+                        style="outline: none; text-decoration: none; ">
+                        <img id="logofps" class="img-responsive" src="./Notificaties_files/FPS-Logo.png"
+                            style="height:58px;">
+                    </a>
+                    <div style="margin-top:40px;" class="menutext"><a
+                            href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html#">Menu</a></div>
+                    <ul class="sidebar-nav list-unstyled collapse in" style="margin-top: 30px; padding-left: 20px;"
+                        aria-expanded="true">
+                        <li class="sidebar-brand menuliparent">
+                        </li>
+                        <li class="menuliparent closecollapseall">
+                            <a data-toggle="collapse"
+                                href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html#collapse2"
+                                class="caretevent"><i class="fa fa-dashboard fa-lg" aria-hidden="true"></i> <span
+                                    class="hidetitle">Dashboard </span><span class="caret addcaret"></span></a>
+                            <ul class="list-group panel-collapse collapse" id="collapse2">
+                                <li class="list-group-item"><a
+                                        href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Module</a>
+                                </li>
+                                <li class="list-group-item"><a
+                                        href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Profiel</a>
+                                </li>
+                                <li class="list-group-item"><a
+                                        href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html">Locatie</a>
+                                </li>
+                                <li class="list-group-item"><a
+                                        href="https://staging-redesign-app.k8s.fpsupport.nl/rapportages-zoeken.html">Rapportages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menuliparent activemenu collapse in" aria-expanded="true" style="">
+                            <a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"><i
+                                    class="fa fa-bell fa-lg" aria-hidden="true"></i> <span
+                                    class="hidetitle">Notificaties </span>
+                                <span class="badge hidetitle" style="background-color:red;margin-left:70px;">4</span>
+                            </a>
+                        </li>
+                        <li class="menuliparent">
+                            <a href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html"><i
+                                    class="fa fa-cog fa-lg" aria-hidden="true"></i> <span class="hidetitle">Beheer
+                                </span></a>
+                        </li>
+                        <li class="menuliparent">
+                            <a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html"><i
+                                    class="fa fa-asterisk fa-lg" aria-hidden="true"></i> <span class="hidetitle">Melding
+                                    overzicht </span></a>
+                        </li>
+                        <li class="menuliparent">
+                            <a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html"><i
+                                    class="fa fa-file fa-lg" aria-hidden="true"></i> <span class="hidetitle">Formulier
+                                    overzicht </span></a>
+                        </li>
+                        <li class="menuliparent closecollapseall">
+                            <a data-toggle="collapse"
+                                href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html#collapse1"><i
+                                    class="fa fa-plus fa-lg" aria-hidden="true"></i> <span class="hidetitle">Aanmaken
+                                </span><span class="caret addcaret"></span></a>
+                            <ul class="list-group panel-collapse collapse" id="collapse1">
+                                <li class="list-group-item"><a
+                                        href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job</a></li>
+                                <li class="list-group-item"><a
+                                        href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding</a>
+                                </li>
+                                <li class="list-group-item"><a
+                                        href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker</a>
+                                </li>
+                                <li class="list-group-item"><a
+                                        href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div style="margin-top:80px;padding-left:20px;padding-bottom:20px;" class="closediv">
+                        <a href="javascript: void(0)" id="closeleftmenu">
+                            <span class="badge" style="background-color:#18A5A5;border-radius: 50%;line-height: unset;"
+                                id="closemenuicon">&lt;</span>
+                            <span class="hidetitle">Menu inklappen</span>
+                        </a>
+                    </div>
+                </div>
+                <style>
+                    .menuliparent {
+                        margin-bottom: 40px;
+                        color: rgba(130, 130, 130, 1);
+                        font-style: normal;
+                        font-family: Poppins;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 212.50000596046448%;
+                    }
 
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery-1.11.2.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/bootstrap-datepicker.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/locales/bootstrap-datepicker.nl.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/dropzone.js"></script>
-<script src="https://browser.sentry-cdn.com/5.23.0/bundle.min.js" integrity="sha384-5yYHk2XjpqhbWfLwJrxsdolnhl+HfgEnD1UhVzAs6Kd2fx+ZoD0wBFjd65mWgZOG"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/init-sentry.js" selectorid="sentry" sentry_api_key="https://69a1bba9d92c421cb24c6c585ede4518:2303e5aceeea48519ca1433d66168c27@sentry.k8s.mytoomba.nl/33" sentry_environment="production"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/main.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/pages/reports-search.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/select2.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/i18n/nl.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/transition.min.js"></script>
-<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery.validate.min.js"></script>
+                    .menuliparent a i {
+                        margin-right: 5px;
+                    }
+
+                    .menuliparent ul {
+                        padding-left: 20px;
+                    }
+
+                    .menuliparent ul li {
+                        border: none;
+                    }
+
+                    .caret.caret-up {
+                        border-top-width: 0;
+                        border-bottom: 4px solid;
+                    }
+
+                    .caret {
+                        margin-left: 80px;
+                    }
+
+                    .activemenu a {
+                        color: rgba(51, 51, 51, 1);
+                        font-weight: 600;
+                    }
+
+                    #leftsidemenudiv.active {
+                        min-width: 125px !important;
+                        max-width: 125px !important;
+                        text-align: center !important;
+                    }
+
+                    #leftsidemenudiv.active .caret {
+                        margin-left: 10px;
+                    }
+
+                    #leftsidemenudiv.active .hidetitle {
+                        display: none;
+                    }
+
+                    #leftsidemenudiv.active .menuliparent ul {
+                        padding-left: 0px;
+                        text-align: left;
+                    }
+
+                    #leftsidemenudiv.active .sidebar-nav {
+                        padding-left: 0px !important;
+                    }
+
+                    #leftsidemenudiv.active .closediv {
+                        padding-left: 0px !important;
+                        padding-right: 40px;
+                    }
+
+                    #leftsidemenudiv.active .menutext {
+                        text-align: left !important;
+                    }
+
+                    #leftsidemenudiv.active #logofps {
+                        padding-left: 20px;
+                    }
+
+                    #leftsidemenudiv.active .menuliparent.closecollapseall a {
+                        padding-right: 20px;
+                    }
+
+                    #leftsidemenudiv.active .menuliparent a {
+                        padding-right: 40px;
+                    }
+                </style>
+            </div>
+            <div class="" style="padding-left: 1px;width: 100%;;min-height: 100vh;transition: all 0.3s;">
+                <nav class="navbar"
+                    style="padding-top:10px;padding-right:10px;background-color:white;margin-bottom:0px;">
+                    <div class="container-fluid" style="margin-left:-30px;">
+                        <form class="navbar-form navbar-left"
+                            action="https://staging-redesign-app.k8s.fpsupport.nl/search-dashboard.html"
+                            style="margin-top:-5px;width:100%;">
+                            <div class="input-group input-lg" style="width:15%;">
+                                <select class=" object-picker non-deselectable" name="searchType" id="searchType"
+                                    tabindex="1" data-placeholder="Please select type of search" data-sortable="false"
+                                    data-value="job" data-display-limit="0">
+                                    <option value="job" selected="selected">
+                                        Job
+                                    </option>
+                                    <option value="meldingen">
+                                        Meldingen
+                                    </option>
+                                    <option value="documenten">
+                                        Documenten
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="input-group input-group-lg" style="width:65%;">
+                                <input type="text" class="form-control" name="search" value=""
+                                    placeholder="Waar ben je naar op zoek?"
+                                    style="border-right:none;padding:20px 10px;">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+                                <div class="dropdown nav navbar-nav ">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                        style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i
+                                            class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" style="min-width: 210px;">
+                                        <li><a tabindex="-1"
+                                                href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true"
+                                                    style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1"
+                                                href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Meldding
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true"
+                                                    style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1"
+                                                href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true"
+                                                    style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1"
+                                                href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true"
+                                                    style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1"
+                                                href="https://staging-redesign-app.k8s.fpsupport.nl/leverancier-overzicht.html">Leverancier
+                                                aanmaken <i class="fa fa-plus" aria-hidden="true"
+                                                    style="float: right;"></i></a></li>
+                                    </ul>
+                                </div>
+                                <a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"
+                                    class="nav navbar-nav" style="margin-left: 5px;margin-right: 15px;">
+                                    <span class="fa-stack fa-2x" data-count="4">
+                                        <i class="fa fa-bell fa-stack-1x" style="color:black;"></i>
+                                    </span>
+                                </a>
+                                <div class="dropdown nav navbar-nav">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                        style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i
+                                            class="fa fa-user" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" style="min-width: 200px;">
+                                        <li><a tabindex="-1"
+                                                href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Mijn
+                                                profiel <i class="fa fa-user" aria-hidden="true"
+                                                    style="float: right;"></i></a></li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1"
+                                                href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Instellingen
+                                                <i class="fa fa-cog" aria-hidden="true" style="float: right;"></i></a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a tabindex="-1"
+                                                href="https://staging-redesign-app.k8s.fpsupport.nl/login/logout/"
+                                                style="color:#CD0000;">Uitloggen <i class="fa fa-sign-out"
+                                                    aria-hidden="true" style="float: right;"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+                <style>
+                    #searchType {
+                        height: 46px;
+                    }
+
+                    .fa-stack[data-count]:after {
+                        position: absolute;
+                        right: 0%;
+                        top: 1%;
+                        content: attr(data-count);
+                        font-size: 30%;
+                        padding: .6em;
+                        border-radius: 999px;
+                        line-height: .75em;
+                        color: white;
+                        background: rgba(255, 0, 0, .85);
+                        text-align: center;
+                        min-width: 2em;
+                        font-weight: bold;
+                    }
+                </style>
+                <style type="text/css">
+                    .note {
+                        padding: 20px;
+                        font-style: italic;
+                        background-color: #f3fafa;
+                        font-weight: 800;
+                        color: #18a5a5;
+                        text-align: center;
+                    }
+
+                    .generalTableItem td {
+                        font-weight: bold !important;
+                    }
+
+                    .generalTableItem.read td {
+                        font-weight: normal !important;
+                    }
+
+                    .generalTable .first-column {
+                        text-align: center;
+                    }
+
+                    .submitButtons .greenBtn {
+                        margin-right: 0px;
+                    }
+                </style>
+                <div class="">
+                    <div class="breadcrumbsWrapper">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1>
+                                                <span style="width: auto; position: relative;"
+                                                    class="title-page-head">Notificaties
+                                                    <i class="help-text-button fa fa-question" data-rel="popover"
+                                                        data-trigger="hover" data-placement="bottom"
+                                                        data-content="De notificaties geven de jobs en meldingen aan die u uit dient te voeren of waar u verantwoordelijk voor bent."
+                                                        data-html="true" data-original-title="" title=""></i>
+                                                </span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="" style="padding-top: 30px;padding-left: 10px;">
+                                        <div class="checkbox">
+                                            <span style="">Toon geschiedenis</span>
+                                            <div class="toggle btn btn-default off btn-sm fps-toggle"
+                                                data-toggle="toggle" style="width: 65px; height: 30px;"><input
+                                                    type="checkbox" data-size="small" data-toggle="toggle"
+                                                    data-style="fps-toggle" id="show-jobs" name="show-jobs">
+                                                <div class="toggle-group"><label
+                                                        class="btn btn-primary btn-sm toggle-on">Ja</label><label
+                                                        class="btn btn-default btn-sm active toggle-off">Nee</label><span
+                                                        class="toggle-handle btn btn-default btn-sm"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="main">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 generalTable rechtenOverzicht">
+                                <table class="tablesorter tablesorter-default hasFilters" cell-spacing="3" role="grid">
+                                    <thead>
+                                        <tr role="row" class="tablesorter-headerRow">
+                                            <th class="generalTableHeader hidden-xs roundBorders greenHeader sorter-false tablesorter-header tablesorter-headerUnSorted"
+                                                width="10%" style="text-align: center; user-select: none;"
+                                                data-column="0" scope="col" role="columnheader" aria-disabled="true"
+                                                unselectable="on" aria-sort="none"
+                                                aria-label=": No sort applied, sorting is disabled">
+                                                <div class="tablesorter-header-inner">
+                                                    <input id="notify-selected-all" type="checkbox"
+                                                        class="checkbox-big">
+                                                </div>
+                                            </th>
+                                            <th class="generalTableHeader hidden-xs greenHeader tablesorter-header tablesorter-headerUnSorted"
+                                                width="25%" data-column="1" tabindex="0" scope="col" role="columnheader"
+                                                aria-disabled="false" unselectable="on" aria-sort="none"
+                                                aria-label="Datum: No sort applied, activate to apply an ascending sort"
+                                                style="user-select: none;">
+                                                <div class="tablesorter-header-inner">Datum </div>
+                                            </th>
+                                            <th class="generalTableHeader roundBorders greenHeader tablesorter-header tablesorter-headerUnSorted"
+                                                width="50%" data-column="2" tabindex="0" scope="col" role="columnheader"
+                                                aria-disabled="false" unselectable="on" aria-sort="none"
+                                                aria-label="Notificatie: No sort applied, activate to apply an ascending sort"
+                                                style="user-select: none;">
+                                                <div class="tablesorter-header-inner">Notificatie</div>
+                                            </th>
+                                            <th class="generalTableHeader hidden-xs roundBorders greenHeader tablesorter-header tablesorter-headerUnSorted"
+                                                width="100%" data-column="3" tabindex="0" scope="col"
+                                                role="columnheader" aria-disabled="false" unselectable="on"
+                                                aria-sort="none"
+                                                aria-label="Type: No sort applied, activate to apply an ascending sort"
+                                                style="user-select: none;">
+                                                <div class="tablesorter-header-inner">Type</div>
+                                            </th>
+                                        </tr>
+                                        <tr role="row" class="tablesorter-filter-row tablesorter-ignoreRow">
+                                            <td data-column="0"><input type="search" placeholder=""
+                                                    class="tablesorter-filter disabled" data-column="0" disabled=""
+                                                    data-lastsearchtime="1627187478285"></td>
+                                            <td data-column="1"><input type="search" placeholder="Zoeken"
+                                                    class="tablesorter-filter" data-column="1"
+                                                    data-lastsearchtime="1627187478285"></td>
+                                            <td data-column="2"><input type="search" placeholder="Zoeken"
+                                                    class="tablesorter-filter" data-column="2"
+                                                    data-lastsearchtime="1627187478285"></td>
+                                            <td data-column="3"><input type="search" placeholder="Zoeken"
+                                                    class="tablesorter-filter" data-column="3"
+                                                    data-lastsearchtime="1627187478285"></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody aria-live="polite" aria-relevant="all">
+                                        <tr class="generalTableItem generalTableItemIcon odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=AA70DC89-F083-48E7-8574CC1B808B074F"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="AA70DC89-F083-48E7-8574CC1B808B074F" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">24-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: SafetyTest</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=67E4B36D-609F-467A-8DC6D2C961309A71"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="67E4B36D-609F-467A-8DC6D2C961309A71" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">27-06-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de
+                                                job waar u verantwoordelijk voor bent: eenmalige job gebruiker</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=FC5037C5-0572-4BEF-9DA8A885527FA02D"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="FC5037C5-0572-4BEF-9DA8A885527FA02D" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">25-06-2021</td>
+                                            <td width="50%" class="linked-row">U bent verantwoordelijke voor een nieuwe
+                                                job: testjob temp25</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=A66FF291-4157-4BE6-A72235B852CC476F"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="A66FF291-4157-4BE6-A72235B852CC476F" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">25-06-2021</td>
+                                            <td width="50%" class="linked-row">U bent verantwoordelijke voor een nieuwe
+                                                job: ChithraTest</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=769C7469-75E5-42C6-ABA3E90806A8841B"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="769C7469-75E5-42C6-ABA3E90806A8841B" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">24-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: First safety test</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=710098C3-0B7C-4183-B79C6649F04180BC"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="710098C3-0B7C-4183-B79C6649F04180BC" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">20-07-2021</td>
+                                            <td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent
+                                                is zojuist in de status 'Rood' gekomen.</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=16268FB8-4F9C-4525-89C23CB2BF1EACCD"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="16268FB8-4F9C-4525-89C23CB2BF1EACCD" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">20-07-2021</td>
+                                            <td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent
+                                                is zojuist in de status 'Rood' gekomen.</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=49B00A58-B0E6-468E-8E592784E7159B39"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="49B00A58-B0E6-468E-8E592784E7159B39" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">20-07-2021</td>
+                                            <td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent
+                                                is zojuist in de status 'Rood' gekomen.</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=08ACC49B-C888-4462-A2E4BEC457BF0876"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="08ACC49B-C888-4462-A2E4BEC457BF0876" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">20-07-2021</td>
+                                            <td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent
+                                                is zojuist in de status 'Rood' gekomen.</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=213FB9ED-EBDF-4698-8D88AD44FF6FE476"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="213FB9ED-EBDF-4698-8D88AD44FF6FE476" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">20-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: safety test 1</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=DE7E9183-DBB5-4ED2-A248C27ABC03867A"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="DE7E9183-DBB5-4ED2-A248C27ABC03867A" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">19-07-2021</td>
+                                            <td width="50%" class="linked-row">Er is een nieuwe job aan u toegewezen:
+                                                safety test 1</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=2BD53672-8800-4310-9006A78E30726FFB"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="2BD53672-8800-4310-9006A78E30726FFB" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">09-07-2021</td>
+                                            <td width="50%" class="linked-row">U bent verantwoordelijke voor een nieuwe
+                                                job: For first</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=0DB56EDA-B686-45B9-A122BBF6CFEF80F0"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="0DB56EDA-B686-45B9-A122BBF6CFEF80F0" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">06-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: Job for testing 1 user</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=314822E0-5AD6-4155-A857540584045FCE"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="314822E0-5AD6-4155-A857540584045FCE" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">06-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: For from Test</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=360F15A4-6BCE-46AE-9F953185F6BA748D"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="360F15A4-6BCE-46AE-9F953185F6BA748D" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">06-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: Job for testing 1 user</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=212ADFBF-E2D2-4F99-8891DCF5793CC991"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="212ADFBF-E2D2-4F99-8891DCF5793CC991" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">05-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de
+                                                job waar u verantwoordelijk voor bent: For from Test</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=8D5F8796-CB3E-4912-8F871D99562758D6"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="8D5F8796-CB3E-4912-8F871D99562758D6" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">05-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: Job for testing 1 supplier</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=DA853F65-A3E1-4262-950526CFA40B85C6"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="DA853F65-A3E1-4262-950526CFA40B85C6" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">05-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de
+                                                job waar u verantwoordelijk voor bent: Job for testing 1 user</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=DD85B475-9F9F-4D17-A5E1A902C7DDDBD4"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="DD85B475-9F9F-4D17-A5E1A902C7DDDBD4" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">05-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de
+                                                job waar u verantwoordelijk voor bent: Job for testing 1 user</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=1522D30F-3381-4DF5-B6D68FFE03339C8B"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="1522D30F-3381-4DF5-B6D68FFE03339C8B" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">04-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de
+                                                job waar u verantwoordelijk voor bent: Job for testing 1 supplier</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=3D96BAFE-5EF5-4824-B98D27667FC4857B"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="3D96BAFE-5EF5-4824-B98D27667FC4857B" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">03-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: Emergency Exists light Testing</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=A2EB2E40-3D63-4A92-99208DEE284D59DF"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="A2EB2E40-3D63-4A92-99208DEE284D59DF" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">02-07-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Oranje' bij de
+                                                job waar u verantwoordelijk voor bent: Emergency Exists light Testing
+                                            </td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=6B2D7491-1EF0-42DA-8FD22E9C204543E9"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="6B2D7491-1EF0-42DA-8FD22E9C204543E9" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">29-06-2021</td>
+                                            <td width="50%" class="linked-row">U bent verantwoordelijke voor een nieuwe
+                                                job: For from Test</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=A4109DCD-05E7-47FF-964FE8A4A9F74159"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="A4109DCD-05E7-47FF-964FE8A4A9F74159" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">29-06-2021</td>
+                                            <td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen:
+                                                test notification29</td>
+                                            <td width="100%" class="linked-row">Melding</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=3242AC2F-5E4F-40C2-A180CD3A641F784D"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="3242AC2F-5E4F-40C2-A180CD3A641F784D" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">29-06-2021</td>
+                                            <td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen:
+                                                test 3</td>
+                                            <td width="100%" class="linked-row">Melding</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=ED64BF91-465C-476F-AE62932C00289B96"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="ED64BF91-465C-476F-AE62932C00289B96" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">29-06-2021</td>
+                                            <td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen:
+                                                test 123</td>
+                                            <td width="100%" class="linked-row">Melding</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=44A9BAD0-3091-42E9-BE2BB5DAA213187C"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="44A9BAD0-3091-42E9-BE2BB5DAA213187C" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">29-06-2021</td>
+                                            <td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen:
+                                                test notification</td>
+                                            <td width="100%" class="linked-row">Melding</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=CA368173-D83E-4551-A8D98FB32938F212"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="CA368173-D83E-4551-A8D98FB32938F212" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">28-06-2021</td>
+                                            <td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen:
+                                                test 123</td>
+                                            <td width="100%" class="linked-row">Melding</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=454C9EDB-2659-4751-BE0A08972C785682"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="454C9EDB-2659-4751-BE0A08972C785682" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">28-06-2021</td>
+                                            <td width="50%" class="linked-row">Er is een nieuwe melding binnengekomen:
+                                                test nofication 14</td>
+                                            <td width="100%" class="linked-row">Melding</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=11977451-2CD9-4821-9A3A5A81C269CB55"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="11977451-2CD9-4821-9A3A5A81C269CB55" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">28-06-2021</td>
+                                            <td width="50%" class="linked-row">Status verandering naar 'Rood' bij de job
+                                                waar u uitvoerder voor bent: eenmalige job gebruiker</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=BE61DAB9-2B32-467F-8E009C24F2B9ED6D"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="BE61DAB9-2B32-467F-8E009C24F2B9ED6D" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">25-06-2021</td>
+                                            <td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent
+                                                is zojuist in de status 'Rood' gekomen.</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=2C8EE744-E2B4-4C09-8A1E2FD3ACD9A14A"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="2C8EE744-E2B4-4C09-8A1E2FD3ACD9A14A" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">25-06-2021</td>
+                                            <td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent
+                                                is zojuist in de status 'Rood' gekomen.</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read odd"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=765F6CDF-5189-41C0-BDD3E6024DC073A4"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="765F6CDF-5189-41C0-BDD3E6024DC073A4" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">25-06-2021</td>
+                                            <td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent
+                                                is zojuist in de status 'Rood' gekomen.</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                        <tr class="generalTableItem generalTableItemIcon read even"
+                                            data-href="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_linkedNotification/?nid=A4D81655-D33F-4B55-ABDD19011D7A753E"
+                                            role="row">
+                                            <td width="10%" class="first-column">
+                                                <input class="notify-selected checkbox-big" name="notify-selected"
+                                                    value="A4D81655-D33F-4B55-ABDD19011D7A753E" type="checkbox">
+                                            </td>
+                                            <td width="25%" class="linked-row">25-06-2021</td>
+                                            <td width="50%" class="linked-row">De job waar u verantwoordelijk voor bent
+                                                is zojuist in de status 'Rood' gekomen.</td>
+                                            <td width="100%" class="linked-row">Job</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-12 ">
+                                <p class="note">
+                                    Gelezen notificaties worden na 30 dagen automatisch verwijderd
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 submitButtonRight submitButtons">
+                                <a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html#"
+                                    class="greenBtn btn-del-color" style="display: none;" id="btnDelFolder"
+                                    data-notification-del="" data-pageid="B504AE62-D026-4D0B-AF76E7DC9CB91C55"
+                                    data-url="https://staging-redesign-app.k8s.fpsupport.nl/page-types/notification_overview/_deleteNotification/">Verwijderen</a>
+                                <input type="hidden" name="notification_del" value="" id="inputDelNotify">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer container-fluid">
+            <div class="container">
+                <hr>
+                <ul class="logo-footer">
+                    <li><a href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Hier kunt u
+                            via gebruikersinstellingen een eigen logo plaatsen</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="modal_main_title">Let op</h4>
+                    </div>
+                    <div class="modal-body" id="modal_main_body">
+                        <p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"
+                            id="modal_main_btn_close">Annuleren</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"
+                            id="modal_main_btn_submit">Verwijderen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main_save">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="modal_main_save_title">Let op</h4>
+                    </div>
+                    <div class="modal-body" id="modal_main_save_body">
+                        <p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"
+                            id="modal_main_save_btn_close">Annuleren</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"
+                            id="modal_main_save_btn_submit">Akkoord</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery-1.11.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/bootstrap-datepicker.js"></script>
+        <script
+            src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/locales/bootstrap-datepicker.nl.js"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/dropzone.js"></script>
+        <script src="https://browser.sentry-cdn.com/5.23.0/bundle.min.js"
+            integrity="sha384-5yYHk2XjpqhbWfLwJrxsdolnhl+HfgEnD1UhVzAs6Kd2fx+ZoD0wBFjd65mWgZOG"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/init-sentry.js" selectorid="sentry"
+            sentry_api_key="https://69a1bba9d92c421cb24c6c585ede4518:2303e5aceeea48519ca1433d66168c27@sentry.k8s.mytoomba.nl/33"
+            sentry_environment="production"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/main.js"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/pages/reports-search.js"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/select2.js"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/i18n/nl.js"></script>
+        <script
+            src="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/transition.min.js"></script>
+        <script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery.validate.min.js"></script>
 
 
 
-<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="index.css"> 
-<link rel="stylesheet" type="text/css" href="material-form.css"> 
-<script src='_logo.js'></script>
-<script src='_menu.js'></script>
-<script src="index.js"></script>
-</div><style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style></body></html>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="material-form.css">
+        <script src='_logo.js'></script>
+        <script src='_menu.js'></script>
+        <script src="index.js"></script>
+    </div>
+    <style>
+        body.tablesorter-disableSelection {
+            -ms-user-select: none;
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .tablesorter-resizable-container {
+            position: relative;
+            height: 1px;
+        }
+
+        .tablesorter-resizable-handle {
+            position: absolute;
+            display: inline-block;
+            width: 8px;
+            top: 1px;
+            cursor: ew-resize;
+            z-index: 3;
+            user-select: none;
+            -moz-user-select: none;
+        }
+    </style>
+</body>
+
+</html>
