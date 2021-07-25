@@ -30,8 +30,6 @@ $(document).ready( function() {
     $("#main .panel-group .col-md-4").removeClass("col-md-4").addClass("col-lg-6 col-xl-4")
 
     // avanken local
-    $('#main .bg-white').removeClass('bg-white')
-
-    
+    $('#main.locationsOverview .bg-white').removeClass('bg-white')
 });
 
