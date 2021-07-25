@@ -26,7 +26,7 @@ var menu = `
         aria-hidden="true"></i> <span class="hidetitle">Beheer </span></a>
   </li>
   <li class="menuliparent">
-    <a href="_Meldingenoverzicht.html"><i class="fa fa-asterisk fa-lg"
+    <a href="_MeldingenOverzicht.html"><i class="fa fa-asterisk fa-lg"
         aria-hidden="true"></i> <span class="hidetitle">Melding overzicht </span></a>
   </li>
   <li class="menuliparent">
