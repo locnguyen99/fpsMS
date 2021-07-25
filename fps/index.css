@@ -341,9 +341,11 @@ a.nav.navbar-nav{
 }
 
 /* button */
-#closeleftmenu span:first {
+#closeleftmenu .badge {
     border-radius: 50%;
     font-size: 24px !important;
+    width: 40px;
+    width: 40px;
 }
 i.fa.fa-bell.fa-stack-1x {
     color: rgba(130, 130, 130, 1) !important;
@@ -710,6 +712,19 @@ a.btn.btn-top-delete i,
 a.btn.btn-top-delete span{
     color: rgba(205, 0, 0,.6) !important;
 }
+/* button btn-top-greybg */
+a.btn.btn-top-greybg:hover {
+    background-color:  rgba(130, 130, 130, 1) !important;
+}
+.btn-top-greybg:hover i,
+.btn-top-greybg:hover span{
+    color: white !important;
+}
+.btn-top-greybg i,
+.btn-top-greybg span{
+    color: rgba(130, 130, 130, 1) !important;
+}
+
 
 .bg-white .panel-group {
     padding: 0px 15px;
