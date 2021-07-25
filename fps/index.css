@@ -573,6 +573,12 @@ i.fa.fa-bell.fa-stack-1x:hover  {
 .flex-space-between .submitButtonRight .btn {
     margin-left: 15px;
 }
+.flex-space-between .submitButtonRight .btn:hover {
+    background-color: #18A5A5 !important;
+}
+.flex-space-between .submitButtonRight .btn:hover span {
+    color: white !important; 
+}
 #main:hover {
     overflow-y: auto;
     overflow: overlay;
