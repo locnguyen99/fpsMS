@@ -18,12 +18,21 @@ h1 {
     max-width: 450px;
 }
 
+
+
 /* Actual code example */
 .form-field {
     display: block;
     margin-bottom: 16px;
 }
 
+.form-field label {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0px;
+    text-transform: capitalize !important;
+}
 .form-field__label {
     /* font-size: 0.75rem; */
     font-size: 90%;
@@ -80,7 +89,7 @@ h1 {
     font-size: 120%;
     margin-top: 30px;
     outline: 0;
-    padding: 0 30px 10px 30px;
+    padding: 0 30px 10px 30px !important;
     width: 100%;
 }
 
