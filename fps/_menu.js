@@ -1,4 +1,3 @@
-
 var menu = `
 <ul class="sidebar-nav list-unstyled" style="margin-top:30px;padding-left:20px;">
   <li class="sidebar-brand menuliparent">
@@ -39,15 +38,14 @@ var menu = `
         class="fa fa-plus fa-lg" aria-hidden="true"></i> <span class="hidetitle">Aanmaken </span><span
         class="caret addcaret"></span></a>
     <ul class="list-group panel-collapse collapse" id="collapse1">
-      <li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job</a></li>
+      <li class="list-group-item"><a href="_Job modules.html">Job</a></li>
       <li class="list-group-item"><a
-          href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding</a></li>
+          href="_Aanmaken Melding.html">Melding</a></li>
       <li class="list-group-item"><a
-          href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker</a></li>
+          href="_Gebruikers overzicht.html">Gebruiker</a></li>
       <li class="list-group-item"><a
-          href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie</a></li>
+          href="_Locaties overzicht.html">Locatie</a></li>
     </ul>
   </li>
 </ul>
 `
-
