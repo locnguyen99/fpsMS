@@ -1,3 +1,4 @@
+
 var menu = `
 <ul class="sidebar-nav list-unstyled" style="margin-top:30px;padding-left:20px;">
   <li class="sidebar-brand menuliparent">
@@ -22,7 +23,7 @@ var menu = `
     </a>
   </li>
   <li class="menuliparent">
-    <a href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html"><i class="fa fa-cog fa-lg"
+    <a href="_Beheer.html"><i class="fa fa-cog fa-lg"
         aria-hidden="true"></i> <span class="hidetitle">Beheer </span></a>
   </li>
   <li class="menuliparent">
