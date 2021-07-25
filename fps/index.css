@@ -377,7 +377,7 @@ input,
 
 .dropdown .toggle,
 .btn.btn-top-greenbg,
-.dropdown.nav.navbar-nav button {
+.dropdown.nav.navbar-nav .btn {
     background-color: rgba(24, 165, 165) !important;
     border-radius: 8px !important;
     color: white !important;
@@ -784,3 +784,21 @@ tr.subModuleButton.linked-element{
     padding: 0px !important;
     border-radius: 50% !important;
 }
+.tablesorter-filter {
+    background-image: url(./Vector.png) !important;
+}
+.tablesorter-filter:hover,
+.tablesorter-filter:focus {
+    background-image: url(./Vector.png) !important;
+
+}
+.user-bg {
+    background-image: url(./avatar.png) !important;
+    background-color: transparent !important;
+    width: 60px !important;
+    height: 60px !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-repeat: no-repeat;
+}
+

@@ -32,6 +32,15 @@ $(document).ready(function () {
     // avanken local
     $('#main.locationsOverview .bg-white').removeClass('bg-white')
 
+    //avatar
+    $('i.fa.fa-user').parent().addClass('user-bg');
+    $('i.fa.fa-user').remove();
+    $('.user-bg').removeClass('btn');
+
+    //checkbox
+    var myCheckbox = $('.my-controls .chk-container').clone();
+    $('input[type=checkbox]').replaceWith($(myCheckbox));
+    
 
     // $('#closeleftmenu .badge').html("<i class='fa fa-angle-left'></i>");
     // var target = document.querySelector('#leftsidemenudiv')
