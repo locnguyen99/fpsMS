@@ -1,4 +1,4 @@
-body {
+ody {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 150%;
@@ -748,4 +748,12 @@ tr.subModuleButton.linked-element{
 }
 .generalTable  {
     border-radius: 8px;
+}
+.generalTableItem.moduleSub td,
+.generalTableHeader.roundBorders.greenHeader {
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.collapse.in td table {
+    padding-left: 20px;
 }
