@@ -31,7 +31,7 @@ var menu = `
         aria-hidden="true"></i> <span class="hidetitle">Melding overzicht </span></a>
   </li>
   <li class="menuliparent">
-    <a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html"><i class="fa fa-file fa-lg"
+    <a href="_Formulieren.html"><i class="fa fa-file fa-lg"
         aria-hidden="true"></i> <span class="hidetitle">Formulier overzicht </span></a>
   </li>
   <li class="menuliparent closecollapseall">
@@ -50,3 +50,4 @@ var menu = `
   </li>
 </ul>
 `
+

@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html -->
+<html lang="nl" aria-expanded="true" class="collapse in" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Formulieren</title>
+<!-- header -->
+
+<link rel="shortcut icon" href="https://staging-redesign-app.k8s.fpsupport.nl/faviconAnsul.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/bootstrap-datepicker3.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customstyle.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customStyleLasted.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/select2.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/css/bootstrap-toggle.min.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/transition.min.css">
+<script src="https://www.google-analytics.com/analytics.js"></script>
+
+
+<style>
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+}
+/* Set gray background color and 100% height */
+.sidenav {
+background-color: #f1f1f1;
+height: 100%;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {
+height: auto;
+}
+}
+</style>
+</head>
+<body class="collapse in" style="overflow-x: hidden;" aria-expanded="true" cz-shortcut-listen="true">
+<div class="container-fluid collapse in" aria-expanded="true" style="">
+<div class="row content collapse in" style="display: flex; align-items: stretch;" aria-expanded="true">
+<div id="leftsidemenudiv" class="collapse in" style="margin-left: 15px; background-color: white; min-width: 250px; max-width: 250px; transition: all 0.3s ease 0s; border-right: 1px solid rgb(247, 247, 247);" aria-expanded="true">
+<!-- Sidebar -->
+<div id="sidebar-wrapper" style="margin-top: 10px; padding-left: 10px;" aria-expanded="true" class="collapse in">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html" style="outline: none; text-decoration: none; ">
+<img id="logofps" class="img-responsive" src="./Formulieren_files/FPS-Logo.png" style="height:58px;">
+</a>
+<div style="margin-top:40px;" class="menutext"><a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html#">Menu</a></div>
+<ul class="sidebar-nav list-unstyled collapse in" style="margin-top: 30px; padding-left: 20px;" aria-expanded="true">
+<li class="sidebar-brand menuliparent">
+</li>
+<li class="menuliparent closecollapseall">
+<a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html#collapse2" class="caretevent"><i class="fa fa-dashboard fa-lg" aria-hidden="true"></i> <span class="hidetitle">Dashboard </span><span class="caret addcaret"></span></a>
+<ul class="list-group panel-collapse collapse" id="collapse2">
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Module</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Profiel</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html">Locatie</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/rapportages-zoeken.html">Rapportages</a></li>
+</ul>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"><i class="fa fa-bell fa-lg" aria-hidden="true"></i> <span class="hidetitle">Notificaties </span>
+<span class="badge hidetitle" style="background-color:red;margin-left:70px;">4</span>
+</a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> <span class="hidetitle">Beheer </span></a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html"><i class="fa fa-asterisk fa-lg" aria-hidden="true"></i> <span class="hidetitle">Melding overzicht </span></a>
+</li>
+<li class="menuliparent activemenu collapse in" aria-expanded="true" style="">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html"><i class="fa fa-file fa-lg" aria-hidden="true"></i> <span class="hidetitle">Formulier overzicht </span></a>
+</li>
+<li class="menuliparent closecollapseall">
+<a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html#collapse1"><i class="fa fa-plus fa-lg" aria-hidden="true"></i> <span class="hidetitle">Aanmaken </span><span class="caret addcaret"></span></a>
+<ul class="list-group panel-collapse collapse" id="collapse1">
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie</a></li>
+</ul>
+</li>
+</ul>
+<div style="margin-top:80px;padding-left:20px;padding-bottom:20px;" class="closediv">
+<a href="javascript: void(0)" id="closeleftmenu">
+<span class="badge" style="background-color:#18A5A5;border-radius: 50%;line-height: unset;" id="closemenuicon">&lt;</span>
+<span class="hidetitle">Menu inklappen</span>
+</a>
+</div>
+</div>
+<style>
+.menuliparent {
+margin-bottom:40px;
+color: rgba(130, 130, 130, 1);
+font-style: normal;
+font-family: Poppins;
+font-weight: 600;
+font-size: 16px;
+line-height: 212.50000596046448%;
+}
+.menuliparent a i {
+margin-right:5px;
+}
+.menuliparent ul {
+padding-left:20px;
+}
+.menuliparent ul li {
+border:none;
+}
+.caret.caret-up {
+border-top-width: 0;
+border-bottom: 4px solid;
+}
+.caret {
+margin-left:80px;
+}
+.activemenu a{
+color: rgba(51, 51, 51, 1);
+font-weight: 600;
+}
+#leftsidemenudiv.active{
+min-width: 125px !important;
+max-width: 125px !important;
+text-align: center !important;
+}
+#leftsidemenudiv.active .caret{
+margin-left:10px;
+}
+#leftsidemenudiv.active .hidetitle{
+display:none;
+}
+#leftsidemenudiv.active .menuliparent ul{
+padding-left:0px;
+text-align:left;
+}
+#leftsidemenudiv.active .sidebar-nav{
+padding-left:0px !important;
+}
+#leftsidemenudiv.active .closediv{
+padding-left:0px !important;
+padding-right:40px;
+}
+#leftsidemenudiv.active .menutext{
+text-align:left !important;
+}
+#leftsidemenudiv.active #logofps{
+padding-left:20px;
+}
+#leftsidemenudiv.active .menuliparent.closecollapseall a{
+padding-right:20px;
+}
+#leftsidemenudiv.active .menuliparent a{
+padding-right:40px;
+}
+</style>
+</div>
+<div class="" style="padding-left: 1px;width: 100%;;min-height: 100vh;transition: all 0.3s;">
+<nav class="navbar" style="padding-top:10px;padding-right:10px;background-color:white;margin-bottom:0px;">
+<div class="container-fluid" style="margin-left:-30px;">
+<form class="navbar-form navbar-left" action="https://staging-redesign-app.k8s.fpsupport.nl/search-dashboard.html" style="margin-top:-5px;width:100%;">
+<div class="input-group input-lg" style="width:15%;">
+<select class=" object-picker non-deselectable" name="searchType" id="searchType" tabindex="1" data-placeholder="Please select type of search" data-sortable="false" data-value="job" data-display-limit="0">
+<option value="job" selected="selected">
+Job
+</option>
+<option value="meldingen">
+Meldingen
+</option>
+<option value="documenten">
+Documenten
+</option>
+</select>
+</div>
+<div class="input-group input-group-lg" style="width:65%;">
+<input type="text" class="form-control" name="search" value="" placeholder="Waar ben je naar op zoek?" style="border-right:none;padding:20px 10px;">
+<div class="input-group-btn">
+<button class="btn btn-default" type="submit">
+<i class="glyphicon glyphicon-search"></i>
+</button>
+</div>
+</div>
+<div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+<div class="dropdown nav navbar-nav ">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-plus" aria-hidden="true"></i>
+</button>
+<ul class="dropdown-menu pull-right" style="min-width: 210px;">
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Meldding aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/leverancier-overzicht.html">Leverancier aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+</ul>
+</div>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html" class="nav navbar-nav" style="margin-left: 5px;margin-right: 15px;">
+<span class="fa-stack fa-2x" data-count="4">
+<i class="fa fa-bell fa-stack-1x" style="color:black;"></i>
+</span>
+</a>
+<div class="dropdown nav navbar-nav">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-user" aria-hidden="true"></i>
+</button>
+<ul class="dropdown-menu pull-right" style="min-width: 200px;">
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Mijn profiel <i class="fa fa-user" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Instellingen <i class="fa fa-cog" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/login/logout/" style="color:#CD0000;">Uitloggen <i class="fa fa-sign-out" aria-hidden="true" style="float: right;"></i></a></li>
+</ul>
+</div>	
+</div>
+</form>
+</div>
+</nav>
+<style>
+#searchType{
+height: 46px;
+}
+.fa-stack[data-count]:after{
+position:absolute;
+right:0%;
+top:1%;
+content: attr(data-count);
+font-size:30%;
+padding:.6em;
+border-radius:999px;
+line-height:.75em;
+color: white;
+background:rgba(255,0,0,.85);
+text-align:center;
+min-width:2em;
+font-weight:bold;
+}
+</style>
+<style type="text/css">
+.job-type{
+display: block;
+}
+.moduleJobs td{
+display: block;
+}
+.module2 {
+background-color: #F39C26 !important;
+}
+.module3 {
+background-color: #3799DB !important;
+}
+body {
+line-height: 1.42857143;
+}
+</style>
+<section id="main">
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_save" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="modal_main_title">Kopieer module</h4>
+</div>
+<div class="modal-body" id="modal_main_body">
+</div>
+<div class="modal-footer">
+<a class="btn btn-danger" id="close-modal-button">Annuleren</a>
+<a class="btn btn-warning" id="submit-modal-button-">Nee, alleen opslaan</a>
+<a class="btn btn-primary" id="submit-modal-button">Akkoord</a>
+</div>
+</div>
+</div>
+</div>
+<div class="breadcrumbsWrapper">
+<div class="container breadcrumbs">
+<div class="row">
+<div class="col-md-12">
+<a title="Dashboard" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Dashboard</a>
+<a title="Beheer" href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html">Beheer</a>
+<a title="Formulier modules">formulier MODULE</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row panel-group">
+<div class="col-md-6 col-sm-12 col-xs-12 generalTable moduleOverzicht" style="display:none" id="form_new_module">
+<table class="" cell-spacing="3">
+<thead>
+<tr>
+<th class="generalTableHeader roundBorders greenHeader">
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_newmodule/" method="post" style="height: 37px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="text" name="module" id="modulename" class="form-control" placeholder="Typ de naam van de formulier module." title="Typ de naam van de formulier module." aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier module in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Maak een nieuwe formulier module.">Aanmaken</button>
+<button type="button" class="btn btn-danger cancel-new-module">x</button>
+</div>
+</div>
+</form>
+</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 generalTable moduleOverzicht">
+<table class="" cell-spacing="3">
+<thead>
+<tr>
+<th class="generalTableHeader roundBorders greenHeader " data-toggle="collapse" href="#961ABF3B-D94F-4B26-9EE8CA9883835CB1" aria-expanded="false" aria-controls="961ABF3B-D94F-4B26-9EE8CA9883835CB1">
+<span id="module_label_961ABF3B-D94F-4B26-9EE8CA9883835CB1" style="height:34px;">
+Chithra
+</span>
+<form id="form_edit_module_961ABF3B-D94F-4B26-9EE8CA9883835CB1" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editmodule/" class="form-edit-module" method="post" style="height: 34px; display:none;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="mid" value="961ABF3B-D94F-4B26-9EE8CA9883835CB1">
+<input type="text" name="module" class="form-control edit-module" placeholder="Typ de naam van de formulier module." title="Typ de naam van de formulier module." aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier module in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Chithra" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier module.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-module" data-mid="961ABF3B-D94F-4B26-9EE8CA9883835CB1">x</button>
+</div>
+</div>
+</form>
+
+<span class="dropdownIconWhite">
+<i class="fa fa-angle-down fa-2x module-opened"></i>
+<i class="fa fa-angle-right fa-2x module-closed"></i>
+</span>
+<a data-mid="961ABF3B-D94F-4B26-9EE8CA9883835CB1" class="edit-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE wijzigen">
+</a><a data-mid="961ABF3B-D94F-4B26-9EE8CA9883835CB1" class="cross-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE verwijderen"></a>
+</th>
+</tr>
+</thead>
+<tbody class="collapse " id="961ABF3B-D94F-4B26-9EE8CA9883835CB1">
+<tr class="">
+<td class="subModuleButton" data-module="961ABF3B-D94F-4B26-9EE8CA9883835CB1">
+Voeg een nieuwe formulier submodule toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem" style="display:none;" id="newSubForm961ABF3B-D94F-4B26-9EE8CA9883835CB1">
+<td>
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_newsubmodule/" method="post">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="moduleId" value="961ABF3B-D94F-4B26-9EE8CA9883835CB1">
+<input type="text" name="subname" id="foldername" class="form-control" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Maak een nieuwe formulier submodule.">Aanmaken</button>
+<button type="button" class="btn btn-danger cancel-new-submodule">x</button>
+</div>
+</div>
+</form>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#961ABF3B-D94F-4B26-9EE8CA9883835CB1CF80A7FA-A070-4F05-B7E43722AE5E3A69" aria-expanded="false">
+<td>
+<span id="submodule_label_CF80A7FA-A070-4F05-B7E43722AE5E3A69">Sub_chithra</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_CF80A7FA-A070-4F05-B7E43722AE5E3A69" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="CF80A7FA-A070-4F05-B7E43722AE5E3A69">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Sub_chithra" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="CF80A7FA-A070-4F05-B7E43722AE5E3A69">x</button>
+</div>
+</div>
+</form>
+<a data-mid="CF80A7FA-A070-4F05-B7E43722AE5E3A69" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="CF80A7FA-A070-4F05-B7E43722AE5E3A69" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="961ABF3B-D94F-4B26-9EE8CA9883835CB1CF80A7FA-A070-4F05-B7E43722AE5E3A69">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=CF80A7FA-A070-4F05-B7E43722AE5E3A69">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs 961ABF3B-D94F-4B26-9EE8CA9883835CB1CF80A7FA-A070-4F05-B7E43722AE5E3A69" style="display:block;margin:0px !important;">
+<td>
+testChithra
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=B06AF4AF-5CDA-4AAA-A586A929EA380076" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="B06AF4AF-5CDA-4AAA-A586A929EA380076" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Geimporteerd</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 generalTable moduleOverzicht">
+<table class="" cell-spacing="3">
+<thead>
+<tr>
+<th class="generalTableHeader roundBorders greenHeader " data-toggle="collapse" href="#C246300C-45CA-4680-B7D8F6868BA18FD6" aria-expanded="false" aria-controls="C246300C-45CA-4680-B7D8F6868BA18FD6">
+<span id="module_label_C246300C-45CA-4680-B7D8F6868BA18FD6" style="height:34px;">
+Chithra
+</span>
+<form id="form_edit_module_C246300C-45CA-4680-B7D8F6868BA18FD6" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editmodule/" class="form-edit-module" method="post" style="height: 34px; display:none;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="mid" value="C246300C-45CA-4680-B7D8F6868BA18FD6">
+<input type="text" name="module" class="form-control edit-module" placeholder="Typ de naam van de formulier module." title="Typ de naam van de formulier module." aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier module in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Chithra" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier module.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-module" data-mid="C246300C-45CA-4680-B7D8F6868BA18FD6">x</button>
+</div>
+</div>
+</form>
+
+<span class="dropdownIconWhite">
+<i class="fa fa-angle-down fa-2x module-opened"></i>
+<i class="fa fa-angle-right fa-2x module-closed"></i>
+</span>
+<a data-mid="C246300C-45CA-4680-B7D8F6868BA18FD6" class="edit-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE wijzigen">
+</a><a data-mid="C246300C-45CA-4680-B7D8F6868BA18FD6" class="cross-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE verwijderen"></a>
+</th>
+</tr>
+</thead>
+<tbody class="collapse " id="C246300C-45CA-4680-B7D8F6868BA18FD6">
+<tr class="">
+<td class="subModuleButton" data-module="C246300C-45CA-4680-B7D8F6868BA18FD6">
+Voeg een nieuwe formulier submodule toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem" style="display:none;" id="newSubFormC246300C-45CA-4680-B7D8F6868BA18FD6">
+<td>
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_newsubmodule/" method="post">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="moduleId" value="C246300C-45CA-4680-B7D8F6868BA18FD6">
+<input type="text" name="subname" id="foldername" class="form-control" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Maak een nieuwe formulier submodule.">Aanmaken</button>
+<button type="button" class="btn btn-danger cancel-new-submodule">x</button>
+</div>
+</div>
+</form>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#C246300C-45CA-4680-B7D8F6868BA18FD6DFB4683A-F942-4A70-85B0985ACCC20F42" aria-expanded="false">
+<td>
+<span id="submodule_label_DFB4683A-F942-4A70-85B0985ACCC20F42">Sub_chithra</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_DFB4683A-F942-4A70-85B0985ACCC20F42" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="DFB4683A-F942-4A70-85B0985ACCC20F42">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Sub_chithra" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="DFB4683A-F942-4A70-85B0985ACCC20F42">x</button>
+</div>
+</div>
+</form>
+<a data-mid="DFB4683A-F942-4A70-85B0985ACCC20F42" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="DFB4683A-F942-4A70-85B0985ACCC20F42" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="C246300C-45CA-4680-B7D8F6868BA18FD6DFB4683A-F942-4A70-85B0985ACCC20F42">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=DFB4683A-F942-4A70-85B0985ACCC20F42">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs C246300C-45CA-4680-B7D8F6868BA18FD6DFB4683A-F942-4A70-85B0985ACCC20F42" style="display:block;margin:0px !important;">
+<td>
+testChithra
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=95DA9329-BEBC-4CD9-A90B0A9D2D7C508F" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="95DA9329-BEBC-4CD9-A90B0A9D2D7C508F" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 generalTable moduleOverzicht">
+<table class="" cell-spacing="3">
+<thead>
+<tr>
+<th class="generalTableHeader roundBorders greenHeader " data-toggle="collapse" href="#A318C1AA-CC3F-41E9-8958521FC91E1F94" aria-expanded="false" aria-controls="A318C1AA-CC3F-41E9-8958521FC91E1F94">
+<span id="module_label_A318C1AA-CC3F-41E9-8958521FC91E1F94" style="height:34px;">
+dat test
+</span>
+<form id="form_edit_module_A318C1AA-CC3F-41E9-8958521FC91E1F94" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editmodule/" class="form-edit-module" method="post" style="height: 34px; display:none;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="mid" value="A318C1AA-CC3F-41E9-8958521FC91E1F94">
+<input type="text" name="module" class="form-control edit-module" placeholder="Typ de naam van de formulier module." title="Typ de naam van de formulier module." aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier module in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="dat test" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier module.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-module" data-mid="A318C1AA-CC3F-41E9-8958521FC91E1F94">x</button>
+</div>
+</div>
+</form>
+
+<span class="dropdownIconWhite">
+<i class="fa fa-angle-down fa-2x module-opened"></i>
+<i class="fa fa-angle-right fa-2x module-closed"></i>
+</span>
+<a data-mid="A318C1AA-CC3F-41E9-8958521FC91E1F94" class="edit-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE wijzigen">
+</a><a data-mid="A318C1AA-CC3F-41E9-8958521FC91E1F94" class="cross-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE verwijderen"></a>
+</th>
+</tr>
+</thead>
+<tbody class="collapse " id="A318C1AA-CC3F-41E9-8958521FC91E1F94">
+<tr class="">
+<td class="subModuleButton" data-module="A318C1AA-CC3F-41E9-8958521FC91E1F94">
+Voeg een nieuwe formulier submodule toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem" style="display:none;" id="newSubFormA318C1AA-CC3F-41E9-8958521FC91E1F94">
+<td>
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_newsubmodule/" method="post">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="moduleId" value="A318C1AA-CC3F-41E9-8958521FC91E1F94">
+<input type="text" name="subname" id="foldername" class="form-control" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Maak een nieuwe formulier submodule.">Aanmaken</button>
+<button type="button" class="btn btn-danger cancel-new-submodule">x</button>
+</div>
+</div>
+</form>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#A318C1AA-CC3F-41E9-8958521FC91E1F945D31F91E-BB9A-4D6C-9935BD8139CFD75B" aria-expanded="false">
+<td>
+<span id="submodule_label_5D31F91E-BB9A-4D6C-9935BD8139CFD75B">dat 22</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_5D31F91E-BB9A-4D6C-9935BD8139CFD75B" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="5D31F91E-BB9A-4D6C-9935BD8139CFD75B">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="dat 22" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="5D31F91E-BB9A-4D6C-9935BD8139CFD75B">x</button>
+</div>
+</div>
+</form>
+<a data-mid="5D31F91E-BB9A-4D6C-9935BD8139CFD75B" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="5D31F91E-BB9A-4D6C-9935BD8139CFD75B" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="A318C1AA-CC3F-41E9-8958521FC91E1F945D31F91E-BB9A-4D6C-9935BD8139CFD75B">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=5D31F91E-BB9A-4D6C-9935BD8139CFD75B">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs A318C1AA-CC3F-41E9-8958521FC91E1F945D31F91E-BB9A-4D6C-9935BD8139CFD75B" style="display:block;margin:0px !important;">
+<td>
+Template dat
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=FD9C62F1-30EF-481A-9FB0D5270C7B2A29" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="FD9C62F1-30EF-481A-9FB0D5270C7B2A29" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#A318C1AA-CC3F-41E9-8958521FC91E1F94883EAB6D-4D01-40EB-B7F121756EBA7822" aria-expanded="false">
+<td>
+<span id="submodule_label_883EAB6D-4D01-40EB-B7F121756EBA7822">dat sub</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_883EAB6D-4D01-40EB-B7F121756EBA7822" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="883EAB6D-4D01-40EB-B7F121756EBA7822">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="dat sub" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="883EAB6D-4D01-40EB-B7F121756EBA7822">x</button>
+</div>
+</div>
+</form>
+<a data-mid="883EAB6D-4D01-40EB-B7F121756EBA7822" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="883EAB6D-4D01-40EB-B7F121756EBA7822" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="A318C1AA-CC3F-41E9-8958521FC91E1F94883EAB6D-4D01-40EB-B7F121756EBA7822">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=883EAB6D-4D01-40EB-B7F121756EBA7822">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 generalTable moduleOverzicht">
+<table class="" cell-spacing="3">
+<thead>
+<tr>
+<th class="generalTableHeader roundBorders greenHeader " data-toggle="collapse" href="#0849EF86-FDD0-4FD8-B2308FF76F33354E" aria-expanded="false" aria-controls="0849EF86-FDD0-4FD8-B2308FF76F33354E">
+<span id="module_label_0849EF86-FDD0-4FD8-B2308FF76F33354E" style="height:34px;">
+For Test module
+</span>
+<form id="form_edit_module_0849EF86-FDD0-4FD8-B2308FF76F33354E" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editmodule/" class="form-edit-module" method="post" style="height: 34px; display:none;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="mid" value="0849EF86-FDD0-4FD8-B2308FF76F33354E">
+<input type="text" name="module" class="form-control edit-module" placeholder="Typ de naam van de formulier module." title="Typ de naam van de formulier module." aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier module in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="For Test module" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier module.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-module" data-mid="0849EF86-FDD0-4FD8-B2308FF76F33354E">x</button>
+</div>
+</div>
+</form>
+
+<span class="dropdownIconWhite">
+<i class="fa fa-angle-down fa-2x module-opened"></i>
+<i class="fa fa-angle-right fa-2x module-closed"></i>
+</span>
+<a data-mid="0849EF86-FDD0-4FD8-B2308FF76F33354E" class="edit-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE wijzigen">
+</a><a data-mid="0849EF86-FDD0-4FD8-B2308FF76F33354E" class="cross-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE verwijderen"></a>
+</th>
+</tr>
+</thead>
+<tbody class="collapse " id="0849EF86-FDD0-4FD8-B2308FF76F33354E">
+<tr class="">
+<td class="subModuleButton" data-module="0849EF86-FDD0-4FD8-B2308FF76F33354E">
+Voeg een nieuwe formulier submodule toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem" style="display:none;" id="newSubForm0849EF86-FDD0-4FD8-B2308FF76F33354E">
+<td>
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_newsubmodule/" method="post">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="moduleId" value="0849EF86-FDD0-4FD8-B2308FF76F33354E">
+<input type="text" name="subname" id="foldername" class="form-control" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Maak een nieuwe formulier submodule.">Aanmaken</button>
+<button type="button" class="btn btn-danger cancel-new-submodule">x</button>
+</div>
+</div>
+</form>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#0849EF86-FDD0-4FD8-B2308FF76F33354E18D5A287-A2EE-4B4C-8A376916E2C95EF0" aria-expanded="false">
+<td>
+<span id="submodule_label_18D5A287-A2EE-4B4C-8A376916E2C95EF0">testSub</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_18D5A287-A2EE-4B4C-8A376916E2C95EF0" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="18D5A287-A2EE-4B4C-8A376916E2C95EF0">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="testSub" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="18D5A287-A2EE-4B4C-8A376916E2C95EF0">x</button>
+</div>
+</div>
+</form>
+<a data-mid="18D5A287-A2EE-4B4C-8A376916E2C95EF0" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="18D5A287-A2EE-4B4C-8A376916E2C95EF0" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="0849EF86-FDD0-4FD8-B2308FF76F33354E18D5A287-A2EE-4B4C-8A376916E2C95EF0">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=18D5A287-A2EE-4B4C-8A376916E2C95EF0">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs 0849EF86-FDD0-4FD8-B2308FF76F33354E18D5A287-A2EE-4B4C-8A376916E2C95EF0" style="display:block;margin:0px !important;">
+<td>
+My New Test
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=7E5862E6-BD87-4FE5-A5C0226EA7A0AF0E" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="7E5862E6-BD87-4FE5-A5C0226EA7A0AF0E" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs 0849EF86-FDD0-4FD8-B2308FF76F33354E18D5A287-A2EE-4B4C-8A376916E2C95EF0" style="display:block;margin:0px !important;">
+<td>
+test11
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=AF070B7A-9C46-475A-9ED7E798C3D16220" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="AF070B7A-9C46-475A-9ED7E798C3D16220" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#0849EF86-FDD0-4FD8-B2308FF76F33354E4C37C01A-BC80-412B-93FCA1CAEC1ACA4A" aria-expanded="false">
+<td>
+<span id="submodule_label_4C37C01A-BC80-412B-93FCA1CAEC1ACA4A">testSub1</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_4C37C01A-BC80-412B-93FCA1CAEC1ACA4A" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="4C37C01A-BC80-412B-93FCA1CAEC1ACA4A">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="testSub1" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="4C37C01A-BC80-412B-93FCA1CAEC1ACA4A">x</button>
+</div>
+</div>
+</form>
+<a data-mid="4C37C01A-BC80-412B-93FCA1CAEC1ACA4A" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="4C37C01A-BC80-412B-93FCA1CAEC1ACA4A" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="0849EF86-FDD0-4FD8-B2308FF76F33354E4C37C01A-BC80-412B-93FCA1CAEC1ACA4A">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=4C37C01A-BC80-412B-93FCA1CAEC1ACA4A">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs 0849EF86-FDD0-4FD8-B2308FF76F33354E4C37C01A-BC80-412B-93FCA1CAEC1ACA4A" style="display:block;margin:0px !important;">
+<td>
+test22
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=B0954206-F6A9-4CDF-B3CD2B98CD8A8A7D" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="B0954206-F6A9-4CDF-B3CD2B98CD8A8A7D" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#0849EF86-FDD0-4FD8-B2308FF76F33354E22C565B5-8918-491F-8B73F3F937726616" aria-expanded="false">
+<td>
+<span id="submodule_label_22C565B5-8918-491F-8B73F3F937726616">testSub2</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_22C565B5-8918-491F-8B73F3F937726616" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="22C565B5-8918-491F-8B73F3F937726616">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="testSub2" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="22C565B5-8918-491F-8B73F3F937726616">x</button>
+</div>
+</div>
+</form>
+<a data-mid="22C565B5-8918-491F-8B73F3F937726616" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="22C565B5-8918-491F-8B73F3F937726616" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="0849EF86-FDD0-4FD8-B2308FF76F33354E22C565B5-8918-491F-8B73F3F937726616">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=22C565B5-8918-491F-8B73F3F937726616">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs 0849EF86-FDD0-4FD8-B2308FF76F33354E22C565B5-8918-491F-8B73F3F937726616" style="display:block;margin:0px !important;">
+<td>
+test33
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=D8F65180-8534-47CA-8455C9AE3083534D" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="D8F65180-8534-47CA-8455C9AE3083534D" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 generalTable moduleOverzicht">
+<table class="" cell-spacing="3">
+<thead>
+<tr>
+<th class="generalTableHeader roundBorders greenHeader " data-toggle="collapse" href="#D2840F5F-9EC3-41CC-9ED62B48BAABC8E2" aria-expanded="false" aria-controls="D2840F5F-9EC3-41CC-9ED62B48BAABC8E2">
+<span id="module_label_D2840F5F-9EC3-41CC-9ED62B48BAABC8E2" style="height:34px;">
+Holand 2
+</span>
+<form id="form_edit_module_D2840F5F-9EC3-41CC-9ED62B48BAABC8E2" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editmodule/" class="form-edit-module" method="post" style="height: 34px; display:none;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="mid" value="D2840F5F-9EC3-41CC-9ED62B48BAABC8E2">
+<input type="text" name="module" class="form-control edit-module" placeholder="Typ de naam van de formulier module." title="Typ de naam van de formulier module." aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier module in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Holand 2" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier module.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-module" data-mid="D2840F5F-9EC3-41CC-9ED62B48BAABC8E2">x</button>
+</div>
+</div>
+</form>
+
+<span class="dropdownIconWhite">
+<i class="fa fa-angle-down fa-2x module-opened"></i>
+<i class="fa fa-angle-right fa-2x module-closed"></i>
+</span>
+<a data-mid="D2840F5F-9EC3-41CC-9ED62B48BAABC8E2" class="edit-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE wijzigen">
+</a><a data-mid="D2840F5F-9EC3-41CC-9ED62B48BAABC8E2" class="cross-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE verwijderen"></a>
+</th>
+</tr>
+</thead>
+<tbody class="collapse " id="D2840F5F-9EC3-41CC-9ED62B48BAABC8E2">
+<tr class="">
+<td class="subModuleButton" data-module="D2840F5F-9EC3-41CC-9ED62B48BAABC8E2">
+Voeg een nieuwe formulier submodule toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem" style="display:none;" id="newSubFormD2840F5F-9EC3-41CC-9ED62B48BAABC8E2">
+<td>
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_newsubmodule/" method="post">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="moduleId" value="D2840F5F-9EC3-41CC-9ED62B48BAABC8E2">
+<input type="text" name="subname" id="foldername" class="form-control" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Maak een nieuwe formulier submodule.">Aanmaken</button>
+<button type="button" class="btn btn-danger cancel-new-submodule">x</button>
+</div>
+</div>
+</form>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#D2840F5F-9EC3-41CC-9ED62B48BAABC8E249ABBBA7-F893-4589-A9CE85AB1C2D8A64" aria-expanded="false">
+<td>
+<span id="submodule_label_49ABBBA7-F893-4589-A9CE85AB1C2D8A64">Amstesdam</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_49ABBBA7-F893-4589-A9CE85AB1C2D8A64" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="49ABBBA7-F893-4589-A9CE85AB1C2D8A64">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Amstesdam" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="49ABBBA7-F893-4589-A9CE85AB1C2D8A64">x</button>
+</div>
+</div>
+</form>
+<a data-mid="49ABBBA7-F893-4589-A9CE85AB1C2D8A64" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="49ABBBA7-F893-4589-A9CE85AB1C2D8A64" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="D2840F5F-9EC3-41CC-9ED62B48BAABC8E249ABBBA7-F893-4589-A9CE85AB1C2D8A64">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=49ABBBA7-F893-4589-A9CE85AB1C2D8A64">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs D2840F5F-9EC3-41CC-9ED62B48BAABC8E249ABBBA7-F893-4589-A9CE85AB1C2D8A64" style="display:block;margin:0px !important;">
+<td>
+dat test
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=AA8F284B-927B-4B65-8065C2B44476C313" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="AA8F284B-927B-4B65-8065C2B44476C313" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 generalTable moduleOverzicht">
+<table class="" cell-spacing="3">
+<thead>
+<tr>
+<th class="generalTableHeader roundBorders greenHeader " data-toggle="collapse" href="#0728F0A7-DD71-45B7-B90D90F125C4689A" aria-expanded="false" aria-controls="0728F0A7-DD71-45B7-B90D90F125C4689A">
+<span id="module_label_0728F0A7-DD71-45B7-B90D90F125C4689A" style="height:34px;">
+My Module
+</span>
+<form id="form_edit_module_0728F0A7-DD71-45B7-B90D90F125C4689A" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editmodule/" class="form-edit-module" method="post" style="height: 34px; display:none;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="mid" value="0728F0A7-DD71-45B7-B90D90F125C4689A">
+<input type="text" name="module" class="form-control edit-module" placeholder="Typ de naam van de formulier module." title="Typ de naam van de formulier module." aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier module in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="My Module" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier module.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-module" data-mid="0728F0A7-DD71-45B7-B90D90F125C4689A">x</button>
+</div>
+</div>
+</form>
+
+<span class="dropdownIconWhite">
+<i class="fa fa-angle-down fa-2x module-opened"></i>
+<i class="fa fa-angle-right fa-2x module-closed"></i>
+</span>
+<a data-mid="0728F0A7-DD71-45B7-B90D90F125C4689A" class="edit-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE wijzigen">
+</a><a data-mid="0728F0A7-DD71-45B7-B90D90F125C4689A" class="cross-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE verwijderen"></a>
+</th>
+</tr>
+</thead>
+<tbody class="collapse " id="0728F0A7-DD71-45B7-B90D90F125C4689A">
+<tr class="">
+<td class="subModuleButton" data-module="0728F0A7-DD71-45B7-B90D90F125C4689A">
+Voeg een nieuwe formulier submodule toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem" style="display:none;" id="newSubForm0728F0A7-DD71-45B7-B90D90F125C4689A">
+<td>
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_newsubmodule/" method="post">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="moduleId" value="0728F0A7-DD71-45B7-B90D90F125C4689A">
+<input type="text" name="subname" id="foldername" class="form-control" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Maak een nieuwe formulier submodule.">Aanmaken</button>
+<button type="button" class="btn btn-danger cancel-new-submodule">x</button>
+</div>
+</div>
+</form>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#0728F0A7-DD71-45B7-B90D90F125C4689AF0EDC257-A97A-462A-AE6AB3A67FEBDD23" aria-expanded="false">
+<td>
+<span id="submodule_label_F0EDC257-A97A-462A-AE6AB3A67FEBDD23">My new module</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_F0EDC257-A97A-462A-AE6AB3A67FEBDD23" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="F0EDC257-A97A-462A-AE6AB3A67FEBDD23">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="My new module" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="F0EDC257-A97A-462A-AE6AB3A67FEBDD23">x</button>
+</div>
+</div>
+</form>
+<a data-mid="F0EDC257-A97A-462A-AE6AB3A67FEBDD23" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="F0EDC257-A97A-462A-AE6AB3A67FEBDD23" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="0728F0A7-DD71-45B7-B90D90F125C4689AF0EDC257-A97A-462A-AE6AB3A67FEBDD23">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=F0EDC257-A97A-462A-AE6AB3A67FEBDD23">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#0728F0A7-DD71-45B7-B90D90F125C4689AED392FF7-5476-44DD-A870B8F4813C0C62" aria-expanded="false">
+<td>
+<span id="submodule_label_ED392FF7-5476-44DD-A870B8F4813C0C62">Test subModule</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_ED392FF7-5476-44DD-A870B8F4813C0C62" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="ED392FF7-5476-44DD-A870B8F4813C0C62">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Test subModule" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="ED392FF7-5476-44DD-A870B8F4813C0C62">x</button>
+</div>
+</div>
+</form>
+<a data-mid="ED392FF7-5476-44DD-A870B8F4813C0C62" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="ED392FF7-5476-44DD-A870B8F4813C0C62" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="0728F0A7-DD71-45B7-B90D90F125C4689AED392FF7-5476-44DD-A870B8F4813C0C62">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=ED392FF7-5476-44DD-A870B8F4813C0C62">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs 0728F0A7-DD71-45B7-B90D90F125C4689AED392FF7-5476-44DD-A870B8F4813C0C62" style="display:block;margin:0px !important;">
+<td>
+test1
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=F8DC249A-A662-4DF9-A74B5BB7BE33DBF7" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="F8DC249A-A662-4DF9-A74B5BB7BE33DBF7" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 generalTable moduleOverzicht">
+<table class="" cell-spacing="3">
+<thead>
+<tr>
+<th class="generalTableHeader roundBorders greenHeader " data-toggle="collapse" href="#AA6F38D1-FADB-4D72-8E3C782A1CE67EA7" aria-expanded="false" aria-controls="AA6F38D1-FADB-4D72-8E3C782A1CE67EA7">
+<span id="module_label_AA6F38D1-FADB-4D72-8E3C782A1CE67EA7" style="height:34px;">
+Test module 0715
+</span>
+<form id="form_edit_module_AA6F38D1-FADB-4D72-8E3C782A1CE67EA7" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editmodule/" class="form-edit-module" method="post" style="height: 34px; display:none;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="mid" value="AA6F38D1-FADB-4D72-8E3C782A1CE67EA7">
+<input type="text" name="module" class="form-control edit-module" placeholder="Typ de naam van de formulier module." title="Typ de naam van de formulier module." aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier module in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Test module 0715" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier module.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-module" data-mid="AA6F38D1-FADB-4D72-8E3C782A1CE67EA7">x</button>
+</div>
+</div>
+</form>
+
+<span class="dropdownIconWhite">
+<i class="fa fa-angle-down fa-2x module-opened"></i>
+<i class="fa fa-angle-right fa-2x module-closed"></i>
+</span>
+<a data-mid="AA6F38D1-FADB-4D72-8E3C782A1CE67EA7" class="edit-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE wijzigen">
+</a><a data-mid="AA6F38D1-FADB-4D72-8E3C782A1CE67EA7" class="cross-module-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="formulier MODULE verwijderen"></a>
+</th>
+</tr>
+</thead>
+<tbody class="collapse " id="AA6F38D1-FADB-4D72-8E3C782A1CE67EA7">
+<tr class="">
+<td class="subModuleButton" data-module="AA6F38D1-FADB-4D72-8E3C782A1CE67EA7">
+Voeg een nieuwe formulier submodule toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem" style="display:none;" id="newSubFormAA6F38D1-FADB-4D72-8E3C782A1CE67EA7">
+<td>
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_newsubmodule/" method="post">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="moduleId" value="AA6F38D1-FADB-4D72-8E3C782A1CE67EA7">
+<input type="text" name="subname" id="foldername" class="form-control" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Maak een nieuwe formulier submodule.">Aanmaken</button>
+<button type="button" class="btn btn-danger cancel-new-submodule">x</button>
+</div>
+</div>
+</form>
+</td>
+</tr>
+<tr class="generalTableItem moduleSub" data-toggle="collapse" href="#AA6F38D1-FADB-4D72-8E3C782A1CE67EA75D15C9BA-DDB1-4866-93109E4EE99F91FD" aria-expanded="false">
+<td>
+<span id="submodule_label_5D15C9BA-DDB1-4866-93109E4EE99F91FD">Test job sub module 0715-3</span>
+<span class="dropdownIconBlue" style="margin-left:5px;">
+<i class="fa fa-angle-down module-opened"></i>
+<i class="fa fa-angle-right module-closed"></i>
+</span>
+<form id="form_edit_submodule_5D15C9BA-DDB1-4866-93109E4EE99F91FD" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/questionnaire_module_overview/_editsubmodule/" class="form-edit-submodule" method="post" style="height: 28px; display:none;margin-top:-5px;">
+<div class="input-group col-md-12 col-sm-12">
+<div class="form-group">
+<input type="hidden" name="pageId" value="26AB5BE5-DCC3-49D8-9AB8608DD160C020">
+<input type="hidden" name="smid" value="5D15C9BA-DDB1-4866-93109E4EE99F91FD">
+<input type="text" name="submodule" class="form-control edit-submodule" placeholder="Typ de naam van de nieuwe formulier submodule" title="Typ de naam van de nieuwe formulier submodule" aria-label="..." oninvalid="setCustomValidity(&#39;Vul hier de naam van de formulier submodule in!&#39;)" oninput="setCustomValidity(&#39;&#39;)" value="Test job sub module 0715-3" required="required">
+</div>
+<div class="input-group-btn">
+<button type="submit" class="saveButton btn btn-primary" title="Maak een nieuwe formulier submodule.">Bevestig</button>
+<input type="hidden" id="userRole" value="AK">
+<button type="button" class="btn btn-danger cancel-edit-submodule" data-mid="5D15C9BA-DDB1-4866-93109E4EE99F91FD">x</button>
+</div>
+</div>
+</form>
+<a data-mid="5D15C9BA-DDB1-4866-93109E4EE99F91FD" class="edit-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule wijzigen">
+</a>
+<a data-mid="5D15C9BA-DDB1-4866-93109E4EE99F91FD" class="cross-submodule-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Job submodule verwijderen.">
+</a>
+</td>
+</tr>
+<tr>
+<td style="padding:0px;">
+<table class="collapse " id="AA6F38D1-FADB-4D72-8E3C782A1CE67EA75D15C9BA-DDB1-4866-93109E4EE99F91FD">
+<tbody style="display:block">
+<tr class="subModuleButton linked-element" style="width:100%;display:block;margin:0px !important;background-color:#68BDF7" data-href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?subid=5D15C9BA-DDB1-4866-93109E4EE99F91FD">
+<td style="padding:0px;display: block;">
+Voeg een nieuwe formulier template toe.
+<i class="icon-add-submodule"></i>
+</td>
+</tr>
+<tr class="generalTableItem moduleJobs AA6F38D1-FADB-4D72-8E3C782A1CE67EA75D15C9BA-DDB1-4866-93109E4EE99F91FD" style="display:block;margin:0px !important;">
+<td>
+test from 0719
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/create-formulieren-template.html?templateId=1FFEC7D0-BB5C-404D-97F7546D712D0A1E" class="edit-job-template green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template wijzigen">
+</a>
+<a data-mid="1FFEC7D0-BB5C-404D-97F7546D712D0A1E" class="cross-job-button green-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Questionnaire template verwijderen.">
+</a>
+<small class="job-type">Custom</small>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_delete">
+<div class="modal-dialog">
+<div class="modal-content" id="modal_delete_content">
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_delete_2">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Let op...</h4>
+</div>
+<div class="modal-body">
+<p>Weet u zeker dat u dezeformuliersubmodule inclusief alleformuliertemplates wilt verwijderen?</p>
+<p id="modal_delete_2_custom_text">
+Dezeformuliersubmodule wordt nog gebruikt door uw klanten.
+<br>
+Deze geimporteerde submodules zullen worden omgezet naar custom submodules.
+</p>
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<input type="hidden" name="module" value="" id="modal_delete_2_input">
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal">Annuleren</button>
+<button class="btn btn-primary" data-dismiss="modal" id="modal_delete_2_submit">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_delete_3">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Let op...</h4>
+</div>
+<div class="modal-body">
+<p>Weet u zeker dat u dezeformuliertemplate wilt verwijderen?</p>
+<p id="modal_delete_3_custom_text">
+Deze templateformulierwordt nog gebruikt door uw klanten.
+<br>
+Deze geimporteerde template questionnaires zullen worden omgezet naar custom questionnaires.
+</p>
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<input type="hidden" name="module" value="" id="modal_delete_3_input">
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal">Annuleren</button>
+<button class="btn btn-primary" data-dismiss="modal" id="modal_delete_3_submit">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_delete_4">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Let op...</h4>
+</div>
+<div class="modal-body">
+<p>Er zijn nog Jobs met een leverancier actief. Laat deze leverancier weten dat u geen documenten meer wilt ontvangen!</p>
+<p>
+Weet u zeker dat u deformulierMODULE met onderliggende job submodules, Questionnaire templates en actieve Jobs wilt verwijderen?
+</p>
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<input type="hidden" name="module" value="" id="modal_delete_4_input">
+<label class="radio-inline">
+<input type="checkbox" id="check_1" name="search_display_type" value="1" checked="">
+Bewaar de afgeronde Jobs voor rapportages.
+</label>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal">Annuleren</button>
+<button class="btn btn-primary" data-dismiss="modal" id="modal_delete_4_submit">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_delete_5">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Let op...</h4>
+</div>
+<div class="modal-body">
+<p>DezeformulierMODULE heeft kopieÃ«n. Wanneer u een Questionnaire template of job submodule (inc. Questionnaire templates) verwijderd wordt dit ook doorgevoerd in de kopieÃ«n.</p>
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<input type="hidden" name="module" value="" id="modal_delete_5_input">
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal">Annuleren</button>
+<button class="btn btn-primary" data-dismiss="modal" id="modal_delete_5_submit">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_delete_6">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Let op...</h4>
+</div>
+<div class="modal-body">
+<p>
+Er zijn nog kopieÃ«n actief van deze origineleformulierMODULE.
+<br>
+Verwijder eerst de kopieÃ«n voordat u deze origineleformulierMODULE kunt verwijderen.
+</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary" data-dismiss="modal">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer container-fluid">
+<div class="container">
+<hr>
+<ul class="logo-footer">
+<li><a href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Hier kunt u via gebruikersinstellingen een eigen logo plaatsen</a></li>
+</ul>
+</div>
+</footer>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="modal_main_title">Let op</h4>
+</div>
+<div class="modal-body" id="modal_main_body">
+<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_btn_close">Annuleren</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_btn_submit">Verwijderen</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main_save">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="modal_main_save_title">Let op</h4>
+</div>
+<div class="modal-body" id="modal_main_save_body">
+<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_save_btn_close">Annuleren</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_save_btn_submit">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+<!-- footer -->
+
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/bootstrap-datepicker.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/locales/bootstrap-datepicker.nl.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/dropzone.js"></script>
+<script src="https://browser.sentry-cdn.com/5.23.0/bundle.min.js" integrity="sha384-5yYHk2XjpqhbWfLwJrxsdolnhl+HfgEnD1UhVzAs6Kd2fx+ZoD0wBFjd65mWgZOG"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/init-sentry.js" selectorid="sentry" sentry_api_key="https://69a1bba9d92c421cb24c6c585ede4518:2303e5aceeea48519ca1433d66168c27@sentry.k8s.mytoomba.nl/33" sentry_environment="production"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/main.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/pages/reports-search.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/select2.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/i18n/nl.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/transition.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery.validate.min.js"></script>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="index.css"> 
+<script src='_logo.js'></script>
+<script src='_menu.js'></script>
+<script src="index.js"></script>
+
+</div></body></html>
