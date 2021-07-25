@@ -7,6 +7,13 @@ $(document).ready( function() {
     $('.logo-footer').parent().removeClass('container');
 
     $('#main .container-fluid').removeClass('container-fluid');
+    $('#main .container').removeClass('container');
+
+    //update layout
+    $('.breadcrumbsWrapper .row:first').removeClass('row').addClass('flex-space-between');
+    $('.flex-space-between .col-md-6:first').removeClass('col-md-6');
+    $('.flex-space-between .col-md-6:first').removeClass('col-md-6');
+
 
     // load logo
     $('#sidebar-wrapper a:first').replaceWith(logo);
