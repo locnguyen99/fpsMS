@@ -12,7 +12,7 @@ var menu = `
       <li class="list-group-item"><a href="_Dashboard Profiel.html">Profiel</a></li>
       <li class="list-group-item"><a href="_Dashboard Locatie.html">Locatie</a></li>
       <li class="list-group-item"><a
-          href="_Rapportages.html">Rapportages</a></li>
+          href="_Dashboard Rapporttages.html">Rapportages</a></li>
     </ul>
   </li>
   <li class="menuliparent">

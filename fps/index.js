@@ -6,6 +6,8 @@ $(document).ready( function() {
     $('.footer hr').remove();
     $('.logo-footer').parent().removeClass('container');
 
+    $("#main .container").removeClass("container");
+
     // load logo
     $('#sidebar-wrapper a:first').replaceWith(logo);
     // load left menu

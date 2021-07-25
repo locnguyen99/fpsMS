@@ -592,7 +592,6 @@ ul.sidebar-nav.list-unstyled {
     margin: 0 30px;
 }
 
-
 hr {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -601,9 +600,6 @@ hr {
 }
 #dashboard, #dashboardUser {
     margin-bottom: 0px !important;
-}
-body .container {
-    height: 100vh;
 }
 ol, ul {
     margin-top: 5px;
@@ -616,3 +612,10 @@ ol, ul {
 #sidebar-wrapper {
     margin-top: 20px !important;
 }
+/* edit row and col of dashboard profile */
+.edit{
+    display: flex;
+  }
+
+/* Rapportages */
+
