@@ -41,7 +41,7 @@ body {
         width: 68% !important;
     }
 }
-input, select, textarea {
+.btn, input, select, textarea {
     border-radius: 8px;
 }
 /* NOTE: Font styles */
