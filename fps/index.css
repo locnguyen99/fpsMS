@@ -704,4 +704,6 @@ a.btn.btn-top-delete span{
     color: rgba(205, 0, 0,.6) !important;
 }
 
-/* rgb(130, 130, 130) */
+.bg-white .panel-group{
+    padding:15px;
+}
