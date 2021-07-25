@@ -25,10 +25,13 @@ $(document).ready( function() {
 
     $(".toggle.btn.btn-default.off.btn-sm.fps-toggle").children().first().remove();
 
+    //HH
+    $("#main .breadcrumbsWrapper").insertBefore("#main")
+    $("#main .panel-group .col-md-4").removeClass("col-md-4").addClass("col-lg-6 col-xl-4")
 
-    $('.cs .select2-selection__rendered#select2-sub_module-container').change(function(){
-        console.log('dfdfdf')
-    })
+    // avanken local
+    $('#main .bg-white').removeClass('bg-white')
+
     
 });
 
