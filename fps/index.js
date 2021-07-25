@@ -7,7 +7,7 @@ $(document).ready( function() {
     $('.logo-footer').parent().removeClass('container');
 
     $('#main .container-fluid').removeClass('container-fluid');
-    $('#main .container').removeClass('container');
+    $('#main .container').removeClass('container').addClass('bg-white');
 
     //update layout
     $('.breadcrumbsWrapper .row:first').removeClass('row').addClass('flex-space-between');
