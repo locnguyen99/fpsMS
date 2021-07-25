@@ -725,6 +725,10 @@ a.btn.btn-top-greybg:hover {
 .btn-top-greybg span{
     color: rgba(130, 130, 130, 1) !important;
 }
+.toggle.btn.btn-default.off.btn-sm.fps-toggle {
+    margin-left: 20px;
+    top: -6px;
+}
 
 
 .bg-white .panel-group {
