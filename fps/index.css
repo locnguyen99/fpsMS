@@ -92,7 +92,7 @@ span.badge.hidetitle{
     font-weight: 400;
 }
 .menutext {
-    /* margin-top: 100px !important; */
+    margin-top: 60px !important;
     text-transform: uppercase;
     margin-left: 20px;
 }
@@ -584,7 +584,7 @@ i.fa.fa-bell.fa-stack-1x:hover  {
 }
 #main {
     overflow-y: hidden;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 236px);
 }
 ul.sidebar-nav.list-unstyled:hover {
     overflow-y: auto;
