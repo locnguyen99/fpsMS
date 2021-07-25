@@ -570,6 +570,9 @@ i.fa.fa-bell.fa-stack-1x:hover  {
     display: flex;
     justify-content: space-between;
 }
+.flex-space-between .submitButtonRight .btn {
+    margin-left: 15px;
+}
 #main:hover {
     overflow-y: auto;
     overflow: overlay;
