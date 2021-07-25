@@ -347,8 +347,9 @@ a.nav.navbar-nav{
 #closeleftmenu .badge {
     border-radius: 50%;
     font-size: 24px !important;
-    width: 40px;
-    width: 40px;
+    width: 40px !important;
+    width: 40px !important;
+    line-height: 150% !important
 }
 i.fa.fa-bell.fa-stack-1x {
     color: rgba(130, 130, 130, 1) !important;

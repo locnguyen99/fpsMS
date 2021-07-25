@@ -33,24 +33,24 @@ $(document).ready(function () {
     $('#main.locationsOverview .bg-white').removeClass('bg-white')
 
 
-    $('#closeleftmenu .badge').html("<i class='fa fa-angle-left'></i>");
-    var target = document.querySelector('#leftsidemenudiv')
-    // create an observer instance
-    var observer = new MutationObserver(function(mutations) {
-        if ($('#leftsidemenudiv').hasClass('active')) {
-            $('#closeleftmenu .badge').html("<i class='fa fa-angle-right'></i>");
-        } else {
-            $('#closeleftmenu .badge').html("<i class='fa fa-angle-left'></i>");
-        }  
-    });
-    // configuration of the observer:
-    var config = { 
-        attributes: true, 
-        attributeFilter: ['class'],
-        childList: false, 
-        characterData: false 
-    };
-    // pass in the target node, as well as the observer options
-    observer.observe(target, config);
+    // $('#closeleftmenu .badge').html("<i class='fa fa-angle-left'></i>");
+    // var target = document.querySelector('#leftsidemenudiv')
+    // // create an observer instance
+    // var observer = new MutationObserver(function(mutations) {
+    //     if ($('#leftsidemenudiv').hasClass('active')) {
+    //         $('#closeleftmenu .badge').html("<i class='fa fa-angle-right'></i>");
+    //     } else {
+    //         $('#closeleftmenu .badge').html("<i class='fa fa-angle-left'></i>");
+    //     }  
+    // });
+    // // configuration of the observer:
+    // var config = { 
+    //     attributes: true, 
+    //     attributeFilter: ['class'],
+    //     childList: false, 
+    //     characterData: false 
+    // };
+    // // pass in the target node, as well as the observer options
+    // observer.observe(target, config);
 });
 
