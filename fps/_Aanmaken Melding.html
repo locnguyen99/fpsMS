@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html -->
+<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Aanmaken Melding</title>
+<link rel="shortcut icon" href="https://staging-redesign-app.k8s.fpsupport.nl/faviconAnsul.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/bootstrap-datepicker3.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customstyle.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/customStyleLasted.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/select2.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/css/bootstrap-toggle.min.css">
+<link rel="stylesheet" type="text/css" href="https://staging-redesign-app.k8s.fpsupport.nl/assets/css/transition.min.css">
+<script src="https://www.google-analytics.com/analytics.js"></script>
+</script>
+<style>
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+}
+/* Set gray background color and 100% height */
+.sidenav {
+background-color: #f1f1f1;
+height: 100%;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {
+height: auto;
+}
+}
+</style>
+</head>
+<body class="" style="overflow-x:hidden;">
+<div class="container-fluid">
+<div class="row content " style="display: flex;align-items: stretch;">
+<div id="leftsidemenudiv" class="" style="margin-left:15px;background-color:white;min-width: 250px;max-width:250px;transition: all 0.3s;border-right: solid 1px #f7f7f7;">
+<!-- Sidebar -->
+<div id="sidebar-wrapper" style="margin-top:10px;padding-left:10px;">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html" style="outline: none; text-decoration: none; ">
+<img id="logofps" class="img-responsive" src="./_Aanmaken Melding_files/FPS-Logo.png" style="height:58px;">
+</a>
+<div style="margin-top:40px;" class="menutext"><a href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html#">Menu</a></div>
+<ul class="sidebar-nav list-unstyled" style="margin-top:30px;padding-left:20px;">
+<li class="sidebar-brand menuliparent">
+</li>
+<li class="menuliparent closecollapseall">
+<a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html#collapse2" class="caretevent"><i class="fa fa-dashboard fa-lg" aria-hidden="true"></i> <span class="hidetitle">Dashboard </span><span class="caret addcaret"></span></a>
+<ul class="list-group panel-collapse collapse" id="collapse2">
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Module</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Profiel</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-locatie.html">Locatie</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/rapportages-zoeken.html">Rapportages</a></li>
+</ul>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html"><i class="fa fa-bell fa-lg" aria-hidden="true"></i> <span class="hidetitle">Notificaties </span>
+<span class="badge hidetitle" style="background-color:red;margin-left:70px;">4</span>
+</a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> <span class="hidetitle">Beheer </span></a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/meldingen-overzicht.html"><i class="fa fa-asterisk fa-lg" aria-hidden="true"></i> <span class="hidetitle">Melding overzicht </span></a>
+</li>
+<li class="menuliparent">
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/formulieren.html"><i class="fa fa-file fa-lg" aria-hidden="true"></i> <span class="hidetitle">Formulier overzicht </span></a>
+</li>
+<li class="menuliparent closecollapseall">
+<a data-toggle="collapse" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html#collapse1" class="" aria-expanded="true"><i class="fa fa-plus fa-lg" aria-hidden="true"></i> <span class="hidetitle">Aanmaken </span><span class="caret addcaret caret-up"></span></a>
+<ul class="list-group panel-collapse collapse in" id="collapse1" aria-expanded="true" style="">
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job</a></li>
+<li class="list-group-item activemenu collapse in" aria-expanded="true" style=""><a href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker</a></li>
+<li class="list-group-item"><a href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie</a></li>
+</ul>
+</li>
+</ul>
+<div style="margin-top:80px;padding-left:20px;padding-bottom:20px;" class="closediv">
+<a href="javascript: void(0)" id="closeleftmenu">
+<span class="badge" style="background-color:#18A5A5;border-radius: 50%;line-height: unset;" id="closemenuicon">&lt;</span>
+<span class="hidetitle">Menu inklappen</span>
+</a>
+</div>
+</div>
+<style>
+.menuliparent {
+margin-bottom:40px;
+color: rgba(130, 130, 130, 1);
+font-style: normal;
+font-family: Poppins;
+font-weight: 600;
+font-size: 16px;
+line-height: 212.50000596046448%;
+}
+.menuliparent a i {
+margin-right:5px;
+}
+.menuliparent ul {
+padding-left:20px;
+}
+.menuliparent ul li {
+border:none;
+}
+.caret.caret-up {
+border-top-width: 0;
+border-bottom: 4px solid;
+}
+.caret {
+margin-left:80px;
+}
+.activemenu a{
+color: rgba(51, 51, 51, 1);
+font-weight: 600;
+}
+#leftsidemenudiv.active{
+min-width: 125px !important;
+max-width: 125px !important;
+text-align: center !important;
+}
+#leftsidemenudiv.active .caret{
+margin-left:10px;
+}
+#leftsidemenudiv.active .hidetitle{
+display:none;
+}
+#leftsidemenudiv.active .menuliparent ul{
+padding-left:0px;
+text-align:left;
+}
+#leftsidemenudiv.active .sidebar-nav{
+padding-left:0px !important;
+}
+#leftsidemenudiv.active .closediv{
+padding-left:0px !important;
+padding-right:40px;
+}
+#leftsidemenudiv.active .menutext{
+text-align:left !important;
+}
+#leftsidemenudiv.active #logofps{
+padding-left:20px;
+}
+#leftsidemenudiv.active .menuliparent.closecollapseall a{
+padding-right:20px;
+}
+#leftsidemenudiv.active .menuliparent a{
+padding-right:40px;
+}
+</style>
+</div>
+<div class="" style="padding-left: 1px;width: 100%;;min-height: 100vh;transition: all 0.3s;">
+<nav class="navbar" style="padding-top:10px;padding-right:10px;background-color:white;margin-bottom:0px;">
+<div class="container-fluid" style="margin-left:-30px;">
+<form class="navbar-form navbar-left" action="https://staging-redesign-app.k8s.fpsupport.nl/search-dashboard.html" style="margin-top:-5px;width:100%;">
+<div class="input-group input-lg" style="width:15%;">
+<select class=" object-picker non-deselectable" name="searchType" id="searchType" tabindex="1" data-placeholder="Please select type of search" data-sortable="false" data-value="job" data-display-limit="0">
+<option value="job" selected="selected">
+Job
+</option>
+<option value="meldingen">
+Meldingen
+</option>
+<option value="documenten">
+Documenten
+</option>
+</select>
+</div>
+<div class="input-group input-group-lg" style="width:65%;">
+<input type="text" class="form-control" name="search" value="" placeholder="Waar ben je naar op zoek?" style="border-right:none;padding:20px 10px;">
+<div class="input-group-btn">
+<button class="btn btn-default" type="submit">
+<i class="glyphicon glyphicon-search"></i>
+</button>
+</div>
+</div>
+<div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+<div class="dropdown nav navbar-nav ">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-plus" aria-hidden="true"></i>
+</button>
+<ul class="dropdown-menu pull-right" style="min-width: 210px;">
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/modules.html">Job aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Meldding aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/werknemers-overzicht.html">Gebruiker aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/locaties-overzicht.html">Locatie aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/leverancier-overzicht.html">Leverancier aanmaken <i class="fa fa-plus" aria-hidden="true" style="float: right;"></i></a></li>
+</ul>
+</div>
+<a href="https://staging-redesign-app.k8s.fpsupport.nl/notificaties.html" class="nav navbar-nav" style="margin-left: 5px;margin-right: 15px;">
+<span class="fa-stack fa-2x" data-count="4">
+<i class="fa fa-bell fa-stack-1x" style="color:black;"></i>
+</span>
+</a>
+<div class="dropdown nav navbar-nav">
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:20px;background-color:#18A5A5;color:white;border-radius: 25%;"><i class="fa fa-user" aria-hidden="true"></i>
+</button>
+<ul class="dropdown-menu pull-right" style="min-width: 200px;">
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Mijn profiel <i class="fa fa-user" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-profiel.html">Instellingen <i class="fa fa-cog" aria-hidden="true" style="float: right;"></i></a></li>
+<li class="divider"></li>
+<li><a tabindex="-1" href="https://staging-redesign-app.k8s.fpsupport.nl/login/logout/" style="color:#CD0000;">Uitloggen <i class="fa fa-sign-out" aria-hidden="true" style="float: right;"></i></a></li>
+</ul>
+</div>	
+</div>
+</form>
+</div>
+</nav>
+<style>
+#searchType{
+height: 46px;
+}
+.fa-stack[data-count]:after{
+position:absolute;
+right:0%;
+top:1%;
+content: attr(data-count);
+font-size:30%;
+padding:.6em;
+border-radius:999px;
+line-height:.75em;
+color: white;
+background:rgba(255,0,0,.85);
+text-align:center;
+min-width:2em;
+font-weight:bold;
+}
+</style>
+<script>
+/*if($( ".nav-bar li" ).hasClass( ".sub-menu" )){
+$('.nav-bar li::before').append('<span class="toggle-caret"><i class="fa fa-plus"></i></span>');
+$('.nav-bar li .sub-menu').hide();
+$(".nav-bar li").on('hover', function(){
+$('.nav-bar li .sub-menu').show();
+});
+};*/
+</script>
+<style type="text/css">
+input[readonly], textarea[readonly], textarea[disabled], input[disabled] {
+background-color:#efeded;
+}
+.rowDocument{
+display: block;
+padding-bottom: 5px;
+}
+.custom-editable .rowDocument input,.custom-editable .rowDocument .cancel-edit,.custom-editable .rowDocument .edit-doc{
+display: none;
+}
+.rowDocument .cancel-edit{
+position: absolute;
+right: 10px;
+top: 5px;
+}
+.rowDocument .cancel-edit .fa{
+color: red;
+}
+.rowDocument .edit-doc{
+cursor: pointer;
+}
+.help-block{
+color : #a94442;
+}
+.custom-editable-on .document-label {
+display: block;
+}
+.document-label {
+display: none;
+}
+.document-label.show-document-label {
+display: block !important;
+}
+.form-field {
+padding-bottom: 20px;
+}
+.form-label {
+color: #6E6E6E;
+padding-bottom: 4px;
+font-size: 16px;
+}
+.input1 {
+width: 90%;
+padding: 10px;
+font-size: 16px;
+font-weight: bold;
+color: #3E3E3E;
+}
+.alert_info_length{
+color:#2ecc71
+}
+.alert_info_length_error{
+color:rgb(121, 6, 6)
+}
+.alert_info_length_error_text{
+}
+.alert_complete_length{
+color:#2ecc71
+}
+.alert_complete_length_error{
+color:rgb(121, 6, 6)
+}
+.alert_complete_length_error_text{
+float:left;
+}
+select {
+-webkit-appearance: none; /* for webkit (safari, chrome) compatibility */
+-moz-appearance: none; /* for firefox compatibility */
+appearance: none;
+}
+#optional_rows .form-group .select2 {
+width: 100% !important;
+}
+/* Main container. You could style it like a <textarea> */
+div.editor
+{
+    background: #efeded;
+    border: 1px solid #DDD;
+    font-family: 'Roboto', arial, sans-serif;
+    height: 150px;
+	color:#8a8888;
+    /* For best results, make the line-height
+       as large as the tags in front of the text. */
+    line-height: 20px;
+    overflow: auto;
+    padding: 1px;
+    width: 100%;
+	font-weight:300;
+	border-radius: 4px;
+}
+/* Element containing the tags in front of text. */
+div.editor ul.prefixes
+{
+    display: block;
+    float: left;
+    list-style-type: none;
+}
+/* One tag */
+div.editor ul.prefixes li
+{
+    background: #333;
+    color: #bbb;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin: 0px 5px 1px 0;
+    padding: 2px 5px;
+}
+/* The editable element. It takes up the space of the parent.
+Since it's a block level element, there is no need for min-width. */
+div.editor div
+{
+    min-height: 100%;
+	padding: 4px;
+}
+
+.fpsSelect{
+	color: #555555;
+    padding: 8px;
+    width: 100% !important;
+    box-shadow: inset 0 1px 1px #eee;
+    border: 1px solid #DDD;
+    border-radius: 4px !important;
+    font-weight: 300;
+}
+.note{
+	width:90%
+}
+.note-description{
+	min-height: 34px;
+	height: 100% !important;
+	border: 1px #ddd solid;
+	color: #555555 !important;
+    border-radius: 4px;
+    background-color: #efeded;
+}
+.note-date{
+	border: 1px #ddd solid;
+	color: #555555 !important;
+    border-radius: 4px;
+    background-color: #efeded;
+}
+</style>
+
+
+
+  		<section id="main" class="backgroundWhite">
+  			<div class="breadcrumbsWrapper">
+				<div class="container breadcrumbs">
+					<div class="row">
+						<div class="col-md-12">
+							
+								<a title="Dashboard" href="https://staging-redesign-app.k8s.fpsupport.nl/dashboard-module.html">Dashboard</a>
+								<a title="Beheer" href="https://staging-redesign-app.k8s.fpsupport.nl/beheer.html">Beheer</a>
+								<a title="Melding Aanmaken" href="https://staging-redesign-app.k8s.fpsupport.nl/aanmaken-melding.html">Melding Aanmaken</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+	  		<div class="container-fluid topBarGreen">
+		  		<div class="row">
+		  			<div class="col-md-6 col-centered">
+		  				
+		  					<h2>Melding Aanmaken</h2>
+		  				
+		  			</div>
+		  		</div>
+	  		</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						
+						
+					</div>
+				</div>
+				<div class="row">
+					<form method="post" id="createForm" enctype="multipart/form-data" name="createForm" action="https://staging-redesign-app.k8s.fpsupport.nl/page-types/create_melding/_createAlert/" novalidate="novalidate">
+						<input type="hidden" name="alertID" id="alertID" value="">
+						<input name="pageId" value="71F406F3-CBE2-4EFD-A80062D3FF36239D" hidden="">
+						<input name="currentMeldingNumber" id="currentMeldingNumber" value="20" hidden="">
+						<input name="curentStatus" id="curentStatus" value="Open" hidden="">
+						<input name="meldingNumber" id="meldingNumber" value="" hidden="">
+
+						<div class="col-md-offset-2 col-md-8">
+
+							
+
+							<div class="row createFormDetail">
+								<div class="col-md-4">
+									<label>Naam melder</label>
+								</div>
+								
+									<div class="col-md-8 form-group">
+										<input type="text" placeholder="Typ de naam van de melder" name="alert_name_disabled" value="Inge Haverkamp" readonly="" disabled="">
+									</div>
+								
+								<input type="hidden" id="alert_label" name="alert_label" value="Inge Haverkamp">
+							</div>
+
+							<div class="row createFormDetail">
+								<div class="col-md-4">
+									<label>E-mail</label>
+								</div>
+								
+									<div class="col-md-8 form-group">
+										<input type="text" placeholder="Typ uw e-mail" name="alert_email" value="Inge@toomba.com" readonly="" disabled="">
+										<input type="hidden" name="alert_email" value="Inge@toomba.com">
+									</div>
+								
+							</div>
+
+							<div class="row createFormDetail ">
+								<div class="col-md-4">
+									<label>Onderwerp melding</label>
+								</div>
+								
+									<div class="col-md-8 form-group">
+										<input type="text" class="groupEdit" value="" placeholder="Typ uw melding" name="alert_topic">
+									</div>
+								
+							</div>
+
+							<div class="row createFormDetail">
+								<div class="col-md-4">
+									<label>Locatie constatering</label>
+								</div>
+								
+									<div class="col-md-8 form-group">
+				  						<span class="select2 select2-container select2-container--default" dir="ltr" style="width: 490px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-alert_location-container"><span class="select2-selection__rendered" id="select2-alert_location-container" title="Selecteer locatie">Selecteer locatie</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><select name="alert_location" id="alert_location" class="gekoppelde-modules ui fluid search dropdown select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+				  							<option disabled="" selected="">Selecteer locatie</option>
+				  							
+				  								<option value="B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">Parnassia</option>
+				  							
+				  								<option value="6841348B-D4B1-47A4-ADBC8389C45B05D2">Supremes</option>
+				  							
+				  								<option value="1023FF5F-F289-40A6-A26B65696EE87B15">Toomba Locatie 1</option>
+				  							
+				  								<option value="45EDEFDF-5B34-43A5-B96D0A3681FECB5E">Toomba Locatie 2</option>
+				  							
+				  								<option value="FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">Toomba Locatie 3</option>
+				  							
+				  						</select>
+									</div>
+								
+							</div>
+
+							<div class="row createFormDetail">
+								<div class="col-md-4">
+									<label>Datum en tijdstip constatering</label>
+								</div>
+								
+									<div class="col-md-8 form-group">
+										<div class="input-group date timePicker col-md-12" data-provide="datepicker" data-date-format="dd-mm-yyyy HH:mm" data-language="nl" data-auto-close="true">
+											
+											<input type="text" autocomplete="off" class="form-control" name="alert_datetime" id="datetimepicker1" value="">
+										</div>
+									</div>
+								
+							</div>
+
+							<div id="block_show_advanced " class="row createFormDetail block_show_advanced">
+
+								<div class="col-md-4 ">
+									<label>MELDING CLASSIFICEREN
+										<i class="fa fa-info-circle" data-rel="popover" data-trigger="hover" data-placement="bottom" data-content="Wanneer u de melding classificeert op Meldingen Module niveau, dan komt de melding automatisch terecht bij de persoon die is aangemerkt als behandelaar van de Meldingen Module." data-html="true" data-original-title="" title=""></i>
+									</label>
+								</div>
+								<div class="col-md-8">
+									
+									
+									<div class="checkbox">
+										
+										
+										<label>
+											<div class="toggle btn btn-default off btn-sm fps-toggle" data-toggle="toggle" style="width: 107px; height: 30px;"><input type="checkbox" data-size="small" data-toggle="toggle" data-style="fps-toggle" id="show_options" name="show_options"><div class="toggle-group"><label class="btn btn-primary btn-sm toggle-on">Ja</label><label class="btn btn-default btn-sm active toggle-off">Nee</label><span class="toggle-handle btn btn-default btn-sm"></span></div></div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div id="optional_rows" style="display: none;">
+								
+									<div class="row createFormDetail" style="display:none;">
+										<div class="col-md-4">
+											<label>Search Melding Template</label>
+										</div>
+										<div class="col-md-8 form-group">
+											<span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-searchMeldingTemplate-container"><span class="select2-selection__rendered" id="select2-searchMeldingTemplate-container" title="Selecteer melding">Selecteer melding</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><select name="search_melding_template" id="searchMeldingTemplate" class="gekoppelde-modules ui fluid search dropdown select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+												<option disabled=""></option>
+
+												<option value="">Selecteer melding</option>
+												
+													
+														
+															<option value="C8C5B43F-5F53-4991-AE32C7BDDD13E989" data-onderwerp-id="BA472005-AC70-401D-AFBFD024C62BBF28" data-onderwerp-type-id="9AE005B0-C4B9-4047-9D10473D76D9627B">Melding Template 2020 with 'no' for melding in job</option>
+														
+													
+														
+															<option value="F962200C-9D2F-4B2A-8AD253ABD3D7B475" data-onderwerp-id="BA472005-AC70-401D-AFBFD024C62BBF28" data-onderwerp-type-id="9AE005B0-C4B9-4047-9D10473D76D9627B">Melding Template 2020 with 'yes' for melding in job</option>
+														
+													
+														
+															<option value="BCD436BA-C82D-45F8-BADD02EC25F73DF2" data-onderwerp-id="421B49A4-6678-474E-92DA65E0A12B133F" data-onderwerp-type-id="633379D9-E0E5-4EE3-B04B9D44D26C1826">test</option>
+														
+													
+														
+															<option value="EA6F562E-2501-4EBE-8FA2ADE4D152F150" data-onderwerp-id="E503024F-6315-4FF4-87373EF578394E2B" data-onderwerp-type-id="7DBDA72E-21F8-4384-B0917E0A68EDDE72">test message</option>
+														
+													
+														
+															<option value="5A94C74B-82FC-44B8-85AA63211F27F251" data-onderwerp-id="3B59447F-FEF4-4FF0-B277E17AB77E2DA5" data-onderwerp-type-id="ECE2AC46-23EE-420B-A5394296D692F552">test message tep14</option>
+														
+													
+														
+															<option value="C769B20C-C6B5-4930-B55991F6FCB856F5" data-onderwerp-id="E503024F-6315-4FF4-87373EF578394E2B" data-onderwerp-type-id="7DBDA72E-21F8-4384-B0917E0A68EDDE72">test message1</option>
+														
+													
+														
+															<option value="D68E3B90-D873-4AC6-A27177A8E3187E59" data-onderwerp-id="D2159709-0920-47EB-A48D656B28299C91" data-onderwerp-type-id="3A071C43-66DA-46C0-812324CFAB85F7BB">Test1</option>
+														
+													
+														
+															<option value="3C49FE81-C76F-4AE3-B305349CDE82027C" data-onderwerp-id="D2159709-0920-47EB-A48D656B28299C91" data-onderwerp-type-id="3A071C43-66DA-46C0-812324CFAB85F7BB">test2</option>
+														
+													
+														
+															<option value="DB3C7A05-0EA9-40F7-89A72B137B208B0D" data-onderwerp-id="D2159709-0920-47EB-A48D656B28299C91" data-onderwerp-type-id="3A071C43-66DA-46C0-812324CFAB85F7BB">test3</option>
+														
+													
+												
+											</select>
+										</div>
+									</div>
+									<div class="row createFormDetail">
+										<div class="col-md-4">
+											<label>Melding module</label>
+										</div>
+										<div class="col-md-8 form-group">
+											<span class="select2 select2-container select2-container--default" dir="ltr" style="width: 490px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-onderwerp-container"><span class="select2-selection__rendered" id="select2-onderwerp-container" title="Selecteer melding module">Selecteer melding module</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><select style="100%" name="onderwerp" id="onderwerp" class="gekoppelde-modules ui fluid search dropdown select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+												<option value="">Selecteer melding module</option>
+
+												
+													
+														
+															<option value="421B49A4-6678-474E-92DA65E0A12B133F">1</option>
+														
+
+													
+														
+															<option value="BA472005-AC70-401D-AFBFD024C62BBF28">Module Melding 2020</option>
+														
+
+													
+														
+															<option value="D2159709-0920-47EB-A48D656B28299C91">My notification</option>
+														
+
+													
+														
+															<option value="40CC1BAC-C564-4EC3-93F04759848ECF7B">New module</option>
+														
+
+													
+														
+															<option value="E503024F-6315-4FF4-87373EF578394E2B">test notification 11</option>
+														
+
+													
+														
+															<option value="3B59447F-FEF4-4FF0-B277E17AB77E2DA5">test notification 14</option>
+														
+
+													
+												
+											</select>
+										</div>
+									</div>
+								
+								
+									<div class="row createFormDetail">
+										<div class="col-md-4">
+											<label>Melding submodule</label>
+										</div>
+										<div class="col-md-8 form-group">
+											<span class="select2 select2-container select2-container--default" dir="ltr" style="width: 490px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-onderwerp_type-container"><span class="select2-selection__rendered" id="select2-onderwerp_type-container" title="Selecteer melding submodule">Selecteer melding submodule</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><select name="onderwerp_type" id="onderwerp_type" class="gekoppelde-modules ui fluid search dropdown select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+												<option disabled=""></option>
+												<option value="">Selecteer melding submodule</option>
+												
+													
+												
+											</select>
+										</div>
+									</div>
+
+									<div class="row createFormDetail">
+										<div class="col-md-4">
+											<label>Melding Template</label>
+										</div>
+										<div class="col-md-8 form-group">
+											<span class="select2 select2-container select2-container--default" dir="ltr" style="width: 490px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-meldings-container"><span class="select2-selection__rendered" id="select2-meldings-container" title="Selecteer melding">Selecteer melding</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><select name="meldingen_template" id="meldings" class="gekoppelde-modules ui fluid search dropdown select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+												<option disabled=""></option>
+
+												<option value="">Selecteer melding</option>
+												
+													
+												
+											</select>
+											
+										</div>
+									</div>
+								
+
+								<div class="row createFormDetail">
+									<div class="col-md-4">
+										<label>Impact Melding</label>
+									</div>
+									<div class="col-md-8 form-group">
+										<span class="select2 select2-container select2-container--default" dir="ltr" style="width: 490px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-impact_melding-container"><span class="select2-selection__rendered" id="select2-impact_melding-container" title=""></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><select name="impact_melding" id="impact_melding" class="gekoppelde-modules ui fluid search dropdown select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+											
+											
+												<option disabled="" selected=""></option>
+											
+											
+												<option value="6682B9C4-D2C9-4496-9303515FE953C469">
+													Hoog
+												</option>
+											
+												<option value="8B3374A0-50B9-4CA8-8FCEADD4E45B8258">
+													Gemiddeld
+												</option>
+											
+												<option value="F70C3B93-70CC-4825-92654479B3EDAA2A">
+													Laag
+												</option>
+											
+										</select>
+										
+									</div>
+								</div>
+							</div>
+
+							<input type="hidden" name="hasJobs" id="hasJobs" value="">
+							
+
+								<div class="row createFormDetail">
+									
+									
+										
+									
+
+									<div id="documentLabel" class="col-md-4 show-document-label document-label">
+										<label>Documenten</label>
+										<input type="hidden" name="alert_number_uploads" value="3">
+									</div>
+
+									<div class="col-md-8 form-group  " id="newUpload">
+										
+										
+											
+											<input type="hidden" name="cur_doc_1" value="">
+											
+												<div class="rowDocument">
+													<input type="file" class="input_file_document" name="alert_document1" data-number="1" multiple="">
+												</div>
+											
+										
+											
+											<input type="hidden" name="cur_doc_2" value="">
+											
+												<div class="rowDocument">
+													<input type="file" class="input_file_document" name="alert_document2" data-number="2" multiple="">
+												</div>
+											
+										
+											
+											<input type="hidden" name="cur_doc_3" value="">
+											
+												<div class="rowDocument">
+													<input type="file" class="input_file_document" name="alert_document3" data-number="3" multiple="">
+												</div>
+											
+										
+										<input type="hidden" class="deleteDocument" name="deleteDocument" id="deleteDocument">
+									</div>
+								</div>
+
+							<div class="row createFormDetail">
+								<div class="col-md-4">
+									<label>Omschrijving</label>
+								</div>
+								
+									<div class="col-md-8">
+										<div class="alert_info_length_error_text hide">
+											<p class="alert_info_length_error">
+												Helaas is het maximaal aantal leestekens van 1,000 stuks van overschreden. Je kunt de tekst aanpassen of het opnemen in een document en bijsluiten als bijlage bij DOCUMENT AFRONDING JOB.
+											</p>										
+										</div>
+										<div style="float: right;">
+											<b class="alert_info_length">0</b>
+											<b>/1,000</b>
+										</div>	
+										<textarea placeholder="Typ hier de melding omschrijving" class="alert_info" id="alert_info" name="alert_info"></textarea>
+									</div>
+								
+							</div>
+
+							<div id="form-notes" class="hide">
+								<div class="row createFormDetail">
+									<div class="col-md-4">
+										<label>	TOEVOEGING BEHANDELAAR</label>
+									</div>
+									
+										<div class="col-md-8">
+												<input type="hidden" name="noteCount" id="noteCount" value="1">
+												<div id="notes">
+													<div class="row">
+														<div class="col-md-3 form-group" style="">
+															<input type="text" autocomplete="off" class="fpsSelect" id="note-datepicker-1" name="note_date_1" value="">
+														</div>
+					
+														<div class="col-md-9 form-group" style="padding-left:5px">
+															<input type="text" placeholder="Typ uw opmerking" name="note_1" value="" id="note" class="note">
+															<i class="fa fa-plus add-more-note" onclick="addMoreNote()" aria-hidden="true"></i>
+														</div>
+													</div>
+												</div>
+										</div>
+									
+									
+								</div>	
+							</div>
+
+							<div id="block_resultaat_melding" class="row createFormDetail hidden">
+								
+							</div>
+							<input type="hidden" id="resultaat_melding_hidden" value="">
+
+							
+							
+
+							<div class="row createFormDetail">
+
+							
+							</div>
+
+							
+
+							<div class="row submitButtons">
+								<div class="col-md-8 col-centered textCenter">
+									
+									
+										<button class="blueBtn" type="button" name="save" value="Opslaan" id="saveButton">Opslaan</button>
+									
+								</div>
+							</div>
+							<input type="hidden" name="alert_active_status" id="alert_active_status" value="1">
+							<input type="hidden" name="checkIsEdit" id="checkIsEdit" value="false">
+						</div>
+					</form>
+				</div>
+			</div>
+  		</section>
+
+				</div>
+			</div>
+			
+	<footer class="footer container-fluid">
+		<div class="container">
+			<hr>
+			<ul class="logo-footer">
+				
+					
+						<li><a href="https://staging-redesign-app.k8s.fpsupport.nl/gebruikersinstellingen.html">Hier kunt u via gebruikersinstellingen een eigen logo plaatsen</a></li>
+										
+				
+				
+				
+			</ul>
+		</div>
+	</footer>
+
+			
+			
+			
+			<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							<h4 class="modal-title" id="modal_main_title">Let op</h4>
+						</div>
+						<div class="modal-body" id="modal_main_body">
+							<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_btn_close">Annuleren</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_btn_submit">Verwijderen</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			
+			
+			
+			<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main_save">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							<h4 class="modal-title" id="modal_main_save_title">Let op</h4>
+						</div>
+						<div class="modal-body" id="modal_main_save_body">
+							<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_save_btn_close">Annuleren</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_save_btn_submit">Akkoord</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/bootstrap-datepicker.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/locales/bootstrap-datepicker.nl.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/dropzone.js"></script>
+<script src="https://browser.sentry-cdn.com/5.23.0/bundle.min.js" integrity="sha384-5yYHk2XjpqhbWfLwJrxsdolnhl+HfgEnD1UhVzAs6Kd2fx+ZoD0wBFjd65mWgZOG"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/init-sentry.js" selectorid="sentry" sentry_api_key="https://69a1bba9d92c421cb24c6c585ede4518:2303e5aceeea48519ca1433d66168c27@sentry.k8s.mytoomba.nl/33" sentry_environment="production"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/main.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/pages/reports-search.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/select2.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/i18n/nl.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/lib/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/transition.min.js"></script>
+<script src="https://staging-redesign-app.k8s.fpsupport.nl/assets/js/jquery.validate.min.js"></script>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="index.css"> 
+<script src='_logo.js'></script>
+<script src='_menu.js'></script>
+<script src="index.js"></script>
+
+	
+
+	</div></body></html>
