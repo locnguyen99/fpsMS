@@ -92,7 +92,7 @@ span.badge.hidetitle{
     font-weight: 400;
 }
 .menutext {
-    margin-top: 100px !important;
+    /* margin-top: 100px !important; */
     text-transform: uppercase;
     margin-left: 20px;
 }
@@ -623,7 +623,7 @@ ol, ul {
 }
 #closeleftmenu {
     padding: 0px 20px !important;
-    padding-top: 20px !important;
+    padding-top: 40px !important;
 }
 #sidebar-wrapper {
     margin-top: 20px !important;
