@@ -44,7 +44,7 @@ var menu = `
       <li class="list-group-item"><a
           href="_GebruikersOverzicht.html">Gebruiker</a></li>
       <li class="list-group-item"><a
-          href="_LocatiesOverzicht.html">Locatie</a></li>
+          href="_Locatiesoverzicht.html">Locatie</a></li>
     </ul>
   </li>
 </ul>
