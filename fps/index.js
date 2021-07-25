@@ -6,7 +6,6 @@ $(document).ready( function() {
     $('.footer hr').remove();
     $('.logo-footer').parent().removeClass('container');
 
-<<<<<<< HEAD
     $('#main .container-fluid').removeClass('container-fluid');
     $('#main .container').removeClass('container');
 
@@ -15,9 +14,6 @@ $(document).ready( function() {
     $('.flex-space-between .col-md-6:first').removeClass('col-md-6');
     $('.flex-space-between .col-md-6:first').removeClass('col-md-6');
 
-=======
-    $("#main .container").removeClass("container");
->>>>>>> da2244f0ac483cf437f14c977774ec89759989eb
 
     // load logo
     $('#sidebar-wrapper a:first').replaceWith(logo);
