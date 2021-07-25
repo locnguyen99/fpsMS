@@ -94,3 +94,43 @@ var menu = `
 <script src='_logo.js'></script>
 <script src='_menu.js'></script>
 <script src="index.js"></script>
+
+
+
+<!-- Material design UI -->
+
+<!-- material select2-->
+<div class="cs no-border bg-transparent form-field">
+  <div class="form-field__control">
+ 
+      <select name="search_display_type" id="search_display_type"
+          class="selectarea gekoppelde-modules ui fluid search dropdown" placeholder="">
+          <option value="1">Openstaand uniek</option>
+          <option value="3" id="opchange">Afgerond uniek</option>
+          <option value="5">Afgerond aantal</option>
+      </select>
+      
+      <label for="search_display_type" class="form-field__label">Keuze rapportage </label>
+  </div>
+</div>
+
+<!-- material time-picker -->
+<div class="no-border bg-transparent form-field">
+  <div class="form-field__control">
+      <input id="VAN" type="text" class="form-field__input"
+          name="vanDatum" id="date1" data-provide="datepicker"
+          data-date-format="dd-mm-yyyy" placeholder=" " data-language="nl"
+          data-auto-close="true" autocomplete="off">
+      <label for="VAN" class="form-field__label">VAN</label>
+  </div>
+</div>
+
+<!-- material input text-->
+<div class="no-border bg-transparent form-field">
+  <div class="form-field__control">
+      <input id="firstname" type="text" class="form-field__input"
+          placeholder=" ">
+      <label for="firstname" class="form-field__label">First
+          name</label>
+  </div>
+</div>

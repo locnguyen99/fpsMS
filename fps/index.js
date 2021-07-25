@@ -24,5 +24,11 @@ $(document).ready( function() {
     $('ul.sidebar-nav.list-unstyled').replaceWith(menu);
 
     $(".toggle.btn.btn-default.off.btn-sm.fps-toggle").children().first().remove();
+
+
+    $('.cs .select2-selection__rendered#select2-sub_module-container').change(function(){
+        console.log('dfdfdf')
+    })
+    
 });
 
