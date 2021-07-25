@@ -576,10 +576,11 @@ Since it's a block level element, there is no need for min-width. */
 										<div class="col-md-8">
 											<div class="no-border bg-transparent form-field">
 												<div class="form-field__control">
-													<input type="text" placeholder=""
-														name="alert_name_disabled" value="Inge Haverkamp" readonly=""
-														disabled="" class="form-field__input">
-													<label for="alert_name_disabled" class="form-field__label">NAAM MELDER</label>
+													<input type="text" placeholder="" name="alert_name_disabled"
+														value="Inge Haverkamp" readonly="" disabled=""
+														class="form-field__input">
+													<label for="alert_name_disabled" class="form-field__label">NAAM
+														MELDER</label>
 												</div>
 											</div>
 
@@ -594,11 +595,13 @@ Since it's a block level element, there is no need for min-width. */
 										</div>
 
 										<div class="col-md-8">
-											
+
 
 											<div class="no-border bg-transparent form-field">
 												<div class="form-field__control">
-													<input type="text" class="form-field__input" placeholder="" name="alert_email" value="Inge@toomba.com" readonly="" disabled="">
+													<input type="text" class="form-field__input" placeholder=""
+														name="alert_email" value="Inge@toomba.com" readonly=""
+														disabled="">
 													<input type="hidden" name="alert_email" value="Inge@toomba.com">
 													<label for="alert_email" class="form-field__label">E-MAIL</label>
 												</div>
@@ -615,10 +618,12 @@ Since it's a block level element, there is no need for min-width. */
 										<div class="col-md-8 form-group">
 											<div class="no-border bg-transparent form-field">
 												<div class="form-field__control">
-													<input type="text" class="form-field__input" placeholder="" 
-														name="alert_topic" value="Inge@toomba.com" readonly="" disabled="">
-													
-													<label for="alert_topic" class="form-field__label">ONDERWERP MELDING</label>
+													<input type="text" class="form-field__input" placeholder=""
+														name="alert_topic" value="Inge@toomba.com" readonly=""
+														disabled="">
+
+													<label for="alert_topic" class="form-field__label">ONDERWERP
+														MELDING</label>
 												</div>
 											</div>
 										</div>
@@ -631,34 +636,39 @@ Since it's a block level element, there is no need for min-width. */
 										</div>
 
 										<div class="col-md-8">
-										
+
 											<div class="cs no-border bg-transparent form-field">
 												<div class="form-field__control">
-											   
-													<select
-												name="alert_location" id=""
-												class="gekoppelde-modules ui fluid search dropdown select2-hidden-accessible"
-												tabindex="-1" aria-hidden="true">
-												<option disabled="" selected="">Selecteer locatie</option>
 
-												<option value="B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">Parnassia</option>
+													<select name="alert_location" id=""
+														class="gekoppelde-modules ui fluid search dropdown select2-hidden-accessible"
+														tabindex="-1" aria-hidden="true">
+														<option disabled="" selected="">Selecteer locatie</option>
 
-												<option value="6841348B-D4B1-47A4-ADBC8389C45B05D2">Supremes</option>
+														<option value="B8B3FDBA-5C21-4AFC-A3532ABDE08B4479">Parnassia
+														</option>
 
-												<option value="1023FF5F-F289-40A6-A26B65696EE87B15">Toomba Locatie 1
-												</option>
+														<option value="6841348B-D4B1-47A4-ADBC8389C45B05D2">Supremes
+														</option>
 
-												<option value="45EDEFDF-5B34-43A5-B96D0A3681FECB5E">Toomba Locatie 2
-												</option>
+														<option value="1023FF5F-F289-40A6-A26B65696EE87B15">Toomba
+															Locatie 1
+														</option>
 
-												<option value="FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">Toomba Locatie 3
-												</option>
+														<option value="45EDEFDF-5B34-43A5-B96D0A3681FECB5E">Toomba
+															Locatie 2
+														</option>
 
-											</select>
-													
-													<label for="alert_location" class="form-field__label">LOCATIE CONSTATERING</label>
+														<option value="FA8BA2B1-26B7-429B-AA58E10C0BA5AE22">Toomba
+															Locatie 3
+														</option>
+
+													</select>
+
+													<label for="alert_location" class="form-field__label">LOCATIE
+														CONSTATERING</label>
 												</div>
-											  </div>
+											</div>
 										</div>
 
 									</div>
@@ -668,13 +678,17 @@ Since it's a block level element, there is no need for min-width. */
 											<label>Datum en tijdstip constatering</label>
 										</div>
 
-										<div class="col-md-8 form-group">
-											<div class="input-group date timePicker col-md-12" data-provide="datepicker"
-												data-date-format="dd-mm-yyyy HH:mm" data-language="nl"
-												data-auto-close="true">
-
-												<input type="text" autocomplete="off" class="form-control"
-													name="alert_datetime" id="datetimepicker1" value="">
+										<div class="col-md-8">
+											<!-- material time-picker -->
+											<div class="no-border bg-transparent form-field">
+												<div class="form-field__control">
+													<input id="alert_datetime" type="text" class="form-field__input"
+														name="alert_datetime" data-provide="datepicker"
+														data-date-format="dd-mm-yyyy HH:mm" placeholder=" "
+														data-language="nl" data-auto-close="true" autocomplete="off">
+													<label for="alert_datetime" class="form-field__label">DATUM EN
+														TIJDSTIP CONSTATERING</label>
+												</div>
 											</div>
 										</div>
 
@@ -994,6 +1008,7 @@ Since it's a block level element, there is no need for min-width. */
 										<div id="documentLabel" class="col-md-4 show-document-label document-label">
 											<label>Documenten</label>
 											<input type="hidden" name="alert_number_uploads" value="3">
+
 										</div>
 
 										<div class="col-md-8 form-group  " id="newUpload">
@@ -1037,7 +1052,7 @@ Since it's a block level element, there is no need for min-width. */
 										</div>
 
 										<div class="col-md-8">
-											<div class="alert_info_length_error_text hide">
+											<!-- <div class="alert_info_length_error_text hide">
 												<p class="alert_info_length_error">
 													Helaas is het maximaal aantal leestekens van 1,000 stuks van
 													overschreden. Je kunt de tekst aanpassen of het opnemen in een
@@ -1047,9 +1062,16 @@ Since it's a block level element, there is no need for min-width. */
 											<div style="float: right;">
 												<b class="alert_info_length">0</b>
 												<b>/1,000</b>
+											</div> -->
+
+												
+											<!-- material input text-->
+											<div class="no-border bg-transparent form-field">
+												<div class="form-field__control">
+													<textarea id="additionalInfo" class="form-field__textarea" placeholder=" "></textarea>
+													<label for="additionalInfo" class="form-field__label">OMSCHRIJVING</label>
+												</div>
 											</div>
-											<textarea placeholder="Typ hier de melding omschrijving" class="alert_info"
-												id="alert_info" name="alert_info"></textarea>
 										</div>
 
 									</div>

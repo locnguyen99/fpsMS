@@ -64,8 +64,9 @@
     -moz-appearance: none;
     /* color: rgba(130, 130, 130, 1); */
     appearance: none;
-    background: transparent;
-    border: 0;
+    background: transparent !important;
+    border: 0px !important;
+    box-shadow: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     display: block;
     /* font-size: 1.2rem; */
