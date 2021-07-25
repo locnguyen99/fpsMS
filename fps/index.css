@@ -7,6 +7,14 @@ body {
     overflow: hidden !important;
 }
 
+a,
+ul,
+textarea,
+input,
+table * {
+    font-family: 'Poppins', sans-serif !important;
+}
+
 .no-padding-left {
     min-height: 100vh !important;
     padding-left: 0px !important;
@@ -802,3 +810,16 @@ tr.subModuleButton.linked-element{
     background-repeat: no-repeat;
 }
 
+.note {
+    font-family: 'Poppins', sans-serif !important;
+}
+ul.dropdown-menu.pull-right {
+    min-width: 300px !important;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px !important;
+}
+ul.dropdown-menu.pull-right li a {
+    padding: 15px 20px;
+    margin: 15px;
+    border-radius: 8px;
+}
