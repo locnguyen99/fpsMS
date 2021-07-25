@@ -671,6 +671,7 @@ ol, ul {
 .toggle.fps-toggle .toggle-handle{
     width: 30px;
     height: 30px;
+    top: 1px;
 }
 .toggle.off .toggle-group {
     left: -83%;
@@ -771,4 +772,11 @@ tr.subModuleButton.linked-element{
 }
 .collapse.in td table {
     padding-left: 20px;
+}
+.checkbox .fps-toggle .toggle-group .toggle-on{
+    background-color: rgba(24, 165, 165) !important;
+}
+.toggle.fps-toggle .toggle-handle {
+    padding: 0px !important;
+    border-radius: 50% !important;
 }
