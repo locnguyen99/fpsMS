@@ -794,10 +794,12 @@ tr.subModuleButton.linked-element{
 }
 .tablesorter-filter {
     background-image: url(./Vector.png) !important;
+    background-size: 14px;
 }
 .tablesorter-filter:hover,
 .tablesorter-filter:focus {
     background-image: url(./Vector.png) !important;
+    background-size: 14px;
 
 }
 .user-bg {
