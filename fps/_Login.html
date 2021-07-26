@@ -55,27 +55,33 @@
 
             <form action="https://staging-redesign-app.k8s.fpsupport.nl/login/attemptLogin/" method="post"
                 class="loginForm">
-                <input type="hidden" name="postLoginUrl" value="/">
-                <div class="no-border bg-transparent form-field">
-                    <div class="form-field__control">
-                        <input name="loginId" type="email" class="form-field__input" placeholder=" " data-language="nl"
-                            data-auto-close="true" autocomplete="off" required="">
-                        <label for="alert_datetime" class="form-field__label">Gebruikersnaam</label>
+                <div>
+                    
+                    <!-- material input text-->
+                    <div class="no-border bg-transparent form-field">
+                        <div class="form-field__control">
+                            <input id="alert_datetime1" type="text" class="form-field__input" placeholder=" ">
+                            <label for="alert_datetime1" class="form-field__label">Gebruikersnaam</label>
+                        </div>
                     </div>
+
+                    <input type="hidden" name="postLoginUrl" value="/">
                 </div>
-                <div class="no-border bg-transparent form-field">
-                    <div class="form-field__control">
-                        <input name="password" type="password" class="form-field__input" placeholder=" "
-                            data-language="nl" data-auto-close="true" autocomplete="off" required="">
-                        <label for="alert_datetime" class="form-field__label">Wachtwoord</label>
+                <div>
+                   
+                    <!-- material input text-->
+                    <div class="no-border bg-transparent form-field">
+                        <div class="form-field__control">
+                            <input id="alert_datetime" type="text" class="form-field__input" placeholder=" ">
+                            <label for="alert_datetime" class="form-field__label">Wachtwoord</label>
+                        </div>
                     </div>
+
                 </div>
-                <!-- <input name="loginId" value="" type="email" placeholder="Gebruikersnaam" required="">
-                <input name="password" value="" type="password" placeholder="Wachtwoord" required=""> -->
                 <button type="submit" class="submitBtn submitBtnCustom" name="submit">Aanmelden</button>
             </form>
             <div class="forgotPass">
-                <p><a href="https://staging-redesign-app.k8s.fpsupport.nl/login/wachtwoord-vergeten.html">Wachtwoord
+                <p><a href="_ForgottenPassword.html">Wachtwoord
                         vergeten?</a></p>
             </div>
             <div style="clear:both">&nbsp;</div>
@@ -83,7 +89,7 @@
     </div>
 
 
-  
+
     <div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -151,15 +157,6 @@
     <script src='_logo.js'></script>
     <script src='_menu.js'></script>
     <script src="index.js"></script>
-
-    <script>
-        $(document).ready(function () { 
-
-
-
-        })
-    </script>
-
 </body>
 
 </html>
