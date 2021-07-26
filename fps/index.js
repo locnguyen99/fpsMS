@@ -41,7 +41,10 @@ $(document).ready(function () {
     var myCheckbox = $('.my-controls .chk-container').clone();
     $('input[type=checkbox]').replaceWith($(myCheckbox));
     
+    //login and logout
     $('.logoSmall').replaceWith(logo);
+    //logout
+    $('.fa.fa-sign-out').parent().attr('href', './index.html');
     
 });
 
