@@ -1,4 +1,4 @@
-var logo = `<a href="./_Home.html" style="outline: none; text-decoration: none; ">
+var logo = `<a href="./_Landing.html" style="outline: none; text-decoration: none; ">
     <div id="logofps">
         <img alt="" class="img-responsive"
             src="https://staging-redesign-app.k8s.fpsupport.nl/assets/images/FPS-Logo-short.png" style="height:58px;">
