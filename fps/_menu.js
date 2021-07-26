@@ -50,9 +50,10 @@ var menu = `
   </li>
 </ul>
 
+
 <div class="my-controls">
-  <label class="chk-container">One
-    <input type="checkbox" checked="checked">
+  <label class="chk-container">
+    <input type="checkbox">
     <span class="checkmark"></span>
   </label>
 </div>
