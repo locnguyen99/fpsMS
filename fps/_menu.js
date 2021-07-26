@@ -1,3 +1,4 @@
+
 var menu = `
 <ul class="sidebar-nav list-unstyled" style="margin-top:30px;padding-left:20px;">
   <li class="sidebar-brand menuliparent">
@@ -44,14 +45,8 @@ var menu = `
       <li class="list-group-item"><a
           href="_GebruikersOverzicht.html">Gebruiker</a></li>
       <li class="list-group-item"><a
-          href="_Locatiesoverzicht.html">Locatie</a></li>
+          href="_LocatiesOverzicht.html">Locatie</a></li>
     </ul>
   </li>
 </ul>
-<div class="my-controls">
-  <label class="chk-container">
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
-</div>
 `
