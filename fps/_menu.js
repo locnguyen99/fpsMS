@@ -49,4 +49,11 @@ var menu = `
     </ul>
   </li>
 </ul>
+
+<div class="my-controls">
+  <label class="chk-container">One
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+  </label>
+</div>
 `
