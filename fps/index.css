@@ -828,7 +828,7 @@ ul.dropdown-menu.pull-right li a {
 
 /* login page */
 #login{
-    /* background-color: #F0F0F0; */
+    background-color: #F0F0F0;
 
 }
 
@@ -875,4 +875,12 @@ label.form-field__label {
 }
 .no-border.bg-transparent.form-field .form-field__control .form-field__label {
     padding-top: 17px !important;
+}
+/* fogotpasswork */
+.loginForm form input {
+    box-shadow: inset 0px -2px 0px -1px #eee;
+}
+
+#loginBox .loginForm input {
+    margin-bottom: 8px !important;
 }
