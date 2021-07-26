@@ -189,6 +189,10 @@ span.select2-dropdown.select2-dropdown--below {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
   }
   
   /* Hide the browser's default checkbox */
