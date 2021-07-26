@@ -884,3 +884,8 @@ label.form-field__label {
 #loginBox .loginForm input {
     margin-bottom: 8px !important;
 }
+
+.tablesorter.tablesorter-default.hasFilters th{
+    padding-left: 10px !important;
+}
+
