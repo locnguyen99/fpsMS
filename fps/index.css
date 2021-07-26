@@ -825,3 +825,54 @@ ul.dropdown-menu.pull-right li a {
     margin: 15px;
     border-radius: 8px;
 }
+
+/* login page */
+#login{
+    /* background-color: #F0F0F0; */
+
+}
+
+#login #loginBox{
+    width: 502px !important;
+    padding: 56px 40px 40px 40px !important;
+    background-color: #FFFFFF !important;
+    border: unset !important;
+    
+}
+#login #loginBox form{
+    padding-top: 45px;
+}
+
+.loginForm input[type="password"]{
+    border-radius: 8px !important;
+}
+.loginForm .submitBtn{
+    margin: 24px 0px !important;
+    background-color: #18A5A5 !important;
+    height: 56px;
+}
+.loginForm .submitBtn:hover{
+    background-color: #18A5A5 !important;
+}
+.logoSmall {
+    background: url(logofps.png) no-repeat;
+    background-position: center top !important;
+    background-size: 100% auto !important;
+    width: 250px;
+    height: 70px;
+    display: block;
+    position: relative;
+    margin: 0 auto 20px;
+}
+.form-field__control input{
+    min-height: 30px !important;
+}
+.no-border.bg-transparent.form-field .form-field__control {
+    height: 56px;
+}
+label.form-field__label {
+    text-align: left;
+}
+.no-border.bg-transparent.form-field .form-field__control .form-field__label {
+    padding-top: 17px !important;
+}

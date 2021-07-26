@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://staging-redesign-app.k8s.fpsupport.nl/login.html -->
+<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login</title>
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Login">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://staging-redesign-app.k8s.fpsupport.nl/login.html">
+<!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://staging-redesign-app.k8s.fpsupport.nl/faviconAnsul.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./Loginwrong_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./Loginwrong_files/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./Loginwrong_files/customstyle.css">
+<link rel="stylesheet" type="text/css" href="./Loginwrong_files/customStyleLasted.css">
+<link rel="stylesheet" type="text/css" href="./Loginwrong_files/floating-labels.css">
+<link rel="stylesheet" type="text/css" href="./Loginwrong_files/css">
+<link rel="stylesheet" type="text/css" href="./Loginwrong_files/style.css">
+<link rel="stylesheet" type="text/css" href="./Loginwrong_files/bootstrap-toggle.min.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script async="" src="./Loginwrong_files/analytics.js"></script><script>
+(function (i, s, o, g, r, a, m) {
+i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+(i[r].q = i[r].q || []).push(arguments)
+}, i[r].l = 1 * new Date(); a = s.createElement(o),
+m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-75794593-2', 'auto');
+ga('send', 'pageview');
+</script>
+<style>
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+}
+/* Set gray background color and 100% height */
+.sidenav {
+background-color: #f1f1f1;
+height: 100%;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {
+height: auto;
+}
+}
+</style>
+</head>
+<body class="" style="overflow-x:hidden;">
+<div id="login" class="container">
+<div id="loginBox" class="row">
+<div class="logoSmall"></div>
+
+<form action="https://staging-redesign-app.k8s.fpsupport.nl/login/attemptLogin/" method="post" class="loginForm">
+<input type="hidden" name="postLoginUrl" value="/">
+<input name="loginId" value="" type="email" placeholder="Gebruikersnaam" required="">
+<input name="password" value="" type="password" placeholder="Wachtwoord" required="">
+<button type="submit" class="submitBtn submitBtnCustom" name="submit">Aanmelden</button>
+</form>
+<div class="forgotPass">
+<p><a href="https://staging-redesign-app.k8s.fpsupport.nl/login/wachtwoord-vergeten.html">Wachtwoord vergeten?</a></p>
+</div>
+<div style="clear:both">&nbsp;</div>
+</div>
+</div>
+
+
+<footer class="footer container-fluid">
+<div class="container">
+<hr>
+<ul class="logo-footer">
+<li>
+<img width="151" heidht="26" src="./Loginwrong_files/saved_resource">
+</li>
+</ul>
+</div>
+</footer>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="modal_main_title">Let op</h4>
+</div>
+<div class="modal-body" id="modal_main_body">
+<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_btn_close">Annuleren</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_btn_submit">Verwijderen</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade ansul-modal" tabindex="-1" role="dialog" id="modal_main_save">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="modal_main_save_title">Let op</h4>
+</div>
+<div class="modal-body" id="modal_main_save_body">
+<p>Let op, er zijn nog actieve jobs gekoppeld aan deze werknemer!</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal" id="modal_main_save_btn_close">Annuleren</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal" id="modal_main_save_btn_submit">Akkoord</button>
+</div>
+</div>
+</div>
+</div>
+<script src="./Loginwrong_files/jquery-1.11.2.min.js"></script>
+<script src="./Loginwrong_files/bootstrap.min.js"></script>
+<script src="./Loginwrong_files/moment-with-locales.min.js"></script>
+<script src="./Loginwrong_files/dropzone.js"></script>
+<script src="./Loginwrong_files/bundle.min.js" crossorigin="anonymous" integrity="sha384-5yYHk2XjpqhbWfLwJrxsdolnhl+HfgEnD1UhVzAs6Kd2fx+ZoD0wBFjd65mWgZOG"></script>
+<script src="./Loginwrong_files/init-sentry.js" selectorid="sentry" sentry_api_key="https://69a1bba9d92c421cb24c6c585ede4518:2303e5aceeea48519ca1433d66168c27@sentry.k8s.mytoomba.nl/33" sentry_environment="production"></script>
+<script src="./Loginwrong_files/main.js"></script>
+<script src="./Loginwrong_files/bootstrap-toggle.min.js"></script>
+
+</body></html>
