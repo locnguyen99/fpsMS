@@ -855,7 +855,7 @@ ul.dropdown-menu.pull-right li a {
     border: unset !important;
     
 }
-#login #loginBox form{
+#login #loginBox{
     padding-top: 45px;
 }
 h2.name {
@@ -873,4 +873,14 @@ h2.name {
 }
 .submitBtn.submitBtnCustom  {
     margin-top: 40px !important;
+    margin-bottom: 0px !important;
+}
+
+.alert.alert-danger {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 30px !important;
+}
+.loginForm {
+    margin-top: 45px !important;
 }
